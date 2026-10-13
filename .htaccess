@@ -1,0 +1,48 @@
+# IIS (vawda.com) ignores .htaccess — keep this for local Apache/Laragon only.
+# Do NOT enable extensionless .php redirects on IIS; they break PHP pages.
+
+RewriteEngine On
+Options -Indexes
+
+# Dynamic robots and sitemap
+RewriteRule ^robots\.txt$ robots.php [L]
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Disabled for IIS hosting — these redirect /index.php -> /index and break the site:
+# RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.php[\s?] [NC]
+# RewriteRule ^index\.php$ ./ [R=301,L]
+# RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+# RewriteCond %{REQUEST_URI} !/(sitemap|robots)\.php$ [NC]
+# RewriteRule ^(.+)\.php$ $1 [R=301,L,NE]
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.+)\.html$ $1 [L,R=301]
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^(.+)/?$ $1.php [L]
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 6 months"
+    ExpiresByType image/png "access plus 6 months"
+    ExpiresByType image/svg+xml "access plus 6 months"
+    ExpiresByType image/webp "access plus 6 months"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|webp|woff2)$">
+        Header set Cache-Control "public, max-age=2592000"
+    </FilesMatch>
+</IfModule>
