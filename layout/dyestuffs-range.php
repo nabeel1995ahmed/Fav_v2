@@ -1,9 +1,9 @@
 <?php
 $dyestuffs_standalone = !empty($dyestuffs_standalone);
 ?>
-<section class="dyestuffs-range-section<?= $dyestuffs_standalone ? ' dyestuffs-range-standalone pt-4' : '' ?> pb-5" id="dyestuffs-range">
+<section class="dyestuffs-range-section<?= $dyestuffs_standalone ? ' dyestuffs-range-standalone' : '' ?> pb-5">
     <div class="container">
-        <div class="dyestuffs-range-block">
+        <div class="dyestuffs-range-block" id="dyestuffs-range">
             <?php if (!$dyestuffs_standalone): ?>
             <button class="dyestuffs-range-toggle collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#dyestuffsRangeCollapse"

@@ -32,6 +32,15 @@ if (!isset($fav_seo_pages)) {
             'section' => 'Products',
             'breadcrumb' => 'Dyestuffs Range',
         ],
+        'textile-dyes-and-chemicals-brochure.php' => [
+            'slug' => 'textile-dyes-and-chemicals-brochure',
+            'title' => 'Textile Dyes & Chemicals Brochure | Vawda',
+            'description' => 'Download the FAV Group Textile Dyes & Chemicals brochure covering sizing, auxiliaries, dyestuffs, printing inks, optical brighteners and special finishes.',
+            'keywords' => 'textile dyes brochure, textile chemicals brochure Pakistan, FAV Group profile textile',
+            'type' => 'product',
+            'section' => 'Products',
+            'breadcrumb' => 'Textile Dyes & Chemicals Brochure',
+        ],
         'masterbatch.php' => [
             'slug' => 'masterbatch',
             'title' => 'Masterbatch for Plastics | Vawda',

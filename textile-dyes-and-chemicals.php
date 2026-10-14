@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=product-card1">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -87,8 +87,8 @@
                             <i class="fa fa-paper-plane"></i>
                         </a>
 
-                        <a href="#" class="btn btn-outline-light">
-                            DOWNLOAD BROCHURE
+                        <a href="#product-categories" class="btn btn-outline-light">
+                            EXPLORE PRODUCTS
                             <i class="fal fa-arrow-right"></i>
                         </a>
 
@@ -202,7 +202,7 @@
          BUSINESS DIVISIONS
     ========================== -->
 
-    <section class="business-divisions py-5">
+    <section id="product-categories" class="business-divisions py-5">
         <div class="container">
             <div class="section-heading text-center mb-5">
                 <h2>OUR PRODUCT CATEGORIES</h2>
@@ -243,7 +243,8 @@
                                 High-performance dyes for cellulosic fibers and blends, delivering brilliant shades, strong wet fastness, and reliable application across modern dyeing and printing processes.
                             </p>
                             <a href="./dyestuffs-range.php#dyestuffs-range" class="product-explore-link">
-                                Explore Dyestuffs Range <i class="fal fa-arrow-right"></i>
+                                Explore Dyestuffs Range
+                                <i class="fal fa-arrow-right" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>

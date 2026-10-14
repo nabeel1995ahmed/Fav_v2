@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="./assets/styling/style.css">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
+    <script>
+        // body { overflow-x: hidden } breaks native hash scrolling — handle #dyestuffs-range manually
+        window.__scrollToDyestuffsRange = (window.location.hash === '#dyestuffs-range');
+        if (window.__scrollToDyestuffsRange) {
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+    </script>
 </head>
 
 <body>
@@ -108,7 +118,7 @@
     ?>
 
     <?php include './layout/footer.php'; ?>
-</body>
+
 <script src="./assets/jquery/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/slick-slider/slick/slick.min.js"></script>
@@ -129,18 +139,54 @@ jQuery(document).ready(function ($) {
     $(window).on('scroll', function () {
         animateOnScroll();
     });
+});
 
-    if (window.location.hash === '#dyestuffs-range') {
-        var $target = $('#dyestuffs-range');
-        if ($target.length) {
-            setTimeout(function () {
-                $('html, body').animate({
-                    scrollTop: $target.offset().top - 100
-                }, 300);
-            }, 50);
+(function () {
+    if (!window.__scrollToDyestuffsRange) {
+        return;
+    }
+
+    function offsetTop(el) {
+        var top = 0;
+        while (el) {
+            top += el.offsetTop;
+            el = el.offsetParent;
+        }
+        return top;
+    }
+
+    function scrollToDyestuffsRange() {
+        var target = document.getElementById('dyestuffs-range');
+        if (!target) {
+            return;
+        }
+
+        var header = document.querySelector('.main-header');
+        var headerHeight = header ? header.offsetHeight : 95;
+        var top = offsetTop(target) - headerHeight - 12;
+
+        window.scrollTo(0, Math.max(0, top));
+    }
+
+    function finish() {
+        scrollToDyestuffsRange();
+        if (window.location.hash !== '#dyestuffs-range') {
+            history.replaceState(null, '', window.location.pathname + window.location.search + '#dyestuffs-range');
         }
     }
-});
+
+    if (document.readyState === 'complete') {
+        finish();
+    } else {
+        window.addEventListener('load', finish);
+    }
+
+    window.addEventListener('pageshow', finish);
+    setTimeout(finish, 50);
+    setTimeout(finish, 250);
+    setTimeout(finish, 600);
+})();
 </script>
+</body>
 
 </html>

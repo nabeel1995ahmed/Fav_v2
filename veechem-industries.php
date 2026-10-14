@@ -211,7 +211,10 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">01</span>
-                                <h5>Sizing</h5>
+                                <div class="product-head-text">
+                                    <h5>Sizing</h5>
+                                    <span class="product-subheading">Sizing Chemicals</span>
+                                </div>
                             </div>
                             <p class="product-text">
                                 To improve weavability to the warp and /or to overcome inherent
@@ -231,6 +234,9 @@
                                 alt="Sizing"
                             >
                         </div>
+                    </div>
+                    <div class="col-12 m-0">
+                        <?php include __DIR__ . '/layout/veechem-sizing-chemicals.php'; ?>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
@@ -533,36 +539,37 @@
          certifications
     ========================== -->
 
-    <section class="certifications pb-5">
+    <section class="certifications veechem-certifications pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="certifications-wrapper">
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/bluesign.png" alt="Bluesign">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/oeko-tex.png" alt="OEKO-TEX">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/zdhc.png" alt="ZDHC">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/iso-9001-2015.png" alt="ISO 9001:2015">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/sgs.png" alt="SGS">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/tuv-australia.png" alt="TUV Austria">
-                        </div>
-                    </div>
-                </div>
+            <div class="section-heading text-center mb-4">
+                <h2>OUR CERTIFICATIONS</h2>
+                <div class="seprator"></div>
+            </div>
+            <?php
+            $veechem_cert_base = './assets/images/products-and-solutions/pigment-powders-and-emulsions/certifications/';
+            $veechem_certs = [
+                ['file' => 'GCL GOTS S4 Letter of Approval ( Scanned Copy ).pdf', 'title' => 'GOTS Letter of Approval'],
+                ['file' => 'Letter of approval Veechem Updated_CERTIFICATE.pdf', 'title' => 'Letter of Approval'],
+                ['file' => 'VEECHEM INDUSTRIES (PVT) LTD._ChemCheckSummary_23-06-2026 (1).pdf', 'title' => 'ChemCheck Summary'],
+                ['file' => 'Veechem Industries (Pvt.) Ltd. - EMS - 2026.pdf', 'title' => 'EMS Certificate 2026'],
+                ['file' => 'Veechem Industries (Pvt.) Ltd. - QMS - 2026.pdf', 'title' => 'QMS Certificate 2026'],
+                ['file' => 'VEECHEM INDUSTRIES PVT LTD - ZDHC CERTIFICATE.PDF', 'title' => 'ZDHC Certificate'],
+            ];
+            ?>
+            <div class="veechem-cert-grid">
+                <?php foreach ($veechem_certs as $cert): ?>
+                    <a class="veechem-cert-card"
+                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                        <span class="veechem-cert-meta">
+                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
+                            <span class="veechem-cert-type">View PDF</span>
+                        </span>
+                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                    </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

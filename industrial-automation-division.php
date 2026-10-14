@@ -92,7 +92,6 @@
     ========================== -->
 
     <section class="why-us second-why-us-section iad-about-section pt-5">
-        <div class="iad-about-decor" aria-hidden="true"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -207,7 +206,7 @@
                             <li><i class="fal fa-desktop"></i> HMIs</li>
                         </ul>
                         <div class="iad-partner-image">
-                            <img src="./assets/images/products-and-solutions/industrial-automation-division/gallery/schneider-vfd.svg" alt="Schneider Electric products">
+                            <img src="./assets/images/products-and-solutions/industrial-automation-division/schneider-electric.svg" alt="Schneider Electric products">
                         </div>
                         <a href="./assets/images/products-and-solutions/industrial-automation-division/schnieder-brochure.pdf" class="iad-brochure-btn" target="_blank" rel="noopener">
                             <i class="fal fa-download"></i>
@@ -227,7 +226,7 @@
                             <li><i class="fal fa-desktop"></i> HMIs</li>
                         </ul>
                         <div class="iad-partner-image">
-                            <img src="./assets/images/products-and-solutions/industrial-automation-division/gallery/siemens-vfd.svg" alt="Siemens products">
+                            <img src="./assets/images/products-and-solutions/industrial-automation-division/siemens.svg" alt="Siemens products">
                         </div>
                         <a href="./assets/images/products-and-solutions/industrial-automation-division/siemens-brochure.pdf" class="iad-brochure-btn" target="_blank" rel="noopener">
                             <i class="fal fa-download"></i>
@@ -246,7 +245,7 @@
                             <li><i class="fal fa-cog"></i> Spare Parts</li>
                         </ul>
                         <div class="iad-partner-image">
-                            <img src="./assets/images/products-and-solutions/industrial-automation-division/gallery/delxi-vfd.svg" alt="Delixi Electric products">
+                            <img src="./assets/images/products-and-solutions/industrial-automation-division/delexi-electric.svg" alt="Delixi Electric products">
                         </div>
                         <a href="./assets/images/products-and-solutions/industrial-automation-division/delixi-flyer.pdf" class="iad-brochure-btn" target="_blank" rel="noopener">
                             <i class="fal fa-download"></i>

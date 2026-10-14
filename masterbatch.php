@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=mb-industries4">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -378,43 +378,59 @@
                     <div class="industries-grid">
 
                         <div class="industry-box">
-                            <i class="fad fa-box"></i>
-                            <h4>Plastic Packaging</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/agriculture-greenhouse-films.svg" alt="Agriculture Greenhouse Films">
+                            </div>
+                            <h4>Agriculture Greenhouse Films</h4>
                         </div>
 
                         <div class="industry-box">
-                            <i class="fad fa-industry"></i>
-                            <h4>Injection Moulding</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/automotive.svg" alt="Automotive">
+                            </div>
+                            <h4>Automotive</h4>
                         </div>
 
                         <div class="industry-box">
-                            <i class="fad fa-layer-group"></i>
-                            <h4>Film Extrusion</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/constructions.svg" alt="Constructions">
+                            </div>
+                            <h4>Constructions</h4>
                         </div>
 
                         <div class="industry-box">
-                            <i class="fad fa-stream"></i>
-                            <h4>Pipes & Profiles</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/electronic.svg" alt="Electronic">
+                            </div>
+                            <h4>Electronic</h4>
                         </div>
 
                         <div class="industry-box">
-                            <i class="fad fa-car"></i>
-                            <h4>Automotive Plastics</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/packaging.svg" alt="Packaging">
+                            </div>
+                            <h4>Packaging</h4>
                         </div>
 
                         <div class="industry-box">
-                            <i class="fad fa-shopping-basket"></i>
-                            <h4>Consumer Goods</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/pharmaceutical.svg" alt="Pharmaceutical">
+                            </div>
+                            <h4>Pharmaceutical</h4>
                         </div>
 
                         <div class="industry-box">
-                            <i class="fad fa-recycle"></i>
-                            <h4>Recycling</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/piping-wire-cable.svg" alt="Piping Wire Cable">
+                            </div>
+                            <h4>Piping Wire Cable</h4>
                         </div>
 
                         <div class="industry-box">
-                            <i class="fad fa-couch"></i>
-                            <h4>Household Products</h4>
+                            <div class="industry-round-shade">
+                                <img src="./assets/images/products-and-solutions/masterbatch/applications/textile-non-woven.svg" alt="Textile Non Woven">
+                            </div>
+                            <h4>Textile Non Woven</h4>
                         </div>
 
                     </div>
@@ -493,44 +509,6 @@
                             <a href="./assets/images/products-and-solutions/masterbatch/gallery/warehouse.svg" target="_blank">
                                 <img src="./assets/images/products-and-solutions/masterbatch/gallery/warehouse.svg" alt="">
                             </a>    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- =========================
-         certifications
-    ========================== -->
-
-    <section class="certifications pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="certifications-wrapper">
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/bluesign.png" alt="Bluesign">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/oeko-tex.png" alt="OEKO-TEX">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/zdhc.png" alt="ZDHC">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/iso-9001-2015.png" alt="ISO 9001:2015">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/sgs.png" alt="SGS">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/tuv-australia.png" alt="TUV Austria">
                         </div>
                     </div>
                 </div>

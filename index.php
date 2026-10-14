@@ -328,9 +328,15 @@
                             We are committed to delivering superior quality products and services with integrity,
                             innovation and a customer-first approach.
                         </p>
-                        <a href="#" class="btn btn-outline-light">
-                            ABOUT US <i class="fal fa-arrow-right"></i>
-                        </a>
+                        <div class="hero-buttons">
+                            <a href="./about-us.php" class="btn btn-outline-light">
+                                ABOUT US <i class="fal fa-arrow-right"></i>
+                            </a>
+                            <a href="./assets/images/home-page/Group%20Profile.pdf" class="btn btn-warning text-white" target="_blank" rel="noopener noreferrer">
+                                GROUP PROFILE
+                                <i class="fal fa-file-pdf"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-8">

@@ -87,8 +87,8 @@
                             <i class="fa fa-paper-plane"></i>
                         </a>
 
-                        <a href="#" class="btn btn-outline-light">
-                            DOWNLOAD BROCHURE
+                        <a href="https://www.favfoods.com.pk/" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+                            VISIT WEBSITE
                             <i class="fal fa-arrow-right"></i>
                         </a>
 
@@ -118,11 +118,11 @@
                             Sweets And Treats Manufactured For Everyday Enjoyment
                         </h2>
                         <p class="text-muted mt-3 mw-100">
-                            Vawda Group manufactures confectionery as part of its diversified operations. The division focuses on high-quality sweets and treats with consistent taste, careful ingredient selection and products suited to retail, wholesale and gifting occasions.
+                            <a href="https://www.favfoods.com.pk/" target="_blank" rel="noopener noreferrer">FAV Foods</a>, a subsidiary of Vawda Group, manufactures confectionery as part of its diversified operations. The division focuses on high-quality sweets and treats with consistent taste, careful ingredient selection and products suited to retail, wholesale and gifting occasions.
                         </p>
-                        <!-- <a href="#" class="btn btn-outline-light">
-                            EXPLORE OUR PRODUCTS <i class="fal fa-arrow-right"></i>
-                        </a> -->
+                        <a href="https://www.favfoods.com.pk/" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+                            VISIT FAV FOODS <i class="fal fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-7">
