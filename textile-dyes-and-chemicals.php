@@ -385,14 +385,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Garment Manufacturing', 'image' => 'garment-manufacturing'],
-        ['label' => 'Fabric Dyeing', 'image' => 'fabric-dyeing'],
-        ['label' => 'Textile Printing', 'image' => 'textile-printing'],
-        ['label' => 'Home Textile', 'image' => 'home-textile'],
-        ['label' => 'Technical Textile', 'image' => 'technical-textile'],
-        ['label' => 'Yarn Manufacturing', 'image' => 'yarn-manufacturing'],
-        ['label' => 'Apparel Exporters', 'image' => 'apparel-exporters'],
-        ['label' => 'Processing Units', 'image' => 'processing-units'],
+        ['label' => 'Garment Manufacturing', 'image' => 'garment-manufacturing', 'text' => 'Dyes and auxiliaries for apparel dyeing and finishing.'],
+        ['label' => 'Fabric Dyeing', 'image' => 'fabric-dyeing', 'text' => 'High-performance dyestuffs for consistent fabric shades.'],
+        ['label' => 'Textile Printing', 'image' => 'textile-printing', 'text' => 'Printing inks and chemicals for textile print processes.'],
+        ['label' => 'Home Textile', 'image' => 'home-textile', 'text' => 'Color and finish solutions for home textile products.'],
+        ['label' => 'Technical Textile', 'image' => 'technical-textile', 'text' => 'Specialty chemicals for technical and functional fabrics.'],
+        ['label' => 'Yarn Manufacturing', 'image' => 'yarn-manufacturing', 'text' => 'Dye and pretreatment support for yarn processing units.'],
+        ['label' => 'Apparel Exporters', 'image' => 'apparel-exporters', 'text' => 'Compliant dye ranges supporting export-quality garments.'],
+        ['label' => 'Processing Units', 'image' => 'processing-units', 'text' => 'End-to-end auxiliaries for textile processing mills.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/textile-dyes-and-chemicals/applications';
 

@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=mb-industries4">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=mb-industries5">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -369,14 +369,46 @@
     <?php
     $industries_img_base = './assets/images/products-and-solutions/masterbatch/applications';
     $industries = [
-        ['label' => 'Agriculture Greenhouse Films', 'image' => 'agriculture-greenhouse-films'],
-        ['label' => 'Automotive Plastics', 'image' => 'automotive'],
-        ['label' => 'Construction', 'image' => 'constructions'],
-        ['label' => 'Electronics', 'image' => 'electronic'],
-        ['label' => 'Packaging', 'image' => 'packaging'],
-        ['label' => 'Pharmaceutical Packaging', 'image' => 'pharmaceutical'],
-        ['label' => 'Piping, Wire & Cable', 'image' => 'piping-wire-cable'],
-        ['label' => 'Textile Non-Woven', 'image' => 'textile-non-woven'],
+        [
+            'label' => 'Agriculture Greenhouse Films',
+            'image' => 'agriculture-greenhouse-films',
+            'text' => 'UV and color masterbatches for durable greenhouse and agri-films.',
+        ],
+        [
+            'label' => 'Automotive Plastics',
+            'image' => 'automotive',
+            'text' => 'Consistent color and additive concentrates for moulded auto parts.',
+        ],
+        [
+            'label' => 'Construction',
+            'image' => 'constructions',
+            'text' => 'Masterbatches for pipes, profiles and building plastic components.',
+        ],
+        [
+            'label' => 'Electronics',
+            'image' => 'electronic',
+            'text' => 'Precise color and performance additives for housings and casings.',
+        ],
+        [
+            'label' => 'Packaging',
+            'image' => 'packaging',
+            'text' => 'White, color and additive solutions for films, bottles and containers.',
+        ],
+        [
+            'label' => 'Pharmaceutical Packaging',
+            'image' => 'pharmaceutical',
+            'text' => 'Clean, reliable concentrates for medical and pharma plastic packs.',
+        ],
+        [
+            'label' => 'Piping, Wire & Cable',
+            'image' => 'piping-wire-cable',
+            'text' => 'Color and filler masterbatches for pipes, wires and cable jackets.',
+        ],
+        [
+            'label' => 'Textile Non-Woven',
+            'image' => 'textile-non-woven',
+            'text' => 'Color and additive masterbatches for non-woven and fiber applications.',
+        ],
     ];
     include __DIR__ . '/layout/industries-serve.php';
     ?>

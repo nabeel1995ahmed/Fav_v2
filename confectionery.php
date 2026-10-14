@@ -260,14 +260,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Retail Stores', 'image' => 'retail'],
-        ['label' => 'Wholesale', 'image' => 'wholesale'],
-        ['label' => 'Food Service', 'image' => 'food-service'],
-        ['label' => 'Hospitality', 'image' => 'hospitality'],
-        ['label' => 'Events & Gifting', 'image' => 'events-gifting'],
-        ['label' => 'Convenience Stores', 'image' => 'convenience-stores'],
-        ['label' => 'Export Markets', 'image' => 'export'],
-        ['label' => 'Celebrations', 'image' => 'celebrations'],
+        ['label' => 'Retail Stores', 'image' => 'retail', 'text' => 'Sweets and treats packed for supermarket and shop shelves.'],
+        ['label' => 'Wholesale', 'image' => 'wholesale', 'text' => 'Bulk confectionery supply for distributors and traders.'],
+        ['label' => 'Food Service', 'image' => 'food-service', 'text' => 'Dessert and sweet options for restaurants and catering.'],
+        ['label' => 'Hospitality', 'image' => 'hospitality', 'text' => 'Guest amenities and sweet offerings for hotels.'],
+        ['label' => 'Events & Gifting', 'image' => 'events-gifting', 'text' => 'Gift packs and assortments for occasions and corporate gifts.'],
+        ['label' => 'Convenience Stores', 'image' => 'convenience-stores', 'text' => 'Ready-to-sell snacks and sweets for quick-commerce retail.'],
+        ['label' => 'Export Markets', 'image' => 'export', 'text' => 'Export-ready confectionery for regional and overseas buyers.'],
+        ['label' => 'Celebrations', 'image' => 'celebrations', 'text' => 'Festive sweets for parties, weddings and celebrations.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/confectionery/applications';
 

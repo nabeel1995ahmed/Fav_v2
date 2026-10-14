@@ -267,14 +267,14 @@
     $industries_intro = 'Automation and motor-control support across process and manufacturing environments.';
     $industries_section_class = 'pt-5';
     $industries = [
-        ['label' => 'Cement & Building Materials', 'image' => 'cement-building'],
-        ['label' => 'Water & Wastewater', 'image' => 'water-wastewater'],
-        ['label' => 'Pharmaceutical', 'image' => 'pharmaceutical'],
-        ['label' => 'Textile', 'image' => 'textile'],
-        ['label' => 'Food & Beverage', 'image' => 'food-beverage'],
-        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
-        ['label' => 'Packaging', 'image' => 'packaging'],
-        ['label' => 'Utilities', 'image' => 'utilities'],
+        ['label' => 'Cement & Building Materials', 'image' => 'cement-building', 'text' => 'Drives and motor control for conveyors, fans and process lines.'],
+        ['label' => 'Water & Wastewater', 'image' => 'water-wastewater', 'text' => 'VFD solutions for pumps, blowers and treatment systems.'],
+        ['label' => 'Pharmaceutical', 'image' => 'pharmaceutical', 'text' => 'Automation components for controlled manufacturing processes.'],
+        ['label' => 'Textile', 'image' => 'textile', 'text' => 'Drive and motor-control support for textile machinery.'],
+        ['label' => 'Food & Beverage', 'image' => 'food-beverage', 'text' => 'Reliable automation for processing and packaging equipment.'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing', 'text' => 'Industrial drives, soft starters and control products.'],
+        ['label' => 'Packaging', 'image' => 'packaging', 'text' => 'Motion and motor control for packaging and filling lines.'],
+        ['label' => 'Utilities', 'image' => 'utilities', 'text' => 'Energy-efficient motor control for utility plant equipment.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/industrial-automation-division/applications';
 

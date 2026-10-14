@@ -293,14 +293,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Corporate Offices', 'image' => 'corporate-offices'],
-        ['label' => 'Retail POS', 'image' => 'retail-pos'],
-        ['label' => 'Photography', 'image' => 'photography'],
-        ['label' => 'Education', 'image' => 'education'],
-        ['label' => 'Banking', 'image' => 'banking'],
-        ['label' => 'Healthcare', 'image' => 'healthcare'],
-        ['label' => 'Government', 'image' => 'government'],
-        ['label' => 'Print Services', 'image' => 'print-services'],
+        ['label' => 'Corporate Offices', 'image' => 'corporate-offices', 'text' => 'Everyday office equipment and supplies for workplace teams.'],
+        ['label' => 'Retail POS', 'image' => 'retail-pos', 'text' => 'Thermal paper and counter supplies for retail checkout.'],
+        ['label' => 'Photography', 'image' => 'photography', 'text' => 'Inkjet photo paper for studio and photo print work.'],
+        ['label' => 'Education', 'image' => 'education', 'text' => 'Classroom and campus supplies for schools and colleges.'],
+        ['label' => 'Banking', 'image' => 'banking', 'text' => 'Reliable print and office consumables for bank branches.'],
+        ['label' => 'Healthcare', 'image' => 'healthcare', 'text' => 'Admin and print supplies for clinics and hospitals.'],
+        ['label' => 'Government', 'image' => 'government', 'text' => 'Office essentials for public sector departments.'],
+        ['label' => 'Print Services', 'image' => 'print-services', 'text' => 'Inks and paper supplies for commercial print operations.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/office-supplies/applications';
 

@@ -1,7 +1,7 @@
 <?php
 /**
  * Shared INDUSTRIES WE SERVE block.
- * Expects $industries = [ ['label' => '...', 'image' => 'slug'], ... ]
+ * Expects $industries = [ ['label' => '...', 'image' => 'slug', 'text' => '...'], ... ]
  * Optional: $industries_heading, $industries_intro, $industries_section_class, $industries_img_base
  * $industries_img_base should point to the product applications folder.
  */
@@ -15,6 +15,13 @@ if (empty($industries_img_base)) {
     return;
 }
 $industries_img_base = rtrim($industries_img_base, '/');
+$has_industry_text = false;
+foreach ($industries as $industry_item) {
+    if (!empty($industry_item['text'])) {
+        $has_industry_text = true;
+        break;
+    }
+}
 ?>
     <section class="<?= htmlspecialchars($industries_section_class) ?>">
         <div class="container">
@@ -27,10 +34,11 @@ $industries_img_base = rtrim($industries_img_base, '/');
                         <p class="industries-serve-intro"><?= htmlspecialchars($industries_intro) ?></p>
                         <?php endif; ?>
                     </div>
-                    <div class="industries-grid">
+                    <div class="industries-grid<?= $has_industry_text ? ' industries-grid-with-text' : '' ?>">
                         <?php foreach ($industries as $industry):
                             $label = $industry['label'] ?? '';
                             $slug = $industry['image'] ?? '';
+                            $text = $industry['text'] ?? '';
                             if ($label === '' || $slug === '') {
                                 continue;
                             }
@@ -41,6 +49,9 @@ $industries_img_base = rtrim($industries_img_base, '/');
                                 <img src="<?= htmlspecialchars($src) ?>" alt="<?= htmlspecialchars($label) ?>">
                             </div>
                             <h4><?= htmlspecialchars($label) ?></h4>
+                            <?php if ($text !== ''): ?>
+                            <p><?= htmlspecialchars($text) ?></p>
+                            <?php endif; ?>
                         </div>
                         <?php endforeach; ?>
                     </div>

@@ -489,14 +489,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Laser Cutting', 'image' => 'laser-cutting'],
-        ['label' => 'Food & Beverage', 'image' => 'food-beverage'],
-        ['label' => 'Pharmaceuticals', 'image' => 'pharmaceutical'],
-        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
-        ['label' => 'Textiles', 'image' => 'textiles'],
-        ['label' => 'Automotive', 'image' => 'automotive'],
-        ['label' => 'Construction', 'image' => 'construction'],
-        ['label' => 'Metal Fabrication', 'image' => 'metal-fabrication'],
+        ['label' => 'Laser Cutting', 'image' => 'laser-cutting', 'text' => 'KN+ Series 5-in-1 packages for clean, dry cutting air.'],
+        ['label' => 'Food & Beverage', 'image' => 'food-beverage', 'text' => 'Oil-free compressors with dryers for hygienic process air.'],
+        ['label' => 'Pharmaceuticals', 'image' => 'pharmaceutical', 'text' => 'KBO and dry oil-free systems for sensitive process lines.'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing', 'text' => 'VA & KB Series screw compressors for plant air supply.'],
+        ['label' => 'Textiles', 'image' => 'textiles', 'text' => 'Stable compressed air with dryers and line filtration.'],
+        ['label' => 'Automotive', 'image' => 'automotive', 'text' => 'Compressors and multi-brand spares for workshop uptime.'],
+        ['label' => 'Construction', 'image' => 'construction', 'text' => 'KM Series mobile compressors for site and field air.'],
+        ['label' => 'Metal Fabrication', 'image' => 'metal-fabrication', 'text' => 'Skid packages, tanks and filters for fab shop air systems.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/industrial-air-compressor/applications';
 

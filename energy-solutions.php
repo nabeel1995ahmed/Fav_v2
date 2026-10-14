@@ -342,14 +342,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Commercial Buildings', 'image' => 'commercial-buildings'],
-        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
-        ['label' => 'Telecom', 'image' => 'telecom'],
-        ['label' => 'Healthcare', 'image' => 'healthcare'],
-        ['label' => 'Data Rooms', 'image' => 'data-rooms'],
-        ['label' => 'Solar Storage', 'image' => 'solar-storage'],
-        ['label' => 'Retail', 'image' => 'retail'],
-        ['label' => 'Utilities', 'image' => 'utilities'],
+        ['label' => 'Commercial Buildings', 'image' => 'commercial-buildings', 'text' => 'Battery backup and power systems for business facilities.'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing', 'text' => 'Reliable energy storage to support plant continuity.'],
+        ['label' => 'Telecom', 'image' => 'telecom', 'text' => 'Power solutions for telecom and communication sites.'],
+        ['label' => 'Healthcare', 'image' => 'healthcare', 'text' => 'Backup power for critical healthcare operations.'],
+        ['label' => 'Data Rooms', 'image' => 'data-rooms', 'text' => 'Wall-mount batteries for data and IT infrastructure.'],
+        ['label' => 'Solar Storage', 'image' => 'solar-storage', 'text' => 'Lithium storage systems paired with solar installations.'],
+        ['label' => 'Retail', 'image' => 'retail', 'text' => 'Power continuity for stores and commercial outlets.'],
+        ['label' => 'Utilities', 'image' => 'utilities', 'text' => 'Energy equipment supporting utility and service networks.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/energy-solutions/applications';
 

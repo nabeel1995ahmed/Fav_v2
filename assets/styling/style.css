@@ -2708,6 +2708,25 @@ section.featured-section {
     margin: 0;
 }
 
+.industry-box p {
+    margin: 8px 0 0;
+    color: #6c757d;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.industries-grid-with-text .industry-box {
+    padding: 14px 10px 16px;
+}
+
+.industries-grid-with-text .industry-box h4 {
+    margin-bottom: 0;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .industry-box:hover {
     background: #f8f8f8;
 }

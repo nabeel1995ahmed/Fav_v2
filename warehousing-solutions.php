@@ -311,14 +311,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'E-commerce', 'image' => 'ecommerce'],
-        ['label' => 'FMCG', 'image' => 'fmcg'],
-        ['label' => 'Retail Distribution', 'image' => 'retail-distribution'],
-        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
-        ['label' => 'Cold Chain', 'image' => 'cold-chain'],
-        ['label' => '3PL Logistics', 'image' => '3pl-logistics'],
-        ['label' => 'Import / Export', 'image' => 'import-export'],
-        ['label' => 'Automotive Parts', 'image' => 'automotive-parts'],
+        ['label' => 'E-commerce', 'image' => 'ecommerce', 'text' => 'Racking and flow systems for fast online order fulfillment.'],
+        ['label' => 'FMCG', 'image' => 'fmcg', 'text' => 'High-density storage for fast-moving consumer goods.'],
+        ['label' => 'Retail Distribution', 'image' => 'retail-distribution', 'text' => 'Warehouse layouts built for retail replenishment cycles.'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing', 'text' => 'Storage and handling systems for plant and WIP inventory.'],
+        ['label' => 'Cold Chain', 'image' => 'cold-chain', 'text' => 'Cold-storage racking for temperature-controlled logistics.'],
+        ['label' => '3PL Logistics', 'image' => '3pl-logistics', 'text' => 'Flexible warehousing solutions for multi-client 3PL sites.'],
+        ['label' => 'Import / Export', 'image' => 'import-export', 'text' => 'Staging and storage systems for inbound and outbound cargo.'],
+        ['label' => 'Automotive Parts', 'image' => 'automotive-parts', 'text' => 'Parts storage and picking systems for auto supply chains.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/warehousing-solutions/applications';
 

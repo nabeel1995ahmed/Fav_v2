@@ -401,14 +401,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Apparel Printing', 'image' => 'apparel-printing'],
-        ['label' => 'Signage', 'image' => 'signage'],
-        ['label' => 'Packaging', 'image' => 'packaging'],
-        ['label' => 'Promotional Products', 'image' => 'promotional'],
-        ['label' => 'Textile Printing', 'image' => 'textile-printing'],
-        ['label' => 'Photography', 'image' => 'photography'],
-        ['label' => 'Advertising', 'image' => 'advertising'],
-        ['label' => 'Industrial Marking', 'image' => 'industrial-marking'],
+        ['label' => 'Apparel Printing', 'image' => 'apparel-printing', 'text' => 'DTF and DTG machines for garment and apparel decoration.'],
+        ['label' => 'Signage', 'image' => 'signage', 'text' => 'Eco-solvent and UV printers for outdoor and indoor signs.'],
+        ['label' => 'Packaging', 'image' => 'packaging', 'text' => 'Date printers and UV systems for packaging workflows.'],
+        ['label' => 'Promotional Products', 'image' => 'promotional', 'text' => 'UV and UV DTF solutions for custom promo merchandise.'],
+        ['label' => 'Textile Printing', 'image' => 'textile-printing', 'text' => 'Sublimation and textile printers for fabric production.'],
+        ['label' => 'Photography', 'image' => 'photography', 'text' => 'High-quality output for photo and studio print work.'],
+        ['label' => 'Advertising', 'image' => 'advertising', 'text' => 'Wide-format print equipment for campaigns and displays.'],
+        ['label' => 'Industrial Marking', 'image' => 'industrial-marking', 'text' => 'Date coding and marking printers for production lines.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/printing-machines/applications';
 

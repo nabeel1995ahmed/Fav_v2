@@ -352,14 +352,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Corporate Offices', 'image' => 'corporate-offices'],
-        ['label' => 'Institutions', 'image' => 'institutions'],
-        ['label' => 'Hotels', 'image' => 'hotels'],
-        ['label' => 'Call Centres', 'image' => 'call-centres'],
-        ['label' => 'Education', 'image' => 'education'],
-        ['label' => 'Healthcare', 'image' => 'healthcare'],
-        ['label' => 'Government', 'image' => 'government'],
-        ['label' => 'Co-working', 'image' => 'coworking'],
+        ['label' => 'Corporate Offices', 'image' => 'corporate-offices', 'text' => 'Executive, manager and staff chairs for professional offices.'],
+        ['label' => 'Institutions', 'image' => 'institutions', 'text' => 'Durable institutional seating for public and private orgs.'],
+        ['label' => 'Hotels', 'image' => 'hotels', 'text' => 'Comfortable seating solutions for hospitality spaces.'],
+        ['label' => 'Call Centres', 'image' => 'call-centres', 'text' => 'Ergonomic chairs built for long shift workstation use.'],
+        ['label' => 'Education', 'image' => 'education', 'text' => 'Practical seating for campuses, labs and admin rooms.'],
+        ['label' => 'Healthcare', 'image' => 'healthcare', 'text' => 'Visitor and staff chairs for clinics and hospitals.'],
+        ['label' => 'Government', 'image' => 'government', 'text' => 'Office furniture for departments and public facilities.'],
+        ['label' => 'Co-working', 'image' => 'coworking', 'text' => 'Flexible seating for shared and modern workspaces.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/office-furnitures/applications';
 

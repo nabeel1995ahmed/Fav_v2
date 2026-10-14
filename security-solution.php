@@ -293,14 +293,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Industrial Sites', 'image' => 'industrial-sites'],
-        ['label' => 'Offices', 'image' => 'offices'],
-        ['label' => 'Retail', 'image' => 'retail'],
-        ['label' => 'Warehouses', 'image' => 'warehouses'],
-        ['label' => 'Education', 'image' => 'education'],
-        ['label' => 'Healthcare', 'image' => 'healthcare'],
-        ['label' => 'Residential', 'image' => 'residential'],
-        ['label' => 'Government', 'image' => 'government'],
+        ['label' => 'Industrial Sites', 'image' => 'industrial-sites', 'text' => 'IP CCTV and NVR systems for plant and factory security.'],
+        ['label' => 'Offices', 'image' => 'offices', 'text' => 'Surveillance coverage for corporate and commercial offices.'],
+        ['label' => 'Retail', 'image' => 'retail', 'text' => 'Camera systems to protect stores and point-of-sale areas.'],
+        ['label' => 'Warehouses', 'image' => 'warehouses', 'text' => 'Monitoring for loading docks, yards and storage zones.'],
+        ['label' => 'Education', 'image' => 'education', 'text' => 'Campus and classroom surveillance for safer institutions.'],
+        ['label' => 'Healthcare', 'image' => 'healthcare', 'text' => 'Secure monitoring for hospitals and clinical facilities.'],
+        ['label' => 'Residential', 'image' => 'residential', 'text' => 'Practical CCTV solutions for homes and housing societies.'],
+        ['label' => 'Government', 'image' => 'government', 'text' => 'Project-series IP systems for public sector facilities.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/security-solutions/applications';
 

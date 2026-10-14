@@ -398,14 +398,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Textile Printing', 'image' => 'textile-printing'],
-        ['label' => 'Coatings & Paints', 'image' => 'coatings-paints'],
-        ['label' => 'Garment Processing', 'image' => 'garment-processing'],
-        ['label' => 'Leather Chemicals', 'image' => 'leather'],
-        ['label' => 'Household Products', 'image' => 'household-products'],
-        ['label' => 'Automotive Coolants', 'image' => 'automotive-coolants'],
-        ['label' => 'Industrial Inks', 'image' => 'industrial-inks'],
-        ['label' => 'Chemical Formulators', 'image' => 'chemical-formulators'],
+        ['label' => 'Textile Printing', 'image' => 'textile-printing', 'text' => 'Pigment powders and emulsions for fabric print applications.'],
+        ['label' => 'Coatings & Paints', 'image' => 'coatings-paints', 'text' => 'Color pigments and binders for paint and coating systems.'],
+        ['label' => 'Garment Processing', 'image' => 'garment-processing', 'text' => 'Auxiliaries supporting garment print and finishing lines.'],
+        ['label' => 'Leather Chemicals', 'image' => 'leather', 'text' => 'Pigment and chemical solutions for leather processing.'],
+        ['label' => 'Household Products', 'image' => 'household-products', 'text' => 'FAVO household care formulations for everyday use.'],
+        ['label' => 'Automotive Coolants', 'image' => 'automotive-coolants', 'text' => 'FAVO radiator coolants for automotive cooling systems.'],
+        ['label' => 'Industrial Inks', 'image' => 'industrial-inks', 'text' => 'Pigment bases suited for industrial ink formulations.'],
+        ['label' => 'Chemical Formulators', 'image' => 'chemical-formulators', 'text' => 'Raw pigments and emulsions for specialty chemical makers.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/pigment-powders-and-emulsions/applications';
 

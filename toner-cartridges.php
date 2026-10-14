@@ -293,14 +293,14 @@
 ========================== -->
     <?php
     $industries = [
-        ['label' => 'Corporate Offices', 'image' => 'corporate-offices'],
-        ['label' => 'Print Shops', 'image' => 'print-shops'],
-        ['label' => 'Education', 'image' => 'education'],
-        ['label' => 'Government', 'image' => 'government'],
-        ['label' => 'Document Centres', 'image' => 'document-centres'],
-        ['label' => 'Healthcare', 'image' => 'healthcare'],
-        ['label' => 'SMEs', 'image' => 'smes'],
-        ['label' => 'Logistics', 'image' => 'logistics'],
+        ['label' => 'Corporate Offices', 'image' => 'corporate-offices', 'text' => 'Toners and cartridges for everyday office printing needs.'],
+        ['label' => 'Print Shops', 'image' => 'print-shops', 'text' => 'High-volume toner and spare support for commercial printers.'],
+        ['label' => 'Education', 'image' => 'education', 'text' => 'Reliable print consumables for schools and campuses.'],
+        ['label' => 'Government', 'image' => 'government', 'text' => 'Document printing supplies for public sector offices.'],
+        ['label' => 'Document Centres', 'image' => 'document-centres', 'text' => 'Copier toners and parts for busy document hubs.'],
+        ['label' => 'Healthcare', 'image' => 'healthcare', 'text' => 'Clear, dependable print output for medical admin work.'],
+        ['label' => 'SMEs', 'image' => 'smes', 'text' => 'Cost-effective toner options for growing businesses.'],
+        ['label' => 'Logistics', 'image' => 'logistics', 'text' => 'Consumables for labels, invoices and warehouse paperwork.'],
     ];
     $industries_img_base = './assets/images/products-and-solutions/toner-cartridges/applications';
 
