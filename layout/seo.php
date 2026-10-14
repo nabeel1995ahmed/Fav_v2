@@ -23,6 +23,15 @@ if (!isset($fav_seo_pages)) {
             'section' => 'Products',
             'breadcrumb' => 'Textile Dyes & Chemicals',
         ],
+        'dyestuffs-range.php' => [
+            'slug' => 'dyestuffs-range',
+            'title' => 'Dyestuffs Range | Textile Dyes & Chemicals | Vawda',
+            'description' => 'Explore Vawda dyestuffs range: reactive dyes, acid dyes, digital textile print inks, auxiliaries and e-brochures for modern dyeing and printing.',
+            'keywords' => 'dyestuffs range, reactive dyes, acid dyes, digital textile inks, textile auxiliaries Pakistan',
+            'type' => 'product',
+            'section' => 'Products',
+            'breadcrumb' => 'Dyestuffs Range',
+        ],
         'masterbatch.php' => [
             'slug' => 'masterbatch',
             'title' => 'Masterbatch for Plastics | Vawda',
@@ -62,11 +71,20 @@ if (!isset($fav_seo_pages)) {
         'industrial-automation-division.php' => [
             'slug' => 'industrial-automation-division',
             'title' => 'Industrial Automation Division | Vawda',
-            'description' => 'Smart industrial automation solutions that improve efficiency, precision and productivity. Controls, systems and technical support from Vawda.',
-            'keywords' => 'industrial automation, factory automation, process control Pakistan',
+            'description' => 'Industrial automation products, drive solutions and technical support for reliable motor control. Authorized distributor of Schneider Electric, Siemens and Delixi Electric.',
+            'keywords' => 'industrial automation, VFD, soft starter, Schneider Electric, Siemens, Delixi Electric, motor control Pakistan',
             'type' => 'product',
             'section' => 'Products',
             'breadcrumb' => 'Industrial Automation Division',
+        ],
+        'industrial-automation-quote.php' => [
+            'slug' => 'industrial-automation-quote',
+            'title' => 'Request a Quote | Industrial Automation | Vawda',
+            'description' => 'Request a quote for industrial automation products, VFDs, soft starters and motor control solutions from Vawda. Authorized distributor of Schneider Electric, Siemens and Delixi Electric.',
+            'keywords' => 'industrial automation quote, VFD quote, motor control enquiry Pakistan',
+            'type' => 'product',
+            'section' => 'Products',
+            'breadcrumb' => 'Request a Quote',
         ],
         'industrial-air-compressor.php' => [
             'slug' => 'industrial-air-compressor',

@@ -207,12 +207,39 @@
             </div>
             <div class="product-main-section">
                 <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">01</span>
+                                <h5>Sizing</h5>
+                            </div>
+                            <p class="product-text">
+                                To improve weavability to the warp and /or to overcome inherent
+                                deficiencies of the yarn to withstand the stresses and strains
+                                of weaving. This can be attained by improving primarily the
+                                abrasion resistance of the yarn. This in turn is achieved with
+                                the formation of a film around the yarn along with some
+                                penetration of sizing chemicals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img
+                                src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/sizing.svg"
+                                class="img-fluid"
+                                alt="Sizing"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
                             <img
                                 src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/pigment-powder.svg"
                                 class="img-fluid"
-                                alt="Sizing"
+                                alt=""
                             >
                         </div>
                     </div>
@@ -220,7 +247,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">01</span>
+                                <span class="product-number">02</span>
                                 <h5>Pigment Powder</h5>
                             </div>
                             <p class="product-text">
@@ -233,77 +260,79 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">02</span>
+                                <span class="product-number">03</span>
                                 <h5>Pigment Emulsion</h5>
                             </div>
                             <p class="product-text">
-                                Veechem Industries (Pvt) Ltd is a leading manufacturer of pigments in Pakistan. We are the only company in Pakistan that is both, backward and forward integrated. We produce a complete range of pigment powder and pigment dispersions. We have the complete range of organic pigments as well as the phthalocyanine range.
+                                High-quality pigment emulsions and dispersions engineered for textile printing, with consistent shade strength and application performance.
                             </p>
+                            <div class="product-pdf-downloads">
+                                <span class="product-pdf-label">Shade Cards &amp; Brochures</span>
+                                <div class="product-pdf-links">
+                                    <a href="./assets/images/products-and-solutions/pigment-powders-and-emulsions/pigment-emulsion/FAVOPRINT%20FD-L%20RANGE.PDF" target="_blank" rel="noopener noreferrer">
+                                        <i class="fal fa-file-pdf"></i>
+                                        <span class="product-pdf-meta">
+                                            <span class="product-pdf-title">FD-L Range</span>
+                                            <span class="product-pdf-type">View PDF</span>
+                                        </span>
+                                    </a>
+                                    <a href="./assets/images/products-and-solutions/pigment-powders-and-emulsions/pigment-emulsion/FAVOPRINT%20GOTS%20SHADE%20CARD%20updated.pdf" target="_blank" rel="noopener noreferrer">
+                                        <i class="fal fa-file-pdf"></i>
+                                        <span class="product-pdf-meta">
+                                            <span class="product-pdf-title">GOTS Shade Card</span>
+                                            <span class="product-pdf-type">View PDF</span>
+                                        </span>
+                                    </a>
+                                    <a href="./assets/images/products-and-solutions/pigment-powders-and-emulsions/pigment-emulsion/FAVOPRINT%20GREEN%20SHADE%20CARD.pdf" target="_blank" rel="noopener noreferrer">
+                                        <i class="fal fa-file-pdf"></i>
+                                        <span class="product-pdf-meta">
+                                            <span class="product-pdf-title">Green Shade Card</span>
+                                            <span class="product-pdf-type">View PDF</span>
+                                        </span>
+                                    </a>
+                                    <a href="./assets/images/products-and-solutions/pigment-powders-and-emulsions/pigment-emulsion/PIGMENT%20POWDER%20SHADE%20CARD.pdf" target="_blank" rel="noopener noreferrer">
+                                        <i class="fal fa-file-pdf"></i>
+                                        <span class="product-pdf-meta">
+                                            <span class="product-pdf-title">Powder Shade Card</span>
+                                            <span class="product-pdf-type">View PDF</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/pigment-emulsion.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/pigment-emulsion.svg" class="img-fluid" alt="Pigment Emulsion">
                         </div>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/textile-auxiliaries.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/textile-auxiliaries.svg" class="img-fluid" alt="Textile Auxiliaries">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">03</span>
+                                <span class="product-number">04</span>
                                 <h5>Textile Auxiliaries</h5>
                             </div>
                             <p class="product-text">
                                 Veechem Industry functions as formulator and standardization of entire range of products for Textile Leather & Paint Industry.
                             </p>
-                            <table class="veechem-offers-table">
-                            <thead>
-                                <tr>
-                                    <th>Veechem Industry Offers</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Sizing Products</td>
-                                </tr>
-                                <tr>
-                                    <td>Pretreatment Chemicals</td>
-                                </tr>
-                                <tr>
-                                    <td>Wetting Agents</td>
-                                </tr>
-                                <tr>
-                                    <td>Detergents</td>
-                                </tr>
-                                <tr>
-                                    <td>Defoamers</td>
-                                </tr>
-                                <tr>
-                                    <td>Dyeing Auxiliaries</td>
-                                </tr>
-                                <tr>
-                                    <td>Finishing Chemicals</td>
-                                </tr>
-                                <tr>
-                                    <td>Printing Auxiliaries</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                            
                         </div>
+                    </div>
+                    <div class="col-12 m-0">
+                        <?php include __DIR__ . '/layout/veechem-textile-auxiliaries.php'; ?>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">04</span>
+                                <span class="product-number">05</span>
                                 <h5>FAVO Paints</h5>
                             </div>
                             <p class="product-text">
@@ -326,7 +355,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">05</span>
+                                <span class="product-number">06</span>
                                 <h5>FAVO Radiator Coolant</h5>
                             </div>
                             <p class="product-text">
@@ -339,7 +368,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">06</span>
+                                <span class="product-number">07</span>
                                 <h5>FAVO Household Products</h5>
                             </div>
                             <p class="product-text">

@@ -224,7 +224,7 @@ $first_key = array_key_first($jintex_categories);
     <div class="dyestuff-product-header">
         <div>
             <span class="dyestuff-product-badge">Jintex</span>
-            <h4>Jintex Catalog</h4>
+            <!-- <h4>Jintex Catalog</h4> -->
             <p class="dyestuff-product-meta">Textile Auxiliaries</p>
         </div>
         <a class="dyestuff-source-btn" href="./assets/images/products-and-solutions/textile-dyes-and-chemicals/jintex-catalog.pdf" target="_blank" rel="noopener noreferrer">

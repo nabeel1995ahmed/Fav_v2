@@ -209,34 +209,6 @@
                 <div class="seprator"></div>
             </div>
             <div class="product-main-section">
-                <!-- <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/sizing.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">01</span>
-                                <h5>Sizing</h5>
-                            </div>
-                            <p class="product-text">
-                                To improve weavability to the warp and /or to overcome inherent
-                                deficiencies of the yarn to withstand the stresses and strains
-                                of weaving. This can be attained by improving primarily the
-                                abrasion resistance of the yarn. This in turn is achieved with
-                                the formation of a film around the yarn along with some
-                                penetration of sizing chemicals.
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
@@ -270,7 +242,7 @@
                             <p class="product-text">
                                 High-performance dyes for cellulosic fibers and blends, delivering brilliant shades, strong wet fastness, and reliable application across modern dyeing and printing processes.
                             </p>
-                            <a href="#dyestuffs-range" class="product-explore-link" data-open-dyestuffs-range>
+                            <a href="./dyestuffs-range.php#dyestuffs-range" class="product-explore-link">
                                 Explore Dyestuffs Range <i class="fal fa-arrow-right"></i>
                             </a>
                         </div>
@@ -279,8 +251,6 @@
             </div>
         </div>
     </section>
-
-    <?php include './layout/dyestuffs-range.php'; ?>
 
     <section class="business-divisions py-5 pt-0">
         <div class="container">
@@ -801,35 +771,6 @@
     // Run when scrolling
     $(window).on('scroll', function () {
         animateOnScroll();
-    });
-
-    var $dyestuffsCollapse = $('#dyestuffsRangeCollapse');
-    var $dyestuffsToggle = $('.dyestuffs-range-toggle');
-
-    $dyestuffsCollapse.on('show.bs.collapse', function () {
-        $dyestuffsToggle.removeClass('collapsed').attr('aria-expanded', 'true');
-    });
-
-    $dyestuffsCollapse.on('hide.bs.collapse', function () {
-        $dyestuffsToggle.addClass('collapsed').attr('aria-expanded', 'false');
-    });
-
-    $('[data-open-dyestuffs-range]').on('click', function (e) {
-        e.preventDefault();
-
-        var $target = $('#dyestuffs-range');
-        var collapseEl = document.getElementById('dyestuffsRangeCollapse');
-
-        if (collapseEl && typeof bootstrap !== 'undefined') {
-            var collapseInstance = bootstrap.Collapse.getOrCreateInstance(collapseEl, { toggle: false });
-            collapseInstance.show();
-        }
-
-        setTimeout(function () {
-            $('html, body').animate({
-                scrollTop: $target.offset().top - 100
-            }, 400);
-        }, 150);
     });
 
 });

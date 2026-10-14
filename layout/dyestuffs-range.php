@@ -1,6 +1,10 @@
-<section class="dyestuffs-range-section pb-5" id="dyestuffs-range">
+<?php
+$dyestuffs_standalone = !empty($dyestuffs_standalone);
+?>
+<section class="dyestuffs-range-section<?= $dyestuffs_standalone ? ' dyestuffs-range-standalone pt-4' : '' ?> pb-5" id="dyestuffs-range">
     <div class="container">
         <div class="dyestuffs-range-block">
+            <?php if (!$dyestuffs_standalone): ?>
             <button class="dyestuffs-range-toggle collapsed" type="button"
                 data-bs-toggle="collapse" data-bs-target="#dyestuffsRangeCollapse"
                 aria-expanded="false" aria-controls="dyestuffsRangeCollapse">
@@ -14,8 +18,9 @@
                     <i class="fal fa-minus"></i>
                 </span>
             </button>
+            <?php endif; ?>
 
-            <div class="collapse" id="dyestuffsRangeCollapse">
+            <div class="<?= $dyestuffs_standalone ? '' : 'collapse' ?>" id="dyestuffsRangeCollapse">
                 <ul class="nav nav-tabs dyestuff-category-tabs" id="dyestuffCategoryTabs" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="reactive-dyes-tab" data-bs-toggle="tab" data-bs-target="#reactive-dyes" type="button" role="tab" aria-controls="reactive-dyes" aria-selected="true">Reactive Dyes</button>

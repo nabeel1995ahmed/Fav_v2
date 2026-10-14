@@ -445,21 +445,33 @@
                     <div class="trust-logo-wrapper">
 
                         <!-- first set  -->
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/dupont-logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/basf-logo.svg" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/samsung-logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/Schneider_Electric.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/canon-logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/Honeywell-Logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/LG-Logo.webp" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/siemens.svg" alt="Siemens" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/schneider.svg" alt="Schneider Electric" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/delixi.svg" alt="Delixi" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/everlight.svg" alt="Everlight" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/jintex.svg" alt="Jintex" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/favianair.svg" alt="Favianair" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/gti.svg" alt="GTI" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/clt.svg" alt="CLT" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/c-d.svg" alt="C&amp;D" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/salipt.svg" alt="Salipt" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/jitat.svg" alt="Jitat" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/fyi.svg" alt="FYI" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/soalr.svg" alt="Solar" class="partner-logo"></div>
                         <!-- second set  -->
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/dupont-logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/basf-logo.svg" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/samsung-logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/Schneider_Electric.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/canon-logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/Honeywell-Logo.png" class="partner-logo"></div>
-                        <div class="trust-logo"><img src="./assets/images/logo/trusted-partners/LG-Logo.webp" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/siemens.svg" alt="Siemens" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/schneider.svg" alt="Schneider Electric" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/delixi.svg" alt="Delixi" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/everlight.svg" alt="Everlight" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/jintex.svg" alt="Jintex" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/favianair.svg" alt="Favianair" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/gti.svg" alt="GTI" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/clt.svg" alt="CLT" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/c-d.svg" alt="C&amp;D" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/salipt.svg" alt="Salipt" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/jitat.svg" alt="Jitat" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/fyi.svg" alt="FYI" class="partner-logo"></div>
+                        <div class="trust-logo"><img src="./assets/images/home-page/partners/soalr.svg" alt="Solar" class="partner-logo"></div>
                     </div>
                 </div>
             </div>

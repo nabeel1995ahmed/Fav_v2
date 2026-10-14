@@ -87,8 +87,8 @@
                             <i class="fa fa-paper-plane"></i>
                         </a>
 
-                        <a href="#" class="btn btn-outline-light">
-                            DOWNLOAD BROCHURE
+                        <a href="https://favplastico.com.pk/" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+                            VISIT WEBSITE
                             <i class="fal fa-arrow-right"></i>
                         </a>
 
@@ -118,11 +118,11 @@
                             Color And Additive Concentrates For Plastics
                         </h2>
                         <p class="text-muted mt-3 mw-100">
-                            FAV Plastico, a subsidiary of Vawda Group, supplies high-quality masterbatches and resins for plastic manufacturing. Our range covers color, white, black, filler, additive and liquid masterbatch so processors can achieve consistent shade, improved properties and efficient production.
+                            <a href="https://favplastico.com.pk/" target="_blank" rel="noopener noreferrer">FAV Plastico</a>, a subsidiary of Vawda Group, supplies high-quality masterbatches and resins for plastic manufacturing. Our range covers color, white, black, filler, additive and liquid masterbatch so processors can achieve consistent shade, improved properties and efficient production.
                         </p>
-                        <!-- <a href="#" class="btn btn-outline-light">
-                            EXPLORE OUR PRODUCTS <i class="fal fa-arrow-right"></i>
-                        </a> -->
+                        <a href="https://favplastico.com.pk/" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">
+                            VISIT FAV PLASTICO <i class="fal fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-7">

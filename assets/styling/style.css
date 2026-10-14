@@ -153,14 +153,21 @@ a {
 .product-section {
     position: relative;
     padding-bottom: 30px;
+    align-items: stretch !important;
+}
+
+.product-section > [class*="col-"] {
+    display: flex;
 }
 
 .product-card {
     position: relative;
-    width: 100%;
-    max-height: 280px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
     background: #f4f7fa;
     border-radius: 24px;
     overflow: hidden;
@@ -201,6 +208,11 @@ a {
 
 .product-details {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     padding: 40px 45px;
     background: #fff;
     border-radius: 24px;
@@ -240,6 +252,174 @@ a {
     gap: 12px;
 }
 
+.product-pdf-downloads {
+    margin-top: 16px;
+    padding-top: 14px;
+}
+
+.product-pdf-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #7a8491;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.product-pdf-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.product-pdf-links a {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+    gap: 10px;
+    min-width: 0;
+    padding: 10px 12px;
+    background: #f5f7fa;
+    border: 1px solid rgba(2, 26, 58, 0.08);
+    border-radius: 10px;
+    color: #021a3a;
+    text-decoration: none;
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.product-pdf-links a i {
+    color: #f87212;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.product-pdf-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.product-pdf-title {
+    color: #021a3a;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-pdf-type {
+    color: #7a8491;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.product-pdf-links a:hover {
+    background: #021a3a;
+    border-color: #021a3a;
+}
+
+.product-pdf-links a:hover .product-pdf-title,
+.product-pdf-links a:hover .product-pdf-type {
+    color: #fff;
+}
+
+.product-pdf-links a:hover i {
+    color: #f87212;
+}
+
+.veechem-aux-panel {
+    width: 100%;
+    margin-top: 8px;
+    padding: 22px 24px 20px;
+    background: #fff;
+    border: 1px solid rgba(2, 26, 58, 0.06);
+    border-radius: 18px;
+    box-shadow: 0 12px 32px rgba(2, 26, 58, 0.06);
+}
+
+.veechem-aux-header {
+    margin-bottom: 16px;
+}
+
+.veechem-aux-label {
+    display: block;
+    margin-bottom: 4px;
+    color: #7a8491;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.veechem-aux-header h4 {
+    margin: 0 0 18px;
+    color: #021a3a;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.veechem-aux-panel .dyestuff-product-switch {
+    margin-bottom: 18px;
+}
+
+.veechem-aux-panel .table-responsive {
+    max-height: 420px;
+    overflow: auto;
+    border: 1px solid rgba(2, 26, 58, 0.06);
+    border-radius: 12px;
+}
+
+.veechem-aux-table {
+    margin: 0;
+    min-width: 860px;
+}
+
+.veechem-aux-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 12px 14px;
+    background: #021a3a;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+    border: 0;
+    vertical-align: middle;
+}
+
+.veechem-aux-table tbody td {
+    padding: 12px 14px;
+    color: #021a3a;
+    font-size: 13px;
+    line-height: 1.5;
+    vertical-align: top;
+    border-color: rgba(2, 26, 58, 0.06);
+}
+
+.veechem-aux-table tbody tr:nth-child(even) td {
+    background: #f8fafc;
+}
+
+.veechem-aux-table tbody td:first-child {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.veechem-aux-table tbody td:nth-child(2),
+.veechem-aux-table tbody td:nth-child(3),
+.veechem-aux-table tbody td:nth-child(4) {
+    white-space: nowrap;
+}
+
 /* =====================================
    DYESTUFFS RANGE (OWN SECTION)
 ===================================== */
@@ -247,6 +427,10 @@ a {
 .dyestuffs-range-section {
     background: #f5f7fa;
     scroll-margin-top: 110px;
+}
+
+.dyestuffs-range-standalone .dyestuffs-range-block {
+    border-radius: 18px;
 }
 
 .dyestuffs-range-block {
@@ -1784,6 +1968,15 @@ section.why-us.second-why-us-section {
     margin: 0;
 }
 
+.why-us.second-why-us-section .choose-text p a {
+    color: var(--secondary) !important;
+    font-weight: 600;
+}
+
+.why-us.second-why-us-section .choose-text p a:hover {
+    text-decoration: underline;
+}
+
 .second-why-us-section .feature-card h5 {
     color: var(--primary);
 }
@@ -1864,7 +2057,7 @@ section.why-us.second-why-us-section {
     margin: 0;
     gap: 60px;
     width: max-content;
-    animation: marquee 20s linear infinite;
+    animation: marquee 40s linear infinite;
 }
 
 @keyframes marquee {
@@ -1884,7 +2077,7 @@ section.why-us.second-why-us-section {
 
 .partner-logo {
     transition: .3s;
-    width: 130px;
+    width: 160px;
     margin: 0 auto;
 }
 
@@ -2716,14 +2909,52 @@ section.newsletter-section {
         order: 2;
     }
 
+    .product-section > [class*="col-"] {
+        display: block;
+    }
+
     .product-card {
-        min-height: auto;
+        min-height: 220px;
+        height: auto;
         border-radius: 24px 24px 0 0;
         max-height: 250px;
     }
 
     .product-details {
+        height: auto;
         border-radius: 0 0 24px 24px;
+        justify-content: flex-start;
+    }
+
+    .product-pdf-downloads {
+        margin-top: 14px;
+        padding-top: 12px;
+    }
+
+    .product-pdf-links {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .product-pdf-links a {
+        flex: 1 1 calc(50% - 8px);
+        padding: 10px 12px;
+    }
+
+    .product-pdf-title {
+        white-space: normal;
+    }
+
+    .veechem-aux-panel {
+        padding: 16px;
+    }
+
+    .veechem-aux-header h4 {
+        font-size: 18px;
+    }
+
+    .veechem-aux-panel .table-responsive {
+        max-height: 360px;
     }
 
     .product-card img {
@@ -2916,6 +3147,10 @@ section.newsletter-section {
 }
 
 @media(max-width:576px) {
+    .product-pdf-links a {
+        flex: 1 1 100%;
+    }
+
     .certifications-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -3099,7 +3334,7 @@ section.newsletter-section {
     }
 
     .partner-logo {
-        width: 90px;
+        width: 110px;
     }
 
     .partners-section .section-heading h2,
@@ -4824,6 +5059,1107 @@ section.terms-banner-section {
     .legal-card p,
     .legal-card li {
         font-size: 15px;
+    }
+}
+
+/* =====================================
+   INDUSTRIAL AUTOMATION DIVISION
+===================================== */
+
+#get-in-touch {
+    scroll-margin-top: 96px;
+}
+
+#product-categories {
+    scroll-margin-top: 0;
+}
+
+.iad-auth-line {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    letter-spacing: 0.02em;
+}
+
+.iad-about-section {
+    position: relative;
+    padding: 80px 0 !important;
+    overflow: hidden;
+    background:
+        linear-gradient(105deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.88) 45%, rgba(255, 255, 255, 0.84) 100%),
+        url(../images/products-and-solutions/industrial-automation-division/main-banner.svg) left bottom / cover no-repeat !important;
+}
+
+.iad-about-decor {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.iad-about-decor::before,
+.iad-about-decor::after {
+    content: "";
+    position: absolute;
+    right: -36px;
+    width: 210px;
+    height: 64px;
+    transform: skewX(-28deg);
+}
+
+.iad-about-decor::before {
+    top: 24px;
+    background: linear-gradient(90deg, var(--secondary) 0%, #001834 60%);
+    opacity: 0.9;
+}
+
+.iad-about-decor::after {
+    bottom: 28px;
+    background: linear-gradient(90deg, #001834 0%, var(--secondary) 70%);
+    opacity: 0.85;
+}
+
+.iad-about-section > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.iad-about-section .iad-about-label,
+.iad-about-section .section-subtitle.iad-about-label {
+    display: inline-block;
+    position: relative;
+    color: var(--secondary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+}
+
+.iad-about-section .iad-about-label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 72px;
+    height: 2px;
+    background: var(--secondary);
+}
+
+.iad-about-section .choose-text {
+    max-width: 480px;
+    padding-right: 8px;
+}
+
+.iad-about-section .section-title {
+    color: #001834;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.iad-about-section .choose-text p {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.iad-about-section .feature-grid {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0, 24, 52, 0.05);
+}
+
+.iad-about-section .feature-box {
+    align-items: flex-start;
+    padding: 22px 16px;
+}
+
+.iad-about-section .feature-content h4 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.iad-about-section .feature-content p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.iad-partners-section {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    padding: 96px 0 36px;
+    box-sizing: border-box;
+    background:
+        linear-gradient(120deg, rgba(0, 16, 36, 0.96) 0%, rgba(0, 24, 52, 0.9) 55%, rgba(0, 20, 44, 0.84) 100%),
+        url(../images/products-and-solutions/industrial-automation-division/main-banner.svg) center/cover no-repeat;
+    overflow: visible;
+    scroll-margin-top: 0;
+}
+
+.iad-partners-section > .container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.iad-partners-row {
+    align-items: stretch;
+}
+
+.iad-partners-row > [class*="col-"] {
+    display: flex;
+}
+
+.iad-partners-row .iad-partner-card {
+    width: 100%;
+}
+
+.iad-partners-section::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -80px;
+    width: 420px;
+    height: 420px;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), transparent 70%);
+    transform: rotate(28deg);
+    pointer-events: none;
+}
+
+.iad-partners-heading {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 24px;
+}
+
+.iad-partners-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #f87212;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+}
+
+.iad-partners-label::before,
+.iad-partners-label::after {
+    content: "";
+    width: 36px;
+    height: 1px;
+    background: #f87212;
+}
+
+.iad-partners-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 10px;
+    line-height: 1.25;
+}
+
+.iad-partners-title span {
+    color: #f87212;
+}
+
+.iad-partners-intro {
+    max-width: 720px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.iad-partner-card {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 18px 16px 16px;
+    background: rgba(6, 20, 40, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+}
+
+.iad-partner-schneider {
+    border-color: #3dbb6b;
+}
+
+.iad-partner-siemens {
+    border-color: #4fc3f7;
+}
+
+.iad-partner-delixi {
+    border-color: #ef5350;
+}
+
+.iad-partner-card h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.iad-partner-focus {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.88);
+    margin: 0;
+}
+
+.iad-partner-focus span {
+    color: #f87212;
+}
+
+.iad-product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.iad-product-tags li {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.iad-partner-schneider .iad-product-tags li {
+    border-color: rgba(61, 187, 107, 0.7);
+}
+
+.iad-partner-siemens .iad-product-tags li {
+    border-color: rgba(79, 195, 247, 0.7);
+}
+
+.iad-partner-delixi .iad-product-tags li {
+    border-color: rgba(239, 83, 80, 0.7);
+}
+
+.iad-partner-image {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    max-height: 160px;
+    margin: 4px 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.iad-partner-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 160px;
+    object-fit: cover;
+}
+
+.iad-brochure-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: auto;
+    flex-shrink: 0;
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.iad-brochure-btn .fa-download {
+    color: #f87212;
+    font-size: 15px;
+}
+
+.iad-brochure-btn .fa-arrow-right {
+    color: #fff;
+    font-size: 14px;
+}
+
+.iad-partner-schneider .iad-brochure-btn {
+    border-color: #3dbb6b;
+}
+
+.iad-partner-siemens .iad-brochure-btn {
+    border-color: #4fc3f7;
+}
+
+.iad-partner-delixi .iad-brochure-btn {
+    border-color: #ef5350;
+}
+
+.iad-brochure-btn:hover {
+    background: rgba(248, 114, 18, 0.15);
+    color: #fff;
+}
+
+.iad-brochure-btn:hover .fa-arrow-right {
+    transform: translateX(3px);
+}
+
+.iad-industries-grid {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.iad-industries-grid .industry-box {
+    padding: 18px 12px;
+}
+
+.iad-industries-grid .industry-box h4 {
+    margin-bottom: 8px;
+}
+
+.iad-industries-grid .industry-box p {
+    font-size: 12px;
+    color: #6c757d;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.why-detail-section .why-list ul li {
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.why-detail-section .why-list ul li small {
+    display: block;
+    color: #6c757d;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 2px;
+}
+
+.why-detail-section .why-list ul li p {
+    margin-bottom: 0;
+}
+
+.iad-cta-wrapper .section-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.iad-cta-hint {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.iad-quote-hero {
+    min-height: auto !important;
+    padding: 120px 0 72px;
+}
+
+.iad-quote-hero .hero-title {
+    font-size: 42px;
+}
+
+.iad-quote-hero .hero-text {
+    max-width: 620px;
+    margin-bottom: 0;
+}
+
+.iad-quote-page-section {
+    padding: 70px 0 90px;
+    background: #f4f6f9;
+}
+
+#quote-form {
+    scroll-margin-top: 96px;
+}
+
+.iad-quote-panel {
+    background: #fff;
+    border: 1px solid #e6ebf0;
+    border-radius: 14px;
+    padding: 36px 34px;
+    box-shadow: 0 10px 30px rgba(0, 24, 52, 0.04);
+}
+
+.iad-quote-panel-head {
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.iad-quote-panel-head .ne-eyebrow {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.iad-quote-panel-head h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.25;
+}
+
+.iad-quote-panel-head p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.65;
+    max-width: 640px;
+}
+
+.iad-quote-group {
+    margin-bottom: 28px;
+}
+
+.iad-quote-group h3 {
+    margin: 0 0 16px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary);
+    position: relative;
+    padding-left: 12px;
+}
+
+.iad-quote-group h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    bottom: 2px;
+    width: 3px;
+    border-radius: 2px;
+    background: var(--secondary);
+}
+
+.iad-quote-form .cu-contact-form label,
+.iad-quote-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #243447;
+    margin-bottom: 8px;
+}
+
+.iad-quote-form label span {
+    color: var(--secondary);
+}
+
+.iad-quote-form input,
+.iad-quote-form select,
+.iad-quote-form textarea {
+    width: 100%;
+    border: 1px solid #dbe3ea;
+    border-radius: 8px;
+    background: #fff;
+    color: #1f2a37;
+    font-size: 14px;
+    padding: 12px 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iad-quote-form input:focus,
+.iad-quote-form select:focus,
+.iad-quote-form textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(248, 114, 18, 0.12);
+}
+
+.iad-quote-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding-top: 8px;
+}
+
+.iad-quote-actions .btn-warning {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    padding: 12px 22px;
+}
+
+.iad-quote-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #dbe3ea;
+    color: var(--primary);
+    background: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 11px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.iad-quote-back-btn:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+    background: #fff7f0;
+}
+
+.iad-quote-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: sticky;
+    top: 110px;
+}
+
+.iad-quote-aside-card {
+    background: #fff;
+    border: 1px solid #e6ebf0;
+    border-radius: 14px;
+    padding: 26px 22px;
+    box-shadow: 0 10px 30px rgba(0, 24, 52, 0.04);
+}
+
+.iad-quote-aside-card .ne-eyebrow {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.iad-quote-aside-card h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1.3;
+}
+
+.iad-quote-aside-card > p {
+    margin: 0 0 18px;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.iad-quote-tips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.iad-quote-tips li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #334155;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.iad-quote-tips i {
+    color: var(--secondary);
+    margin-top: 3px;
+}
+
+.iad-quote-contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.iad-quote-contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.iad-quote-contact-list i {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff7f0;
+    color: var(--secondary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.iad-quote-contact-list strong {
+    display: block;
+    font-size: 13px;
+    color: var(--primary);
+    margin-bottom: 2px;
+}
+
+.iad-quote-contact-list a,
+.iad-quote-contact-list span {
+    color: #6b7280;
+    font-size: 14px;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.iad-quote-contact-list a:hover {
+    color: var(--secondary);
+}
+
+.iad-quote-explore-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.iad-quote-explore-link:hover {
+    background: #07274d;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .iad-quote-hero {
+        padding: 100px 0 56px;
+    }
+
+    .iad-quote-hero .hero-title {
+        font-size: 34px;
+    }
+
+    .iad-quote-page-section {
+        padding: 50px 0 70px;
+    }
+
+    .iad-quote-panel {
+        padding: 28px 22px;
+    }
+
+    .iad-quote-aside {
+        position: static;
+    }
+}
+
+@media (max-width: 767px) {
+    .iad-quote-hero {
+        padding: 90px 0 48px;
+    }
+
+    .iad-quote-hero .hero-title {
+        font-size: 28px;
+    }
+
+    .iad-quote-panel-head h2 {
+        font-size: 24px;
+    }
+
+    .iad-quote-aside-card h3 {
+        font-size: 20px;
+    }
+
+    .iad-quote-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .iad-quote-actions .btn,
+    .iad-quote-back-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .iad-quote-panel {
+        padding: 22px 16px;
+        border-radius: 12px;
+    }
+
+    .iad-quote-aside-card {
+        padding: 20px 16px;
+    }
+
+    .iad-quote-group h3 {
+        font-size: 13px;
+    }
+}
+
+.industrial-automation-division-hero .hero-title {
+    font-size: 42px;
+}
+
+@media (max-width: 767px) {
+    .industrial-automation-division-hero .hero-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .iad-partners-title {
+        font-size: 28px;
+    }
+
+    .iad-partner-image {
+        min-height: 110px;
+        max-height: 140px;
+    }
+
+    .iad-partner-image img {
+        max-height: 140px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .iad-about-section .section-title {
+        font-size: 30px;
+    }
+
+    .iad-partners-section {
+        padding: 92px 0 32px;
+    }
+
+    .iad-partners-title {
+        font-size: 26px;
+    }
+
+    .iad-partner-card {
+        padding: 16px 14px;
+        gap: 8px;
+    }
+
+    .iad-partner-card h3 {
+        font-size: 18px;
+    }
+
+    .iad-partner-image {
+        min-height: 100px;
+        max-height: 130px;
+    }
+
+    .iad-partner-image img {
+        max-height: 130px;
+    }
+
+    .iad-brochure-btn {
+        font-size: 11px;
+        padding: 9px 12px;
+    }
+}
+
+@media (max-width: 991px) {
+    .industrial-automation-division-hero .hero-title {
+        font-size: 32px;
+    }
+
+    .iad-about-section {
+        padding: 70px 0 !important;
+        background-position: center bottom;
+    }
+
+    .iad-about-section .choose-text {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .iad-about-section .section-title {
+        font-size: 28px;
+    }
+
+    .iad-partners-section {
+        min-height: auto;
+        padding: 100px 0 50px;
+        align-items: flex-start;
+    }
+
+    .iad-partners-heading {
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    .iad-partners-title {
+        font-size: 24px;
+    }
+
+    .iad-partners-intro {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+
+    .iad-partner-card {
+        padding: 20px 16px;
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .iad-partner-image {
+        min-height: 160px;
+        max-height: 200px;
+    }
+
+    .iad-partner-image img {
+        max-height: 200px;
+    }
+
+    .iad-brochure-btn {
+        font-size: 12px;
+        padding: 11px 14px;
+    }
+
+    .iad-industries-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .iad-industries-grid .industry-box {
+        border-bottom: 1px solid #ececec;
+    }
+
+    .iad-industries-grid .industry-box:nth-child(3n) {
+        border-right: 0;
+    }
+
+    .iad-industries-grid .industry-box:nth-child(n+4) {
+        border-bottom: 0;
+    }
+
+    .why-detail-section .row > [class*="col-"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .industrial-automation-division-hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .industrial-automation-division-hero .hero-title {
+        font-size: 26px;
+    }
+
+    .industrial-automation-division-hero .hero-text,
+    .iad-auth-line {
+        font-size: 14px;
+    }
+
+    .iad-about-section {
+        padding: 55px 0 !important;
+    }
+
+    .iad-about-decor::before,
+    .iad-about-decor::after {
+        width: 120px;
+        height: 42px;
+        right: -30px;
+    }
+
+    .iad-about-section .section-title {
+        font-size: 24px;
+    }
+
+    .iad-about-section .iad-about-label {
+        font-size: 12px;
+    }
+
+    .iad-partners-section {
+        padding: 90px 0 40px;
+    }
+
+    .iad-partners-heading {
+        margin-bottom: 22px;
+    }
+
+    .iad-partners-title {
+        font-size: 22px;
+    }
+
+    .iad-partner-card h3 {
+        font-size: 18px;
+    }
+
+    .iad-partner-image {
+        min-height: 150px;
+        max-height: 180px;
+    }
+
+    .iad-partner-image img {
+        max-height: 180px;
+    }
+
+    .iad-industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .iad-industries-grid .industry-box {
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .iad-industries-grid .industry-box:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .iad-industries-grid .industry-box:nth-last-child(-n+2) {
+        border-bottom: 0;
+    }
+
+    .why-detail-section .row {
+        flex-direction: column;
+    }
+
+    .why-detail-section .gallery-slider {
+        margin-top: 20px;
+    }
+
+    .iad-cta-wrapper h2 {
+        font-size: 24px;
+    }
+
+    .iad-cta-wrapper .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .iad-cta-wrapper .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .industrial-automation-division-hero .hero-title {
+        font-size: 24px;
+    }
+
+    .industrial-automation-division-hero .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .industrial-automation-division-hero .hero-buttons .btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .iad-about-section {
+        padding: 48px 0 !important;
+    }
+
+    .iad-about-section .feature-box {
+        padding: 18px 14px;
+    }
+
+    .iad-partners-section {
+        padding: 88px 0 36px;
+    }
+
+    .iad-partners-title {
+        font-size: 20px;
+    }
+
+    .iad-partners-label {
+        font-size: 11px;
+        gap: 8px;
+    }
+
+    .iad-partners-label::before,
+    .iad-partners-label::after {
+        width: 18px;
+    }
+
+    .iad-partners-intro {
+        font-size: 13px;
+    }
+
+    .iad-partner-card {
+        padding: 18px 14px;
+    }
+
+    .iad-partner-card h3 {
+        font-size: 18px;
+    }
+
+    .iad-partner-focus {
+        font-size: 11px;
+    }
+
+    .iad-product-tags li {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .iad-partner-image {
+        min-height: 140px;
+        max-height: 170px;
+    }
+
+    .iad-partner-image img {
+        max-height: 170px;
+    }
+
+    .iad-brochure-btn {
+        font-size: 11px;
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .iad-industries-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iad-industries-grid .industry-box {
+        border-right: 0 !important;
+        border-bottom: 1px solid #ececec;
+        padding: 16px 12px;
+    }
+
+    .iad-industries-grid .industry-box:last-child {
+        border-bottom: 0;
+    }
+
+    .iad-cta-wrapper {
+        padding: 24px 18px;
+    }
+
+    .iad-cta-wrapper h2 {
+        font-size: 22px;
+    }
+
+    .iad-cta-hint {
+        font-size: 13px;
     }
 }
 
