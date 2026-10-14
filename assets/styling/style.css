@@ -7033,3 +7033,231 @@ section.terms-banner-section {
     display: none;
 }
 
+/* Industrial Air Compressor — tabbed product catalog */
+.iac-catalog {
+    border: 1px solid rgba(2, 26, 58, 0.08);
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 16px 40px rgba(2, 26, 58, 0.06);
+}
+
+.iac-category-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(2, 26, 58, 0.08);
+    background: #f8fafc;
+}
+
+.iac-category-tabs .nav-item {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.iac-category-tabs .nav-link,
+.iac-category-tabs .nav-link:focus {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 16px 10px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #5a6472 !important;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+.iac-category-tabs .nav-link:hover {
+    color: #021a3a !important;
+    background: rgba(2, 26, 58, 0.03);
+}
+
+.iac-category-tabs .nav-link.active,
+.iac-category-tabs .nav-link.active:hover,
+.iac-category-tabs .nav-link.active:focus {
+    color: #021a3a !important;
+    background: transparent;
+}
+
+.iac-category-tabs .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    bottom: 0;
+    height: 3px;
+    background: #f87212;
+    border-radius: 3px 3px 0 0;
+}
+
+.iac-category-content {
+    background: #fff;
+    padding: 28px 28px 32px;
+}
+
+.iac-category-intro {
+    margin-bottom: 22px;
+}
+
+.iac-category-intro .product-subheading {
+    margin-bottom: 6px;
+}
+
+.iac-category-intro p {
+    margin: 0;
+    color: #5a6472;
+    font-size: 14px;
+}
+
+.iac-product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.iac-product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #f8fafc;
+    border: 1px solid rgba(2, 26, 58, 0.06);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.iac-product-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(248, 114, 18, 0.25);
+    box-shadow: 0 14px 28px rgba(2, 26, 58, 0.08);
+}
+
+.iac-product-media {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    padding: 18px;
+    background: linear-gradient(180deg, #eef3f8 0%, #f8fafc 100%);
+}
+
+.iac-product-media img {
+    max-width: 100%;
+    max-height: 140px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.35s ease;
+}
+
+.iac-product-card:hover .iac-product-media img {
+    transform: scale(1.05);
+}
+
+.iac-product-number {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #f87212;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.iac-product-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px 18px 20px;
+    background: #fff;
+    flex: 1;
+}
+
+.iac-product-body h5 {
+    margin: 0;
+    color: #021a3a;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.2px;
+}
+
+.iac-product-body p {
+    margin: 0;
+    color: #5a6472;
+    font-size: 13px;
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.iac-product-specs {
+    margin-top: auto;
+    padding-top: 8px;
+    color: #021a3a;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+    .iac-product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .iac-category-content {
+        padding: 22px 18px 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .iac-category-tabs {
+        flex-wrap: wrap;
+    }
+
+    .iac-category-tabs .nav-item {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .iac-product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iac-category-tabs .nav-item {
+        flex: 1 1 100%;
+    }
+
+    .iac-category-tabs .nav-link,
+    .iac-category-tabs .nav-link:focus {
+        padding: 14px 12px;
+        font-size: 12px;
+    }
+
+    .iac-product-media {
+        height: 160px;
+    }
+}
+

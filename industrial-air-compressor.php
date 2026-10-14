@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=iac-tabs2">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -48,16 +48,16 @@
                                 <i class="fal fa-chevron-right"></i>
                             </li>
                             <li>
-                                <span>Industrial Automation Division</span>
+                                <span>Industrial Air Compressor</span>
                             </li>
                         </ul>
                     </div>
                     <h1 class="hero-title">
-                        <span>INDUSTRIAL ATOMATION DIVISION</span>
+                        <span>INDUSTRIAL AIR COMPRESSOR</span>
                     </h1>
 
                     <p class="hero-text">
-                    Smart automation solutions to improve efficiency, precision, and productivity in industrial processes.
+                        Reliable compressed air equipment, dryers, filters and multi-brand spare parts for manufacturing and plant operations.
                      </p>
 
                     <div class="hero-list">
@@ -87,7 +87,7 @@
                             <i class="fa fa-paper-plane"></i>
                         </a>
 
-                        <a href="#" class="btn btn-outline-light">
+                        <a href="./assets/images/products-and-solutions/industrial-air-compressor/favianair-brochure.pdf" class="btn btn-outline-light" target="_blank" rel="noopener">
                             DOWNLOAD BROCHURE
                             <i class="fal fa-arrow-right"></i>
                         </a>
@@ -118,11 +118,8 @@
                             Compressed Air Equipment, Parts And Service Support
                         </h2>
                         <p class="text-muted mt-3 mw-100">
-                            Vawda supplies industrial air compressors and multi-brand spare parts including bearing kits, compressor oil, controllers, drain valves and oil filters. The range supports manufacturing plants that need reliable compressed air, servicing parts and technical backup.
+                            Vawda supplies industrial air compressors, air dryers, receiver tanks, line filters and multi-brand spare parts including bearing kits, compressor oil, controllers, drain valves and oil filters. The range supports manufacturing plants that need reliable compressed air, servicing parts and technical backup.
                         </p>
-                        <!-- <a href="#" class="btn btn-outline-light">
-                            EXPLORE OUR PRODUCTS <i class="fal fa-arrow-right"></i>
-                        </a> -->
                     </div>
                 </div>
                 <div class="col-lg-7">
@@ -196,235 +193,292 @@
 
 
     <!-- =========================
-         BUSINESS DIVISIONS
+         PRODUCT CATEGORIES
     ========================== -->
 
-    <section class="business-divisions py-5">
+    <section id="product-categories" class="business-divisions py-5">
         <div class="container">
             <div class="section-heading text-center mb-5">
                 <h2>OUR PRODUCT CATEGORIES</h2>
                 <div class="seprator"></div>
             </div>
-            <div class="product-main-section">
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/bearing-kit.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
-                        </div>
-                    </div>
 
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">01</span>
-                                <h5>Bearing Kit</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
-                            <strong>
-                                Range 5.5kw - 550kw
-                            </strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">02</span>
-                                <h5>Compressor Oil</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/compressor-oil.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/controller-hmi.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">03</span>
-                                <h5>Controller hmi</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
-                            <strong>
-                                Range 5.5kw - 550kw
-                            </strong>
-                        </div>
-                    </div>
-                </div> 
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">04</span>
-                                <h5>Drain Valve</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            <br>  <strong>
-                                Range 5.5kw - 550kw
-                            </strong>
-                            </p>
-                          
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/drain-valve.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 d-none align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">05</span>
-                                <h5>Hosting Filter</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
-                            <strong>
-                                Range 5.5kw - 550kw
-                            </strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/oil-filter.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">05</span>
-                                <h5>Oil Filter</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
-                            <strong>
-                                Range 5.5kw - 550kw
-                            </strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 d-none align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">07</span>
-                                <h5>Oil Free</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                                <strong>
-                                <br>Rotary Screw Air Compressors <br> 7.5kw ~ 550kw
-                            </strong>
-                            <br>Installed asynchronous/synchronous motor power 5.5–500kw/7.5–550hp Free air delivery from 0.36 to 75.64 m³/min Pressure 3 – 40 bar
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div> 
-                <div class="row g-4 d-none align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">08</span>
-                                <h5>Oil Injected</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                               <strong>
-                                Rotary Screw Air Compressors <br> 7.5kw ~ 550kw <br>
-                            </strong>
-                            Installed asynchronous/synchronous motor power 5.5–500kw/7.5–550hp Free air delivery from 0.36 to 75.64 m³/min Pressure 3 – 40 bar
-                            </p>
-                         
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">06</span>
-                                <h5>Oil Separator</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                                <strong>
-                                <br> 5.5kw ~ 550kw
-                            </strong>
-                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/oil-separator.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/industrial-air-compressor/Multi Brand/new-used-air-ends.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">07</span>
-                                <h5>New Used Air End</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            <br> <strong>
-                                Range 5.5kw - 550kw
-                            </strong>
-                            </p>
-                           
-                        </div>
-                    </div>
+            <?php
+            $imgBase = './assets/images/products-and-solutions/industrial-air-compressor';
+            $imgRoot = __DIR__ . '/assets/images/products-and-solutions/industrial-air-compressor';
 
-                </div>                              
+            /**
+             * Build product rows dynamically from images inside a category folder.
+             * Optional $catalog maps filename (without extension) => name/text/specs.
+             */
+            $loadCategoryProducts = static function (string $folder, array $catalog = [], string $defaultText = '') use ($imgRoot): array {
+                $dir = $imgRoot . DIRECTORY_SEPARATOR . $folder;
+                if (!is_dir($dir)) {
+                    return [];
+                }
+
+                $files = array_values(array_filter(scandir($dir) ?: [], static function ($file) use ($dir) {
+                    if ($file === '.' || $file === '..') {
+                        return false;
+                    }
+                    $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                    return in_array($ext, ['svg', 'png', 'jpg', 'jpeg', 'webp'], true) && is_file($dir . DIRECTORY_SEPARATOR . $file);
+                }));
+
+                natcasesort($files);
+                $files = array_values($files);
+                $products = [];
+
+                foreach ($files as $file) {
+                    $key = strtolower(pathinfo($file, PATHINFO_FILENAME));
+                    $meta = $catalog[$key] ?? [];
+                    $fallbackName = ucwords(str_replace(['-', '_'], ' ', pathinfo($file, PATHINFO_FILENAME)));
+
+                    $products[] = [
+                        'name' => $meta['name'] ?? $fallbackName,
+                        'image' => $folder . '/' . $file,
+                        'text' => $meta['text'] ?? $defaultText,
+                        'specs' => $meta['specs'] ?? null,
+                    ];
+                }
+
+                return $products;
+            };
+
+            $airReceiverTankProducts = $loadCategoryProducts(
+                'air-receiver-tank',
+                [
+                    'air-storage-tank' => [
+                        'name' => 'Air Storage Tank',
+                        'text' => 'Stores compressed air to stabilize system pressure, reduce compressor cycling and support peak demand across the plant.',
+                    ],
+                ],
+                'Industrial air receiver tank for stable compressed air storage and efficient plant air supply.'
+            );
+
+            $categories = [
+                [
+                    'id' => 'air-compressor',
+                    'title' => 'Air Compressor',
+                    'short' => 'Air Compressor',
+                    'products' => [
+                        [
+                            'name' => 'VA Series Permanent Magnet Power Frequency Screw Air Compressor',
+                            'image' => 'air-compressor/va-series-permanent-magnet-power-frequency-screw-air-compressor.svg',
+                            'text' => 'Energy-efficient permanent magnet variable frequency screw compressor designed for stable pressure, lower power use and continuous industrial duty.',
+                        ],
+                        [
+                            'name' => 'KB Series Double Stage Screw Air Compressor',
+                            'image' => 'air-compressor/kb-Series-double-stage-screw-air-compressor.svg',
+                            'text' => 'Two-stage compression for higher efficiency, lower discharge temperature and dependable performance in demanding plant applications.',
+                        ],
+                        [
+                            'name' => 'Dry Oil Free Screw Air Compressor',
+                            'image' => 'air-compressor/dry-oil-free-screw-compressor.svg',
+                            'text' => 'Oil-free compressed air for sensitive processes where product purity and clean air quality are critical.',
+                        ],
+                        [
+                            'name' => 'KN+ Series 5-in-1 Laser Cutting Screw Air Compressor',
+                            'image' => 'air-compressor/kn-series-5-in-1-laser-cutting-screw-aircompressor.svg',
+                            'text' => 'Integrated 5-in-1 package purpose-built for laser cutting lines, delivering clean, dry and stable high-pressure air.',
+                        ],
+                        [
+                            'name' => 'KBO Series Oil-free Water Lubricated Screw Air Compressor',
+                            'image' => 'air-compressor/kbo-series-oilfreewater-lubricated-screw-air-compressor.svg',
+                            'text' => 'Water-lubricated oil-free technology for Class 0 air quality with reduced contamination risk and efficient cooling.',
+                        ],
+                        [
+                            'name' => 'KPQ Series Skid Mounted 6-in-1 Machine',
+                            'image' => 'air-compressor/kpqseries-skidmounted-6-in-1-machine.svg',
+                            'text' => 'Skid-mounted all-in-one compressed air system combining multiple treatment stages for quick install and compact footprint.',
+                        ],
+                        [
+                            'name' => 'KM Series Mobile Screw Air Compressor',
+                            'image' => 'air-compressor/km-series-mobile-screw-aircompressor.svg',
+                            'text' => 'Portable screw compressor for site work, temporary supply and applications that need flexible compressed air on the move.',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 'air-dryer',
+                    'title' => 'Air Dryer',
+                    'short' => 'Air Dryer',
+                    'products' => [
+                        [
+                            'name' => 'Refrigerated Dryer',
+                            'image' => 'air-dryer/refrigrated-dryer.svg',
+                            'text' => 'Removes moisture from compressed air through refrigeration, protecting tools, pipelines and process equipment from condensation damage.',
+                        ],
+                        [
+                            'name' => 'Micro Thermal Adsorption Dryer',
+                            'image' => 'air-dryer/micro-thermal-adsoption-dryer.svg',
+                            'text' => 'Delivers very low dew points for applications that need ultra-dry air and high process reliability.',
+                        ],
+                        [
+                            'name' => 'High Efficiency Oil Remover',
+                            'image' => 'air-dryer/high-efficiency-oil-remover.svg',
+                            'text' => 'High-efficiency oil removal stage that improves air purity and protects downstream equipment and end processes.',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 'air-receiver-tank',
+                    'title' => 'Air Receiver Tank',
+                    'short' => 'Receiver Tank',
+                    'products' => $airReceiverTankProducts,
+                ],
+                [
+                    'id' => 'air-line-filter',
+                    'title' => 'Air Line Filter',
+                    'short' => 'Line Filter',
+                    'products' => [
+                        [
+                            'name' => 'Stage Precision Filter',
+                            'image' => 'air-line-filter/stage-precision-filter.svg',
+                            'text' => 'Precision multi-stage filtration to remove dust, oil and contaminants from the compressed air line for cleaner, safer delivery.',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 'multi-brand',
+                    'title' => 'Multi Brand Air Compressor Spare Parts',
+                    'short' => 'Multi Brand Spares',
+                    'products' => [
+                        [
+                            'name' => 'Air Filter',
+                            'image' => 'multi-brand/air-filter.svg',
+                            'text' => 'Protects your compressor by removing dust, dirt and airborne contaminants from incoming air for better performance, improved efficiency and longer equipment life.',
+                            'specs' => 'Filtration Efficiency: Up to 99% · Micron Rating: 5–20 microns (custom options available)',
+                        ],
+                        [
+                            'name' => 'Oil Filter',
+                            'image' => 'multi-brand/oil-filter.svg',
+                            'text' => 'Maintains oil cleanliness by removing dirt, metal particles and contaminants, ensuring smooth operation and extending the life of internal components.',
+                            'specs' => 'Filtration Rating: 10–25 microns · Efficiency: Up to 99% particle removal',
+                        ],
+                        [
+                            'name' => 'Compressor Oil',
+                            'image' => 'multi-brand/compressor-oil.svg',
+                            'text' => 'High-performance compressor lubricants formulated for reliable lubrication, cooling and protection across oil-injected screw compressor systems.',
+                        ],
+                        [
+                            'name' => 'Oil Separator',
+                            'image' => 'multi-brand/oil-separator.svg',
+                            'text' => 'Separates oil from compressed air in oil-injected compressors, ensuring cleaner air output while returning oil to the system and reducing consumption.',
+                            'specs' => 'Filtration Efficiency: Up to 99.9% · Oil Carryover: ≤ 3 ppm',
+                        ],
+                        [
+                            'name' => 'Controllers, HMI & Sensors',
+                            'image' => 'multi-brand/controller-hmi.svg',
+                            'text' => 'Essential for monitoring, control and automation of compressor systems—supporting energy-saving algorithms, fault protection and real-time operator visibility.',
+                            'specs' => 'Automatic start/stop & load management · Fault detection · Multi-compressor compatibility',
+                        ],
+                        [
+                            'name' => 'Wearing Kits',
+                            'image' => 'multi-brand/wearing-kit.svg',
+                            'text' => 'Service kits with essential wear parts designed to maintain efficiency, reduce downtime and keep compressors reliable at recommended service intervals.',
+                            'specs' => '2,000 / 4,000 / 8,000 Hours kits · Customized kits as per compressor model',
+                        ],
+                        [
+                            'name' => 'Rubber Coupling',
+                            'image' => 'multi-brand/rubber-coupling.svg',
+                            'text' => 'Flexible coupling that connects rotating shafts while absorbing vibration, shock and misalignment to protect motors and compressor drivetrains.',
+                            'specs' => 'Material: Natural rubber / NBR / Polyurethane · Temperature Range: -20°C to +80°C',
+                        ],
+                        [
+                            'name' => 'Bearing Kits',
+                            'image' => 'multi-brand/bearing-kit.svg',
+                            'text' => 'Precision bearing kits for air ends and drive assemblies, supporting smooth rotation, reduced vibration and dependable rebuild quality.',
+                        ],
+                        [
+                            'name' => 'Drain Valves',
+                            'image' => 'multi-brand/drain-valve.svg',
+                            'text' => 'Manual and automatic drain valves remove condensate, oil and contaminants from receivers, filters and pipelines to prevent corrosion and protect air quality.',
+                        ],
+                        [
+                            'name' => 'New & Used Air Ends',
+                            'image' => 'multi-brand/new-used-air-ends.svg',
+                            'text' => 'New precision-engineered screw air ends delivering high efficiency, durability, low noise and long service life for new installs or upgrades.',
+                        ],
+                        [
+                            'name' => 'Used / Reconditioned Air Ends',
+                            'image' => 'multi-brand/used-reconditioned-air-ends.svg',
+                            'text' => 'Inspected, repaired and performance-tested reconditioned air ends with replaced bearings, seals and worn parts—a cost-effective industrial option.',
+                        ],
+                    ],
+                ],
+            ];
+
+            $categories = array_values(array_filter($categories, static function ($category) {
+                return !empty($category['products']);
+            }));
+            ?>
+
+            <div class="iac-catalog">
+                <ul class="nav nav-tabs iac-category-tabs" id="iacCategoryTabs" role="tablist">
+                    <?php foreach ($categories as $categoryIndex => $category):
+                        $tabId = 'iac-' . $category['id'];
+                        $isActive = $categoryIndex === 0;
+                    ?>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link<?= $isActive ? ' active' : '' ?>"
+                            id="<?= htmlspecialchars($tabId) ?>-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#<?= htmlspecialchars($tabId) ?>"
+                            type="button"
+                            role="tab"
+                            aria-controls="<?= htmlspecialchars($tabId) ?>"
+                            aria-selected="<?= $isActive ? 'true' : 'false' ?>"
+                        >
+                            <?= htmlspecialchars($category['short'] ?? $category['title']) ?>
+                        </button>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <div class="tab-content iac-category-content" id="iacCategoryTabContent">
+                    <?php foreach ($categories as $categoryIndex => $category):
+                        $tabId = 'iac-' . $category['id'];
+                        $isActive = $categoryIndex === 0;
+                    ?>
+                    <div
+                        class="tab-pane fade<?= $isActive ? ' show active' : '' ?>"
+                        id="<?= htmlspecialchars($tabId) ?>"
+                        role="tabpanel"
+                        aria-labelledby="<?= htmlspecialchars($tabId) ?>-tab"
+                        tabindex="0"
+                    >
+                        <div class="iac-category-intro">
+                            <span class="product-subheading"><?= htmlspecialchars($category['title']) ?></span>
+                            <p><?= count($category['products']) ?> product<?= count($category['products']) === 1 ? '' : 's' ?> in this range</p>
+                        </div>
+
+                        <div class="iac-product-grid">
+                            <?php foreach ($category['products'] as $productIndex => $product):
+                                $productNumber = $productIndex + 1;
+                                $imageSrc = $imgBase . '/' . $product['image'];
+                                $alt = htmlspecialchars($product['name']);
+                                $number = str_pad((string) $productNumber, 2, '0', STR_PAD_LEFT);
+                            ?>
+                            <article class="iac-product-card">
+                                <div class="iac-product-media">
+                                    <span class="iac-product-number"><?= $number ?></span>
+                                    <img src="<?= htmlspecialchars($imageSrc) ?>" alt="<?= $alt ?>">
+                                </div>
+                                <div class="iac-product-body">
+                                    <h5><?= $alt ?></h5>
+                                    <p><?= htmlspecialchars($product['text']) ?></p>
+                                    <?php if (!empty($product['specs'])): ?>
+                                    <strong class="iac-product-specs"><?= htmlspecialchars($product['specs']) ?></strong>
+                                    <?php endif; ?>
+                                </div>
+                            </article>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
     </section>
@@ -537,34 +591,34 @@
                     </div>
                     <div class="gallery-slider">
                         <div class="gallery-image">
-                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/air-dryer.svg" target="_blank">
-                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/air-dryer.svg" alt="">
-                            </a>    
+                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/gallery/air-dryer.svg" target="_blank">
+                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/gallery/air-dryer.svg" alt="Air Dryer">
+                            </a>
                         </div>
                         <div class="gallery-image">
-                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/air-filter.svg" target="_blank">
-                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/air-filter.svg" alt="">
-                            </a>    
+                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/gallery/air-filter.svg" target="_blank">
+                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/gallery/air-filter.svg" alt="Air Filter">
+                            </a>
                         </div>
                         <div class="gallery-image">
-                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/compressor.svg" target="_blank">
-                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/compressor.svg" alt="">
-                            </a>    
+                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/gallery/compressor.svg" target="_blank">
+                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/gallery/compressor.svg" alt="Compressor">
+                            </a>
                         </div>
                         <div class="gallery-image">
-                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/controller-hmi.svg" target="_blank">
-                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/controller-hmi.svg" alt="">
-                            </a>    
+                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/gallery/controller-hmi.svg" target="_blank">
+                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/gallery/controller-hmi.svg" alt="Controller HMI">
+                            </a>
                         </div>
                         <div class="gallery-image">
-                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/favion-compressor.svg" target="_blank">
-                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/favion-compressor.svg" alt="">
-                            </a>    
+                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/gallery/favion-compressor.svg" target="_blank">
+                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/gallery/favion-compressor.svg" alt="Favian Compressor">
+                            </a>
                         </div>
                         <div class="gallery-image">
-                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/rubber-coupling.svg" target="_blank">
-                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/Gallery/rubber-coupling.svg" alt="">
-                            </a>    
+                            <a href="./assets/images/products-and-solutions/industrial-air-compressor/gallery/rubber-coupling.svg" target="_blank">
+                                <img src="./assets/images/products-and-solutions/industrial-air-compressor/gallery/rubber-coupling.svg" alt="Rubber Coupling">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -645,68 +699,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/slick-slider/slick/slick.min.js"></script>
 <script>
-    $('.testimonial-slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true,
-        prevArrow: false,
-        nextArrow: false,
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
-
-    $('.feature-product-slider').slick({
-        infinite: true,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: false,
-        prevArrow: '<button type="button" class="slick-prev"><i class="fal fa-angle-left"></i></button>',
-        nextArrow: '<button type="button" class="slick-next"><i class="fal fa-angle-right"></i></button>',
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow: 2
-                }
-            }
-        ]
-    });
-
     $('.gallery-slider').slick({
         infinite: true,
         slidesToShow: 4,

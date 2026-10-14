@@ -98,8 +98,8 @@ if (!isset($fav_seo_pages)) {
         'industrial-air-compressor.php' => [
             'slug' => 'industrial-air-compressor',
             'title' => 'Industrial Air Compressors | Vawda',
-            'description' => 'Industrial air compressors for reliable compressed air in manufacturing and plant operations. Equipment and support from Vawda in Pakistan.',
-            'keywords' => 'industrial air compressor, compressed air systems, compressor Pakistan',
+            'description' => 'Industrial air compressors, dryers, receiver tanks, line filters and multi-brand spare parts for manufacturing and plant operations from Vawda in Pakistan.',
+            'keywords' => 'industrial air compressor, screw compressor, air dryer, compressor spare parts Pakistan',
             'type' => 'product',
             'section' => 'Products',
             'breadcrumb' => 'Industrial Air Compressor',
