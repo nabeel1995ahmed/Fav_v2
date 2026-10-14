@@ -393,65 +393,24 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'Textile Printing', 'image' => 'textile-printing'],
+        ['label' => 'Coatings & Paints', 'image' => 'coatings-paints'],
+        ['label' => 'Garment Processing', 'image' => 'garment-processing'],
+        ['label' => 'Leather Chemicals', 'image' => 'leather'],
+        ['label' => 'Household Products', 'image' => 'household-products'],
+        ['label' => 'Automotive Coolants', 'image' => 'automotive-coolants'],
+        ['label' => 'Industrial Inks', 'image' => 'industrial-inks'],
+        ['label' => 'Chemical Formulators', 'image' => 'chemical-formulators'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/pigment-powders-and-emulsions/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-print"></i>
-                            <h4>Textile Printing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-paint-brush"></i>
-                            <h4>Coatings & Paints</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-tshirt"></i>
-                            <h4>Garment Processing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-flask"></i>
-                            <h4>Leather Chemicals</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-home"></i>
-                            <h4>Household Products</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-car"></i>
-                            <h4>Automotive Coolants</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-fill-drip"></i>
-                            <h4>Industrial Inks</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-industry"></i>
-                            <h4>Chemical Formulators</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

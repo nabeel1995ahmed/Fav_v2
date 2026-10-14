@@ -306,65 +306,24 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'E-commerce', 'image' => 'ecommerce'],
+        ['label' => 'FMCG', 'image' => 'fmcg'],
+        ['label' => 'Retail Distribution', 'image' => 'retail-distribution'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
+        ['label' => 'Cold Chain', 'image' => 'cold-chain'],
+        ['label' => '3PL Logistics', 'image' => '3pl-logistics'],
+        ['label' => 'Import / Export', 'image' => 'import-export'],
+        ['label' => 'Automotive Parts', 'image' => 'automotive-parts'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/warehousing-solutions/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-shopping-cart"></i>
-                            <h4>E-commerce</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-boxes"></i>
-                            <h4>FMCG</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-store"></i>
-                            <h4>Retail Distribution</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-industry"></i>
-                            <h4>Manufacturing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-snowflake"></i>
-                            <h4>Cold Chain</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-truck"></i>
-                            <h4>3PL Logistics</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-globe"></i>
-                            <h4>Import / Export</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-car"></i>
-                            <h4>Automotive Parts</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

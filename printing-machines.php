@@ -396,65 +396,24 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'Apparel Printing', 'image' => 'apparel-printing'],
+        ['label' => 'Signage', 'image' => 'signage'],
+        ['label' => 'Packaging', 'image' => 'packaging'],
+        ['label' => 'Promotional Products', 'image' => 'promotional'],
+        ['label' => 'Textile Printing', 'image' => 'textile-printing'],
+        ['label' => 'Photography', 'image' => 'photography'],
+        ['label' => 'Advertising', 'image' => 'advertising'],
+        ['label' => 'Industrial Marking', 'image' => 'industrial-marking'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/printing-machines/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-tshirt"></i>
-                            <h4>Apparel Printing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-sign"></i>
-                            <h4>Signage</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-box"></i>
-                            <h4>Packaging</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-gift"></i>
-                            <h4>Promotional Products</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-print"></i>
-                            <h4>Textile Printing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-camera"></i>
-                            <h4>Photography</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-ad"></i>
-                            <h4>Advertising</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-industry"></i>
-                            <h4>Industrial Marking</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

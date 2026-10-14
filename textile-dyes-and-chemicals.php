@@ -380,65 +380,24 @@
         </div>
     </section> -->
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'Garment Manufacturing', 'image' => 'garment-manufacturing'],
+        ['label' => 'Fabric Dyeing', 'image' => 'fabric-dyeing'],
+        ['label' => 'Textile Printing', 'image' => 'textile-printing'],
+        ['label' => 'Home Textile', 'image' => 'home-textile'],
+        ['label' => 'Technical Textile', 'image' => 'technical-textile'],
+        ['label' => 'Yarn Manufacturing', 'image' => 'yarn-manufacturing'],
+        ['label' => 'Apparel Exporters', 'image' => 'apparel-exporters'],
+        ['label' => 'Processing Units', 'image' => 'processing-units'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/textile-dyes-and-chemicals/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-tshirt"></i>
-                            <h4>Garment Manufacturing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-th-large"></i>
-                            <h4>Fabric Dyeing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-print"></i>
-                            <h4>Textile Printing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-couch"></i>
-                            <h4>Home Textile</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-vial"></i>
-                            <h4>Technical Textile</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-atom-alt"></i>
-                            <h4>Yarn Manufacturing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-shopping-bag"></i>
-                            <h4>Apparel Exporters</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-tshirt"></i>
-                            <h4>Processing Units</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

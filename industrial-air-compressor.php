@@ -484,65 +484,24 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'Laser Cutting', 'image' => 'laser-cutting'],
+        ['label' => 'Food & Beverage', 'image' => 'food-beverage'],
+        ['label' => 'Pharmaceuticals', 'image' => 'pharmaceutical'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
+        ['label' => 'Textiles', 'image' => 'textiles'],
+        ['label' => 'Automotive', 'image' => 'automotive'],
+        ['label' => 'Construction', 'image' => 'construction'],
+        ['label' => 'Metal Fabrication', 'image' => 'metal-fabrication'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/industrial-air-compressor/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-industry"></i>
-                            <h4>Manufacturing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-tshirt"></i>
-                            <h4>Textiles</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-car"></i>
-                            <h4>Automotive</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-utensils"></i>
-                            <h4>Food & Beverage</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-hard-hat"></i>
-                            <h4>Construction</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-pills"></i>
-                            <h4>Pharmaceuticals</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-box"></i>
-                            <h4>Packaging</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-tools"></i>
-                            <h4>Workshops</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

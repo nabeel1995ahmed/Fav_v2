@@ -366,78 +366,20 @@
     <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
-
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/agriculture-greenhouse-films.svg" alt="Agriculture Greenhouse Films">
-                            </div>
-                            <h4>Agriculture Greenhouse Films</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/automotive.svg" alt="Automotive">
-                            </div>
-                            <h4>Automotive</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/constructions.svg" alt="Constructions">
-                            </div>
-                            <h4>Constructions</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/electronic.svg" alt="Electronic">
-                            </div>
-                            <h4>Electronic</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/packaging.svg" alt="Packaging">
-                            </div>
-                            <h4>Packaging</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/pharmaceutical.svg" alt="Pharmaceutical">
-                            </div>
-                            <h4>Pharmaceutical</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/piping-wire-cable.svg" alt="Piping Wire Cable">
-                            </div>
-                            <h4>Piping Wire Cable</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <div class="industry-round-shade">
-                                <img src="./assets/images/products-and-solutions/masterbatch/applications/textile-non-woven.svg" alt="Textile Non Woven">
-                            </div>
-                            <h4>Textile Non Woven</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    $industries_img_base = './assets/images/products-and-solutions/masterbatch/applications';
+    $industries = [
+        ['label' => 'Agriculture Greenhouse Films', 'image' => 'agriculture-greenhouse-films'],
+        ['label' => 'Automotive Plastics', 'image' => 'automotive'],
+        ['label' => 'Construction', 'image' => 'constructions'],
+        ['label' => 'Electronics', 'image' => 'electronic'],
+        ['label' => 'Packaging', 'image' => 'packaging'],
+        ['label' => 'Pharmaceutical Packaging', 'image' => 'pharmaceutical'],
+        ['label' => 'Piping, Wire & Cable', 'image' => 'piping-wire-cable'],
+        ['label' => 'Textile Non-Woven', 'image' => 'textile-non-woven'],
+    ];
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

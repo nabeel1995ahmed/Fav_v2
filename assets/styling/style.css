@@ -2635,6 +2635,14 @@ section.featured-section {
    INDUSTRIES WE SERVE
 ===================================== */
 
+.industries-serve-intro {
+    max-width: 640px;
+    margin: 14px auto 0;
+    color: #5a6472;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
 .industries-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);

@@ -288,65 +288,24 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'Corporate Offices', 'image' => 'corporate-offices'],
+        ['label' => 'Retail POS', 'image' => 'retail-pos'],
+        ['label' => 'Photography', 'image' => 'photography'],
+        ['label' => 'Education', 'image' => 'education'],
+        ['label' => 'Banking', 'image' => 'banking'],
+        ['label' => 'Healthcare', 'image' => 'healthcare'],
+        ['label' => 'Government', 'image' => 'government'],
+        ['label' => 'Print Services', 'image' => 'print-services'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/office-supplies/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-building"></i>
-                            <h4>Corporate Offices</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-cash-register"></i>
-                            <h4>Retail POS</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-camera"></i>
-                            <h4>Photography</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-university"></i>
-                            <h4>Education</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-university"></i>
-                            <h4>Banking</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-hospital"></i>
-                            <h4>Healthcare</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-landmark"></i>
-                            <h4>Government</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-print"></i>
-                            <h4>Print Services</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

@@ -255,65 +255,24 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'Retail Stores', 'image' => 'retail'],
+        ['label' => 'Wholesale', 'image' => 'wholesale'],
+        ['label' => 'Food Service', 'image' => 'food-service'],
+        ['label' => 'Hospitality', 'image' => 'hospitality'],
+        ['label' => 'Events & Gifting', 'image' => 'events-gifting'],
+        ['label' => 'Convenience Stores', 'image' => 'convenience-stores'],
+        ['label' => 'Export Markets', 'image' => 'export'],
+        ['label' => 'Celebrations', 'image' => 'celebrations'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/confectionery/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-store"></i>
-                            <h4>Retail</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-boxes"></i>
-                            <h4>Wholesale</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-utensils"></i>
-                            <h4>Food Service</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-gift"></i>
-                            <h4>Events & Gifting</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-globe"></i>
-                            <h4>Export</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-shopping-basket"></i>
-                            <h4>Convenience Stores</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-hotel"></i>
-                            <h4>Hospitality</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-birthday-cake"></i>
-                            <h4>Celebrations</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

@@ -337,65 +337,24 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
+    <?php
+    $industries = [
+        ['label' => 'Commercial Buildings', 'image' => 'commercial-buildings'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
+        ['label' => 'Telecom', 'image' => 'telecom'],
+        ['label' => 'Healthcare', 'image' => 'healthcare'],
+        ['label' => 'Data Rooms', 'image' => 'data-rooms'],
+        ['label' => 'Solar Storage', 'image' => 'solar-storage'],
+        ['label' => 'Retail', 'image' => 'retail'],
+        ['label' => 'Utilities', 'image' => 'utilities'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/energy-solutions/applications';
 
-    <section class="industries-serve-section pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>INDUSTRIES WE SERVE</h2>
-                        <div class="seprator"></div>
-                    </div>
-                    <div class="industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-building"></i>
-                            <h4>Commercial Buildings</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-industry"></i>
-                            <h4>Manufacturing</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-broadcast-tower"></i>
-                            <h4>Telecom</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-hospital"></i>
-                            <h4>Healthcare</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-server"></i>
-                            <h4>Data Rooms</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-solar-panel"></i>
-                            <h4>Solar Storage</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-store"></i>
-                            <h4>Retail</h4>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-bolt"></i>
-                            <h4>Utilities</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US

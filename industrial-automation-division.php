@@ -259,64 +259,27 @@
     </section>
 
 
-    <!-- =========================
+        <!-- =========================
          INDUSTRIES WE SERVE
     ========================== -->
+    <?php
+    $industries_heading = 'SERVING INDUSTRIES THAT KEEP MOVING.';
+    $industries_intro = 'Automation and motor-control support across process and manufacturing environments.';
+    $industries_section_class = 'pt-5';
+    $industries = [
+        ['label' => 'Cement & Building Materials', 'image' => 'cement-building'],
+        ['label' => 'Water & Wastewater', 'image' => 'water-wastewater'],
+        ['label' => 'Pharmaceutical', 'image' => 'pharmaceutical'],
+        ['label' => 'Textile', 'image' => 'textile'],
+        ['label' => 'Food & Beverage', 'image' => 'food-beverage'],
+        ['label' => 'Manufacturing', 'image' => 'manufacturing'],
+        ['label' => 'Packaging', 'image' => 'packaging'],
+        ['label' => 'Utilities', 'image' => 'utilities'],
+    ];
+    $industries_img_base = './assets/images/products-and-solutions/industrial-automation-division/applications';
 
-    <section class="industries-serve-section pt-5 pb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading text-center mb-4">
-                        <h2>SERVING INDUSTRIES THAT KEEP MOVING.</h2>
-                        <div class="seprator"></div>
-                        <p class="iad-partners-intro mx-auto">
-                            Automation and motor-control support across process and manufacturing environments.
-                        </p>
-                    </div>
-                    <div class="industries-grid iad-industries-grid">
-
-                        <div class="industry-box">
-                            <i class="fad fa-building"></i>
-                            <h4>Cement &amp; Building Materials</h4>
-                            <p>Drive solutions for conveyors, fans, pumps and process equipment.</p>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-tint"></i>
-                            <h4>Water &amp; Wastewater</h4>
-                            <p>Variable speed control for pumps, blowers and treatment systems.</p>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-flask"></i>
-                            <h4>Pharmaceutical</h4>
-                            <p>Motor control and automation components for manufacturing processes.</p>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-tshirt"></i>
-                            <h4>Textile</h4>
-                            <p>Drive and motor-control solutions for textile machinery.</p>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-utensils"></i>
-                            <h4>Food &amp; Beverage</h4>
-                            <p>Automation and motor control for production and processing equipment.</p>
-                        </div>
-
-                        <div class="industry-box">
-                            <i class="fad fa-industry"></i>
-                            <h4>Manufacturing</h4>
-                            <p>Industrial drives, control products and automation components.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
 
     <!-- =========================
          WHY CHOOSE US
