@@ -209,17 +209,22 @@
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/energy-solutions/lithium-battery-12v.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/energy-solutions/favl5a.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">01</span>
-                                <h5>Lithium Battery 12V</h5>
+                                <h5>FAVL5A</h5>
                             </div>
                             <p class="product-text">
-                                Lithium Battery 12V (1KW ~ 2.5KW )
+                                51.2 V 100 AH <br>
+                                • 5.12 kwh 
+                                • LFP 
+                                Max Parallel 12 ( 60 kwh ) <br>
+                                5 years replacement
+
                             </p>
                         </div>
                     </div>
@@ -229,32 +234,37 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">02</span>
-                                <h5>Wall Mount Battery</h5>
+                                <h5>FAVL16A</h5>
                             </div>
                             <p class="product-text">
-                                Wall Mount Battery (5KW)
+                                51.2 V 314 AH <br>
+                                16 kwh <br>
+                                • LFP
+                                • Max parallel 8 ( 128 kwh ) <br> 
+                                5 years replacement
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/energy-solutions/wall-mount-battery.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/energy-solutions/favl16a.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/energy-solutions/wall-mount-51V-battery.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/energy-solutions/stackable-lv-hv-ess.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">03</span>
-                                <h5>Wall Mount 51V Battery</h5>
+                                <h5> Stackable LV & HV ESS</h5>
                             </div>
-                            <p class="product-text">
+                            <p class="product-text d-none">
                                 Wall Mount 51V
                             </p>
                         </div>
@@ -265,77 +275,92 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">04</span>
-                                <h5>Wall Mount Residential Battery 10kw</h5>
+                                <h5>FAVBS30-60K</h5>
                             </div>
                             <p class="product-text">
-                               Wall Mount Residential Battery (10KW ~ 16KW)
+                               30 Kw / 60 Kwh <br>
+                                PCS +LFP BANK<br>
+                                • LFP 280/314 AH
+                                • Fire Proof
+                                • IP55 <br>
+                                5 years replacement
+
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/energy-solutions/wall-mount-residential-battery-10kw.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/energy-solutions/favbs30-60k.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/energy-solutions/recharable fan.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/energy-solutions/favbs100k.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">05</span>
-                                <h5>Recharable Fan</h5>
+                                <h5> FAVBS100K</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
+                                  50 kw / 100 kwh <br>
+                                    PCS +LFP BANK <br>
+                                    • Fire Proof 
+                                    • IP55
+                                    • LFP 280/314 AH <br>
+                                    5 years replacement 
+
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">06</span>
-                                <h5>AC DC Fans</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/energy-solutions/ac-dc-fan.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/energy-solutions/inverter-fan.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">07</span>
-                                <h5>Inverter Fan</h5>
-                            </div>
-                            <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
-                        </div>
-                    </div>
-                </div>                               
+                </div>                          
             </div>
         </div>
     </section>
+    <!-- =========================
+         certifications
+    ========================== -->
 
+    <section class="certifications veechem-certifications pb-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>DOWNLOAD</h2>
+                <div class="seprator"></div>
+            </div>
+            <?php
+            $veechem_cert_base = './assets/images/products-and-solutions/energy-solutions/';
+            $veechem_certs = [
+                ['file' => 'Energy Solution Catalogue.pdf', 'title' => 'Energy Solution Catalogue'],
+                ['file' => 'commercial-industrial.pdf', 'title' => 'Commercial Industrial Energy Storage System'],
+                ['file' => 'lithium-battery-10kw 16kw.pdf', 'title' => 'Lithium-Battery 10kw 16kw'],
+                ['file' => 'main-brochure.pdf', 'title' => 'Main Brochure'],
+                ['file' => 'wall-rack-battery-brochure.pdf', 'title' => "Wall Rack Battery"],
+                ['file' => '250-350-kwh.pdf', 'title' => "250-350-kwh"],
+                ['file' => 'all-in-one.pdf', 'title' => "All In One"],
+
+            ];
+            ?>
+            <div class="veechem-cert-grid">
+                <?php foreach ($veechem_certs as $cert): ?>
+                    <a class="veechem-cert-card"
+                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                        <span class="veechem-cert-meta">
+                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
+                            <span class="veechem-cert-type">View PDF</span>
+                        </span>
+                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
 
         <!-- =========================
      INDUSTRIES WE SERVE
