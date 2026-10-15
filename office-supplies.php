@@ -210,7 +210,7 @@
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
                             <img
-                                src="./assets/images/products-and-solutions/office-supplies/equipment.svg"
+                                src="./assets/images/products-and-solutions/office-supplies/cartridges.svg"
                                 class="img-fluid"
                                 alt="Sizing"
                             >
@@ -221,11 +221,10 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">01</span>
-                                <h5>Equipment</h5>
+                                <h5>Toner Cartridges</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
+                                High-quality toner cartridges designed to deliver sharp text, consistent print quality, and reliable performance across compatible printer and copier models.                            </p>
                         </div>
                     </div>
                 </div>
@@ -234,16 +233,15 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">02</span>
-                                <h5>Inkjet Photo Paper</h5>
+                                <h5>Premium Inks</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
+                                Premium-quality inks engineered to deliver rich colours, clear output, and consistent results for compatible printing applications.                          </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/office-supplies/inkjet-photo-paper.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/office-supplies/premium-inks.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -260,8 +258,7 @@
                                 <h5>Shaker Inks</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
+                               Reliable shaker inks developed for consistent ink application and dependable performance in compatible printing systems.               </p>
                         </div>
                     </div>
                 </div>
@@ -270,23 +267,111 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">04</span>
-                                <h5>Thermal Paper</h5>
+                                <h5>Powder Refill Bags</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
-                            </p>
+                               Quality toner powder refill bags offering a cost-effective solution for cartridge refilling, dependable print output, and efficient printing operations.                      </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/office-supplies/thermal-paper.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/office-supplies/toner-powder-refill-bags.svg" class="img-fluid" alt="">
                         </div>
                     </div>
-                </div>                                
+                </div> 
+                <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img
+                                src="./assets/images/products-and-solutions/office-supplies/copier-spare-parts.svg"
+                                class="img-fluid"
+                                alt="Sizing"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">05</span>
+                                <h5>Copier Spare Parts</h5>
+                            </div>
+                            <p class="product-text">
+                               Reliable copier spare parts designed to support smooth machine operation, reduce downtime, and maintain consistent printing performance.                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">06</span>
+                                <h5>Inkjet Photo Paper</h5>
+                            </div>
+                            <p class="product-text">
+                               High-quality inkjet photo paper designed to deliver sharp details, vibrant colours, and professional-quality photo prints.                  </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/office-supplies/inkjet-photo-paper.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/office-supplies/equipment.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">07</span>
+                                <h5>Equipment</h5>
+                            </div>
+                            <p class="product-text">
+                                Essential office equipment designed to support everyday business operations, improve workflow, and enhance workplace productivity.                            
+                            </p>
+                        </div>
+                    </div>
+                </div>                              
             </div>
         </div>
     </section>
+<!-- =========================
+         certifications
+    ========================== -->
 
+    <section class="certifications veechem-certifications pb-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>Download</h2>
+                <div class="seprator"></div>
+            </div>
+            <?php
+            $veechem_cert_base = './assets/images/products-and-solutions/office-supplies/';
+            $veechem_certs = [
+                ['file' => 'supplies-catalogue.pdf', 'title' => 'Catalogue'],
+                          ];
+            ?>
+            <div class="veechem-cert-grid">
+                <?php foreach ($veechem_certs as $cert): ?>
+                    <a class="veechem-cert-card"
+                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                        <span class="veechem-cert-meta">
+                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
+                            <span class="veechem-cert-type">View PDF</span>
+                        </span>
+                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
 
         <!-- =========================
      INDUSTRIES WE SERVE

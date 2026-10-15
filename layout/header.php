@@ -10,13 +10,12 @@ $page_nav_map = [
     'textile-dyes-and-chemicals.php' => 'products',
     'masterbatch.php' => 'products',
     'veechem-industries.php' => 'products',
-    'toner-cartridges.php' => 'products',
     'office-supplies.php' => 'products',
     'industrial-automation-division.php' => 'products',
     'industrial-air-compressor.php' => 'products',
     'confectionery.php' => 'products',
     'security-solution.php' => 'products',
-    'printing-machines.php' => 'products',
+    'machines.php' => 'products',
     'energy-solutions.php' => 'products',
     'office-furniture.php' => 'products',
     'warehousing-solutions.php' => 'products',
@@ -77,16 +76,16 @@ function dropdown_active($href, $current_page) {
                             <li><a href="./textile-dyes-and-chemicals.php" class="dropdown-item<?= dropdown_active('./textile-dyes-and-chemicals.php', $current_page) ?>">Textile Dyes & Chemicals</a></li>
                             <li><a href="./masterbatch.php" class="dropdown-item<?= dropdown_active('./masterbatch.php', $current_page) ?>">Masterbatch</a></li>
                             <li><a href="./veechem-industries.php" class="dropdown-item<?= dropdown_active('./veechem-industries.php', $current_page) ?>">Veechem Industries Pvt. Ltd.</a></li>
-                            <li><a href="./toner-cartridges.php" class="dropdown-item<?= dropdown_active('./toner-cartridges.php', $current_page) ?>">Toner Cartridges</a></li>
+                            <li><a href="./toner-cartridges.php" class="d-none dropdown-item<?= dropdown_active('./toner-cartridges.php', $current_page) ?>">Toner Cartridges</a></li>
                             <li><a href="./office-supplies.php" class="dropdown-item<?= dropdown_active('./office-supplies.php', $current_page) ?>">Office Supplies</a></li>
-                            <li><a href="./industrial-automation-division.php" class="dropdown-item<?= dropdown_active('./industrial-automation-division.php', $current_page) ?>">Industrial Automation Division</a></li>
+                            <li><a href="./industrial-automation-division.php" class="dropdown-item<?= dropdown_active('./industrial-automation-division.php', $current_page) ?>">Industrial Automation  Solutions</a></li>
                             <li><a href="./industrial-air-compressor.php" class="dropdown-item<?= dropdown_active('./industrial-air-compressor.php', $current_page) ?>">Industrial Air Compressor</a></li>
                             <li><a href="./confectionery.php" class="dropdown-item<?= dropdown_active('./confectionery.php', $current_page) ?>">Confectionery</a></li>
                             <li><a href="./security-solution.php" class="dropdown-item<?= dropdown_active('./security-solution.php', $current_page) ?>">Security Solutions</a></li>
-                            <li><a href="./printing-machines.php" class="dropdown-item<?= dropdown_active('./printing-machines.php', $current_page) ?>">Printing Machines</a></li>
+                            <li><a href="./machines.php" class="dropdown-item<?= dropdown_active('./machines.php', $current_page) ?>">Machines</a></li>
                             <li><a href="./energy-solutions.php" class="dropdown-item<?= dropdown_active('./energy-solutions.php', $current_page) ?>">Energy Solutions</a></li>
                             <li><a href="./office-furniture.php" class="dropdown-item<?= dropdown_active('./office-furniture.php', $current_page) ?>">Office Furniture</a></li>
-                            <li><a href="./warehousing-solutions.php" class="dropdown-item<?= dropdown_active('./warehousing-solutions.php', $current_page) ?>">Warehousing Solutons</a></li>
+                            <li><a href="./warehousing-solutions.php" class="dropdown-item<?= dropdown_active('./warehousing-solutions.php', $current_page) ?>">Warehousing Solutions</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
