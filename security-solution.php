@@ -286,6 +286,46 @@
             </div>
         </div>
     </section>
+    <!-- =========================
+         certifications
+    ========================== -->
+
+    <section class="certifications veechem-certifications pb-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>DOWNLOAD</h2>
+                <div class="seprator"></div>
+            </div>
+            <?php
+            $veechem_cert_base = './assets/images/products-and-solutions/security-solutions/';
+            $veechem_certs = [
+                ['file' => 'CSS HD Analog.pdf', 'title' => 'CSS HD Analog'],
+                ['file' => 'CSS IP CCTV.pdf', 'title' => 'CSS IP CCTV'],
+                ['file' => 'HIVIDEO CCTV.pdf', 'title' => 'HIVIDEO CCTV'],
+                ['file' => 'Linkff POE Switch.pdf', 'title' => 'Linkff PoE Switches'],
+                ['file' => 'TT INTL IP CCTV.pdf', 'title' => "TT INT'L IP CCTV"],
+                ['file' => 'TT INTL NVR.pdf', 'title' => "TT INT'L NVR"],
+            ];
+            ?>
+            <div class="veechem-cert-grid">
+                <?php foreach ($veechem_certs as $cert): ?>
+                    <a class="veechem-cert-card"
+                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                        <span class="veechem-cert-meta">
+                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
+                            <span class="veechem-cert-type">View PDF</span>
+                        </span>
+                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </section>
+
+
 
 
         <!-- =========================
@@ -452,6 +492,11 @@
         </div>
     </section>
 
+
+
+
+
+    
     <!-- =========================
          FOOTER
     ========================== -->
