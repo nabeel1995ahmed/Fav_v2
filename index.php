@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=homepro21">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=homepro23">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -50,6 +50,14 @@
                         <a href="./contact-us.php" class="btn btn-warning text-white">
                             REQUEST A QUOTE
                             <i class="fa fa-paper-plane"></i>
+                        </a>
+
+                        <a href="./assets/images/home-page/Group%20Profile.pdf"
+                            class="btn btn-outline-light"
+                            target="_blank"
+                            rel="noopener">
+                            GROUP PROFILE
+                            <i class="fal fa-file-pdf"></i>
                         </a>
 
                         <a href="#business-divisions" class="btn btn-outline-light">
@@ -343,9 +351,16 @@
                             products and technical support to manufacturers and businesses
                             worldwide, with integrity, innovation and long-term partnerships.
                         </p>
-                        <div class="hero-buttons">
+                        <div class="hero-buttons why-us-actions">
                             <a href="./about-us.php" class="btn btn-outline-light">
                                 ABOUT US <i class="fal fa-arrow-right"></i>
+                            </a>
+                            <a href="./assets/images/home-page/Group%20Profile.pdf"
+                                class="btn btn-warning text-white"
+                                target="_blank"
+                                rel="noopener">
+                                GROUP PROFILE
+                                <i class="fal fa-file-pdf"></i>
                             </a>
                         </div>
                     </div>

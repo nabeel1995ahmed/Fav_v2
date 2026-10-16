@@ -212,7 +212,7 @@
                             <img
                                 src="./assets/images/products-and-solutions/warehousing-solutions/discover_future.svg"
                                 class="img-fluid"
-                                alt="Sizing"
+                                alt="Discover Future Warehousing"
                             >
                         </div>
                     </div>
@@ -224,7 +224,11 @@
                                 <h5>Discover Future</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
+                                Future-ready warehouse systems built for growth and efficiency
+                                <br>Smart layouts that support automation and digital operations
+                                <br>Higher storage density with safer material flow
+                                <br>Scalable designs for expanding distribution centres
+                                <br>Technical guidance from planning to installation
                             </p>
                         </div>
                     </div>
@@ -234,23 +238,27 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">02</span>
-                                <h5>Ecommerce Retail</h5>
+                                <h5>Ecommerce &amp; Retail</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
+                                Fulfilment-focused storage for online and retail orders
+                                <br>Pick-and-pack friendly racking and staging zones
+                                <br>Faster order cycle times with organised SKU access
+                                <br>Solutions for multi-channel retail distribution
+                                <br>Layouts designed for peak-season throughput
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/warehousing-solutions/ecommerce_retail.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/warehousing-solutions/ecommerce_retail.svg" class="img-fluid" alt="Ecommerce and Retail Warehousing">
                         </div>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/warehousing-solutions/fast_moving.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/warehousing-solutions/fast_moving.svg" class="img-fluid" alt="Fast Moving Goods Storage">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
@@ -260,7 +268,11 @@
                                 <h5>Fast Moving</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
+                                High-velocity storage for FMCG and fast-moving SKUs
+                                <br>Quick put-away and retrieval for frequent stock turns
+                                <br>Clear aisle planning for forklifts and handlers
+                                <br>FIFO-friendly configurations where required
+                                <br>Reliable systems for high-frequency replenishment
                             </p>
                         </div>
                     </div>
@@ -270,23 +282,27 @@
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">04</span>
-                                <h5>Sector We Serve</h5>
+                                <h5>Sectors We Serve</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
+                                E-commerce and retail distribution centres
+                                <br>FMCG, manufacturing and automotive parts storage
+                                <br>Import / export and 3PL logistics hubs
+                                <br>Cold-chain and temperature-controlled warehousing
+                                <br>Custom layouts tailored to each industry workflow
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/warehousing-solutions/sector_we_serve.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/warehousing-solutions/sector_we_serve.svg" class="img-fluid" alt="Sectors We Serve">
                         </div>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/warehousing-solutions/warehousing-solutions.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/warehousing-solutions/warehousing-solutions.svg" class="img-fluid" alt="Warehousing Solutions">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
@@ -296,11 +312,15 @@
                                 <h5>Warehousing Solutions</h5>
                             </div>
                             <p class="product-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, facere
+                                Complete racking and storage system range
+                                <br>Material handling support for safe daily operations
+                                <br>Space-efficient designs to maximise warehouse capacity
+                                <br>Solutions for industrial, commercial and logistics sites
+                                <br>End-to-end support from requirement to delivery
                             </p>
                         </div>
                     </div>
-                </div>                                
+                </div>
             </div>
         </div>
     </section>
