@@ -2,8 +2,10 @@
 /**
  * Shared INDUSTRIES WE SERVE block.
  * Expects $industries = [ ['label' => '...', 'image' => 'slug', 'text' => '...'], ... ]
- * Optional: $industries_heading, $industries_intro, $industries_section_class, $industries_img_base
- * $industries_img_base should point to the product applications folder.
+ * Optional per item: 'src' => full image path (overrides image + base)
+ * Optional: $industries_heading, $industries_intro, $industries_section_class,
+ *           $industries_img_base, $industries_grid_class
+ * $industries_img_base should point to the product applications folder when using slugs.
  */
 if (empty($industries) || !is_array($industries)) {
     return;
@@ -11,16 +13,23 @@ if (empty($industries) || !is_array($industries)) {
 
 $industries_heading = $industries_heading ?? 'INDUSTRIES WE SERVE';
 $industries_section_class = trim('industries-serve-section pb-5 ' . ($industries_section_class ?? ''));
-if (empty($industries_img_base)) {
-    return;
-}
-$industries_img_base = rtrim($industries_img_base, '/');
+$industries_img_base = isset($industries_img_base) ? rtrim((string) $industries_img_base, '/') : '';
+$industries_grid_class = trim((string) ($industries_grid_class ?? ''));
+
 $has_industry_text = false;
 foreach ($industries as $industry_item) {
     if (!empty($industry_item['text'])) {
         $has_industry_text = true;
         break;
     }
+}
+
+$grid_classes = 'industries-grid';
+if ($has_industry_text) {
+    $grid_classes .= ' industries-grid-with-text';
+}
+if ($industries_grid_class !== '') {
+    $grid_classes .= ' ' . $industries_grid_class;
 }
 ?>
     <section class="<?= htmlspecialchars($industries_section_class) ?>">
@@ -34,15 +43,22 @@ foreach ($industries as $industry_item) {
                         <p class="industries-serve-intro"><?= htmlspecialchars($industries_intro) ?></p>
                         <?php endif; ?>
                     </div>
-                    <div class="industries-grid<?= $has_industry_text ? ' industries-grid-with-text' : '' ?>">
+                    <div class="<?= htmlspecialchars($grid_classes) ?>">
                         <?php foreach ($industries as $industry):
                             $label = $industry['label'] ?? '';
                             $slug = $industry['image'] ?? '';
                             $text = $industry['text'] ?? '';
-                            if ($label === '' || $slug === '') {
+                            if ($label === '') {
                                 continue;
                             }
-                            $src = $industries_img_base . '/' . rawurlencode($slug) . '.svg';
+
+                            if (!empty($industry['src'])) {
+                                $src = $industry['src'];
+                            } elseif ($industries_img_base !== '' && $slug !== '') {
+                                $src = $industries_img_base . '/' . rawurlencode($slug) . '.svg';
+                            } else {
+                                continue;
+                            }
                         ?>
                         <div class="industry-box">
                             <div class="industry-round-shade">
@@ -60,5 +76,12 @@ foreach ($industries as $industry_item) {
         </div>
     </section>
 <?php
-unset($industries, $industries_heading, $industries_intro, $industries_section_class, $industries_img_base);
+unset(
+    $industries,
+    $industries_heading,
+    $industries_intro,
+    $industries_section_class,
+    $industries_img_base,
+    $industries_grid_class
+);
 ?>

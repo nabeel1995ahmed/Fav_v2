@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=divisions9">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=homepro21">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -22,7 +22,7 @@
 <body>
     <?php include './layout/header.php'; ?>
 
-    <!-- =========================
+<!-- =========================
          HERO SECTION
     ========================== -->
 
@@ -33,15 +33,16 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-7">
+                    <span class="hero-label">FAV GROUP — Farid Ahmed Vawda</span>
                     <h1 class="hero-title">
                         TRUSTED <span>INDUSTRIAL &
                             BUSINESS </span>SOLUTIONS
                     </h1>
 
                     <p class="hero-text">
-                        Serving industries worldwide with textile chemicals,
-                        automation, energy, security and workplace solutions —
-                        quality partners you can rely on.
+                        FAV Group, founded by Farid Ahmed Vawda, serves industries
+                        worldwide with textile chemicals, automation, energy, security
+                        and workplace solutions — quality partners you can rely on.
                     </p>
 
                     <div class="hero-buttons">
@@ -94,8 +95,7 @@
 
     </section>
 
-
-    <!-- =========================
+<!-- =========================
          BUSINESS DIVISIONS
     ========================== -->
 
@@ -107,8 +107,8 @@
                 <h2>OUR BUSINESS DIVISIONS</h2>
                 <div class="seprator"></div>
                 <p class="divisions-intro">
-                    Eight specialised divisions delivering industrial excellence
-                    and business solutions across global markets.
+                    Eight specialised divisions of FAV Group delivering industrial
+                    excellence and business solutions across global markets.
                 </p>
             </div>
 
@@ -260,8 +260,70 @@
 
     </section>
 
+<!-- =========================
+         INDUSTRIES WE SERVE
+    ========================== -->
 
-    <!-- =========================
+    <?php
+    $industries = [
+        [
+            'label' => 'Textile',
+            'image' => 'fabric-dyeing',
+            'src' => './assets/images/products-and-solutions/textile-dyes-and-chemicals/applications/fabric-dyeing.svg',
+            'text' => 'Dyes, chemicals and printing for mills and exporters.',
+        ],
+        [
+            'label' => 'Plastics',
+            'image' => 'packaging',
+            'src' => './assets/images/products-and-solutions/masterbatch/applications/packaging.svg',
+            'text' => 'Masterbatch and pigments for plastic manufacturers.',
+        ],
+        [
+            'label' => 'Manufacturing',
+            'image' => 'manufacturing',
+            'src' => './assets/images/products-and-solutions/industrial-automation-division/applications/manufacturing.svg',
+            'text' => 'Automation, compressors and industrial systems.',
+        ],
+        [
+            'label' => 'Energy',
+            'image' => 'solar-storage',
+            'src' => './assets/images/products-and-solutions/energy-solutions/applications/solar-storage.svg',
+            'text' => 'Power and storage solutions for business continuity.',
+        ],
+        [
+            'label' => 'Security',
+            'image' => 'industrial-sites',
+            'src' => './assets/images/products-and-solutions/security-solutions/applications/industrial-sites.svg',
+            'text' => 'Surveillance and protection for sites and facilities.',
+        ],
+        [
+            'label' => 'Corporate Offices',
+            'image' => 'corporate-offices',
+            'src' => './assets/images/products-and-solutions/office-furnitures/applications/corporate-offices.svg',
+            'text' => 'Furniture, supplies and workplace essentials.',
+        ],
+        [
+            'label' => 'Food & Confectionery',
+            'image' => 'retail',
+            'src' => './assets/images/products-and-solutions/confectionery/applications/retail.svg',
+            'text' => 'Manufacturing and supply for confectionery brands.',
+        ],
+        [
+            'label' => 'Warehousing',
+            'image' => 'ecommerce',
+            'src' => './assets/images/products-and-solutions/warehousing-solutions/applications/ecommerce.svg',
+            'text' => 'Storage and logistics infrastructure solutions.',
+        ],
+    ];
+    $industries_heading = 'INDUSTRIES WE SERVE';
+    $industries_intro = 'From textiles and plastics to energy, security and workplace solutions — one group supporting multiple sectors.';
+    $industries_section_class = 'home-industries-section';
+    $industries_img_base = '';
+
+    include __DIR__ . '/layout/industries-serve.php';
+    ?>
+
+<!-- =========================
          WHY CHOOSE US
     ========================== -->
 
@@ -271,15 +333,15 @@
                 <div class="col-lg-4">
                     <div class="choose-text">
                         <span class="section-subtitle">
-                            WHY CHOOSE VAWDA
+                            WHY CHOOSE FAV GROUP
                         </span>
                         <h2 class="section-title">
                             A Trusted Partner Across Industries
                         </h2>
                         <p class="text-muted mt-3">
-                            Since 1984, we have delivered quality products and technical support
-                            to manufacturers and businesses worldwide — with integrity, innovation
-                            and a commitment to long-term partnerships.
+                            Since 1984, FAV Group — Farid Ahmed Vawda — has delivered quality
+                            products and technical support to manufacturers and businesses
+                            worldwide, with integrity, innovation and long-term partnerships.
                         </p>
                         <div class="hero-buttons">
                             <a href="./about-us.php" class="btn btn-outline-light">
@@ -332,42 +394,60 @@
         </div>
     </section>
 
-    <!-- =========================
-         FAV GROUP VIDEO
+<!-- =========================
+         QUALITY & CERTIFICATIONS
     ========================== -->
 
-    <section class="fav-video-section py-5" id="fav-group-video">
+    <section class="home-certs-section py-5">
         <div class="container">
             <div class="section-heading text-center mb-4">
-                <h2>FAV GROUP VIDEO</h2>
+                <h2>QUALITY &amp; CERTIFICATIONS</h2>
                 <div class="seprator"></div>
-                <p class="fav-video-intro">
-                    Discover how FAV Group delivers industrial and business solutions worldwide.
+                <p class="home-section-intro">
+                    ISO 9001 since 2003, plus EcoCert and Halal credentials —
+                    quality systems you can verify.
                 </p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 col-xl-8">
-                    <div class="fav-video-frame">
-                        <video
-                            id="fav-group-video-player"
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            controls
-                            preload="auto"
-                            poster="./assets/images/home-page/why-we-choose-us-background.jpeg"
-                            aria-label="FAV Group company video">
-                            <source src="./assets/images/home-page/F%20A%20V%20VIDEO.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
+            <div class="row g-3 justify-content-center home-certs-grid">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./certificates.php" class="home-cert-card">
+                        <div class="home-cert-icon"><i class="fal fa-award"></i></div>
+                        <h5>ISO 9001</h5>
+                        <span>Certified since 2003</span>
+                    </a>
                 </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./certificates.php" class="home-cert-card">
+                        <div class="home-cert-icon"><i class="fal fa-leaf"></i></div>
+                        <h5>EcoCert</h5>
+                        <span>Environmental standards</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./certificates.php" class="home-cert-card">
+                        <div class="home-cert-icon"><i class="fal fa-certificate"></i></div>
+                        <h5>Halal</h5>
+                        <span>Certified manufacturing</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="./certificates.php" class="home-cert-card">
+                        <div class="home-cert-icon"><i class="fal fa-shield-check"></i></div>
+                        <h5>BVQI</h5>
+                        <span>British accreditation</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-buttons justify-content-center mt-4">
+                <a href="./certificates.php" class="btn btn-warning text-white">
+                    VIEW ALL CERTIFICATES
+                    <i class="fal fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- =========================
+<!-- =========================
          COUNTER SECTION
     ========================== -->
 
@@ -379,7 +459,7 @@
                         <div class="counter-box">
                             <i class="fal fa-building"></i>
                             <div class="counter-text">
-                                <h3 class="counter" data-count="10">0+</h3>
+                                <h3 class="counter" data-count="8">0+</h3>
                                 <p>Business Divisions</p>
                             </div>
                         </div>
@@ -409,7 +489,7 @@
                         <div class="counter-box">
                             <i class="fal fa-stopwatch"></i>
                             <div class="counter-text">
-                                <h3 class="counter" data-count="20">0+</h3>
+                                <h3 class="counter" data-count="40">0+</h3>
                                 <p>Years of Experience</p>
                             </div>
                         </div>
@@ -419,7 +499,65 @@
         </div>
     </section>
 
-    <!-- =========================
+<!-- =========================
+         HOW WE WORK
+    ========================== -->
+
+    <section class="home-process-section py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h2>HOW WE WORK</h2>
+                <div class="seprator"></div>
+                <p class="home-section-intro">
+                    A clear path from first inquiry to reliable delivery and support.
+                </p>
+            </div>
+            <div class="row g-4 home-process-steps">
+                <div class="col-6 col-lg-3">
+                    <div class="home-process-card">
+                        <span class="home-process-num">01</span>
+                        <div class="home-process-media">
+                            <img src="./assets/images/products-and-solutions/security-solutions/applications/industrial-sites.svg" alt="Inquiry">
+                        </div>
+                        <h5>Inquiry</h5>
+                        <p>Share your requirement with our team.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="home-process-card">
+                        <span class="home-process-num">02</span>
+                        <div class="home-process-media">
+                            <img src="./assets/images/products-and-solutions/industrial-automation-division/applications/manufacturing.svg" alt="Technical Consult">
+                        </div>
+                        <h5>Technical Consult</h5>
+                        <p>Specialists review fit, specs and options.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="home-process-card">
+                        <span class="home-process-num">03</span>
+                        <div class="home-process-media">
+                            <img src="./assets/images/products-and-solutions/energy-solutions/applications/utilities.svg" alt="Quote">
+                        </div>
+                        <h5>Quote</h5>
+                        <p>Receive a clear, tailored commercial proposal.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="home-process-card">
+                        <span class="home-process-num">04</span>
+                        <div class="home-process-media">
+                            <img src="./assets/images/products-and-solutions/warehousing-solutions/applications/import-export.svg" alt="Delivery and Support">
+                        </div>
+                        <h5>Delivery &amp; Support</h5>
+                        <p>On-time supply with ongoing technical help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- =========================
      TRUSTED PARTNERS
 ========================== -->
 
@@ -466,10 +604,45 @@
                 </div>
             </div>
         </div>
+    </section>
+
+<!-- =========================
+         FAV GROUP VIDEO
+    ========================== -->
+
+    <section class="fav-video-section py-5" id="fav-group-video">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>FAV GROUP VIDEO</h2>
+                <div class="seprator"></div>
+                <p class="fav-video-intro">
+                    See how FAV Group — Farid Ahmed Vawda — delivers industrial
+                    and business solutions worldwide.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8">
+                    <div class="fav-video-frame">
+                        <video
+                            id="fav-group-video-player"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            controls
+                            preload="auto"
+                            poster="./assets/images/home-page/why-we-choose-us-background.jpeg"
+                            aria-label="FAV Group company video">
+                            <source src="./assets/images/home-page/F%20A%20V%20VIDEO.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- =========================
+<!-- =========================
      FEATURED PRODUCT & SOLUTIONS
 ========================== -->
 
@@ -608,7 +781,79 @@
         </div>
     </section>
 
-    <!-- =========================
+<!-- =========================
+         OUR PRESENCE
+    ========================== -->
+
+    <section class="home-presence-section py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>OUR PRESENCE</h2>
+                <div class="seprator"></div>
+                <p class="home-section-intro">
+                    Head office in Karachi, with liaison offices in Lahore and Faisalabad.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="home-presence-card">
+                        <span class="home-presence-tag">Head Office</span>
+                        <h5>Karachi</h5>
+                        <p>B-66/A, S.I.T.E. Area, Karachi-75700, Pakistan.</p>
+                        <ul>
+                            <li><i class="fal fa-phone-alt"></i><a href="tel:+922132550093">+92 (21) 32550093-98</a></li>
+                            <li><i class="fal fa-envelope"></i><a href="mailto:info@vawda.com">info@vawda.com</a></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="home-presence-card">
+                        <span class="home-presence-tag">Liaison Office</span>
+                        <h5>Lahore</h5>
+                        <p>307-E, Nadir Street, Ferry Meadow Lane, West Canal Bank, Lahore.</p>
+                        <ul>
+                            <li><i class="fal fa-phone-alt"></i><a href="tel:+924236113239">+92 (42) 36113239</a></li>
+                            <li><i class="fal fa-fax"></i><span>+92 (42) 35292819</span></li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <article class="home-presence-card">
+                        <span class="home-presence-tag">Liaison Office</span>
+                        <h5>Faisalabad</h5>
+                        <p>P-68, Vawda House, Vawda Street 4, Zia Town, Faisalabad.</p>
+                        <ul>
+                            <li><i class="fal fa-phone-alt"></i><a href="tel:+92418524576">+92 (41) 8524576</a></li>
+                            <li><i class="fal fa-fax"></i><span>+92 (41) 8524947</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+            <div class="home-presence-map mt-5">
+                <div class="text-center mb-4">
+                    <span class="ne-eyebrow">FIND US</span>
+                    <h3 class="home-presence-map-title">Visit Our Head Office</h3>
+                </div>
+                <div class="cu-map-frame">
+                    <iframe
+                        title="Vawda Head Office Location"
+                        src="https://www.google.com/maps?q=B-66/A,+S.I.T.E.,+Karachi,+Pakistan&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="hero-buttons justify-content-center mt-4">
+                <a href="./contact-us.php#branches" class="btn btn-warning text-white">
+                    CONTACT DETAILS
+                    <i class="fal fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<?php /* Testimonials hidden for now
+<!-- =========================
      TESTIMONIALS
 ========================== -->
 
@@ -625,55 +870,7 @@
                 <div class="testimonial-card">
                     <i class="fa fa-quote-left quote-icon"></i>
                     <p>
-                        Vawda has been a dependable partner for our
-                        operations. Product quality and technical
-                        support consistently meet international expectations.
-                    </p>
-                    <div class="client-info">
-                        <img src="./assets/images/clients/client1.svg" alt="" class="client-img">
-                        <div>
-                            <h6>Ahmad Raza</h6>
-                            <span>Operations Manager,</span>
-                            <span>Textile Industry</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <i class="fa fa-quote-left quote-icon"></i>
-                    <p>
-                        From industrial automation to energy solutions,
-                        everything under one roof. A professional team
-                        with reliable service delivery.
-                    </p>
-                    <div class="client-info">
-                        <img src="./assets/images/clients/client2.svg" alt="" class="client-img">
-                        <div>
-                            <h6>Sarah Khan</h6>
-                            <span>Procurement Head,</span>
-                            <span>Manufacturing Industry</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <i class="fa fa-quote-left quote-icon"></i>
-                    <p>
-                        Reliable, efficient and client-focused.
-                        We value the consistency of their products
-                        and after-sales support.
-                    </p>
-                    <div class="client-info">
-                        <img src="./assets/images/clients/client3.svg" alt="" class="client-img">
-                        <div>
-                            <h6>Imran Sheikh</h6>
-                            <span>General Manager,</span>
-                            <span>Packaging Industry</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <i class="fa fa-quote-left quote-icon"></i>
-                    <p>
-                        Vawda has been a dependable partner for our
+                        FAV Group has been a dependable partner for our
                         operations. Product quality and technical
                         support consistently meet international expectations.
                     </p>
@@ -721,8 +918,69 @@
             </div>
         </div>
     </section>
+*/ ?>
 
-    <!-- =========================
+<!-- =========================
+     NEWS & EVENTS
+========================== -->
+
+    <section class="home-news-section py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>NEWS &amp; EVENTS</h2>
+                <div class="seprator"></div>
+                <p class="home-section-intro">
+                    Recent exhibitions, milestones and company moments from FAV Group.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="./news-events.php" class="home-news-card">
+                        <div class="home-news-media">
+                            <img src="./assets/images/news-events/Textile Asia 2026/WhatsApp Image 2026-07-04 at 5.49.22 PM.jpeg" alt="Textile Asia 2026">
+                        </div>
+                        <div class="home-news-body">
+                            <span class="ne-eyebrow">Exhibition</span>
+                            <h5>Textile Asia 2026</h5>
+                            <p>FAV Group at Textile Asia — showcasing dyes, chemicals and solutions.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./news-events.php" class="home-news-card">
+                        <div class="home-news-media">
+                            <img src="./assets/images/news-events/Mera Brand Pakistan Food Expo 2026/mera-brand-pakistan-1.jpeg" alt="Mera Brand Pakistan Food Expo 2026">
+                        </div>
+                        <div class="home-news-body">
+                            <span class="ne-eyebrow">Food Expo</span>
+                            <h5>Mera Brand Pakistan Food Expo 2026</h5>
+                            <p>Confectionery and brand presence at Pakistan’s food expo.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./news-events.php" class="home-news-card">
+                        <div class="home-news-media">
+                            <img src="./assets/images/news-events/Milestone/196A2321.JPG" alt="FAV Group Milestone">
+                        </div>
+                        <div class="home-news-body">
+                            <span class="ne-eyebrow">Milestone</span>
+                            <h5>Company Milestones</h5>
+                            <p>Recognition and achievements across the FAV Group journey.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-buttons justify-content-center mt-4">
+                <a href="./news-events.php" class="btn btn-warning text-white">
+                    VIEW ALL NEWS &amp; EVENTS
+                    <i class="fal fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- =========================
      CTA SECTION
 ========================== -->
 
@@ -735,7 +993,7 @@
                         for Your Business?
                     </h2>
                     <p>
-                        Speak with our specialists for tailored products
+                        Speak with FAV Group specialists for tailored products
                         and technical guidance for your industry.
                     </p>
                 </div>
@@ -757,7 +1015,8 @@
         </div>
 
     </section>
-    <!-- =========================
+
+<!-- =========================
          FOOTER
     ========================== -->
     <?php include './layout/footer.php'; ?>
@@ -766,35 +1025,37 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/slick-slider/slick/slick.min.js"></script>
 <script>
-    $('.testimonial-slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        dots: true,
-        prevArrow: false,
-        nextArrow: false,
-        responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2
+    if ($('.testimonial-slider').length) {
+        $('.testimonial-slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            prevArrow: false,
+            nextArrow: false,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+            ]
+        });
+    }
 
     $('.feature-product-slider').slick({
         infinite: true,

@@ -49,9 +49,16 @@
     font-weight: 700;
 }
 
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     font-family: 'Barlow';
     overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
     color: #333;
     line-height: 1.7;
     font-weight: 400;
@@ -1447,6 +1454,8 @@ a {
     padding: 100px 0;
     color: #fff;
     position: relative;
+    overflow: hidden;
+    max-width: 100%;
     height: calc(100vh - 95px);
     overflow: hidden;
     display: flex;
@@ -1690,10 +1699,15 @@ span.hero-label {
 
 .business-divisions {
     background:
-        radial-gradient(ellipse at top, rgba(248, 114, 18, 0.06), transparent 55%),
-        linear-gradient(180deg, #f4f6f9 0%, #ffffff 48%, #f4f6f9 100%);
+        linear-gradient(rgba(244, 246, 249, 0.92), rgba(255, 255, 255, 0.94)),
+        url(../images/divisions/industrial-systems.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 70px;
     padding-bottom: 80px;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .business-divisions .divisions-grid {
@@ -1715,7 +1729,7 @@ span.hero-label {
 }
 
 .business-divisions .divisions-intro {
-    max-width: 520px;
+    /* max-width: 640px; */
     margin: 18px auto 0;
     color: var(--text);
     font-size: 16px;
@@ -2027,12 +2041,17 @@ span.hero-label {
 ===================================== */
 
 .fav-video-section {
-    background: #f5f7fa;
+    background:
+        linear-gradient(rgba(245, 247, 250, 0.92), rgba(245, 247, 250, 0.94)),
+        url(../images/divisions/printing-solutions.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .fav-video-intro {
-    max-width: 560px;
+    /* max-width: 560px; */
     margin: 16px auto 0;
     color: var(--text);
     font-size: 16px;
@@ -2507,12 +2526,24 @@ section.why-us.second-why-us-section {
 .testimonial-section .section-heading h2,
 .business-divisions .section-heading h2,
 .featured-section .section-heading h2,
-.industries-serve-section .section-heading h2 {
+.industries-serve-section .section-heading h2,
+.home-certs-section .section-heading h2,
+.home-process-section .section-heading h2,
+.home-presence-section .section-heading h2,
+.home-news-section .section-heading h2 {
     font-size: 30px;
+}
+
+.partners-section,
+.partners-section .container,
+.partners-section .row {
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .trust-logo-slider {
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -2900,6 +2931,16 @@ section.cta-section.detail-cta-section {
     width: 100%;
 }
 
+.feature-product-slider {
+    position: relative;
+    max-width: 100%;
+    padding: 0 48px;
+}
+
+.feature-product-slider .slick-list {
+    overflow: hidden;
+}
+
 .feature-product-slider .slick-arrow {
     width: 40px;
     height: 40px;
@@ -2916,7 +2957,7 @@ section.cta-section.detail-cta-section {
 }
 
 .feature-product-slider .slick-arrow.slick-prev {
-    left: -45px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -2924,11 +2965,13 @@ section.cta-section.detail-cta-section {
 .feature-product-slider .slick-arrow.slick-next {
     top: 50%;
     transform: translateY(-50%);
-    right: -45px;
+    right: 0;
 }
 
 section.featured-section {
     padding-bottom: 60px;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 /* =====================================
@@ -2936,23 +2979,33 @@ section.featured-section {
 ===================================== */
 
 .industries-serve-intro {
-    max-width: 640px;
+    /* max-width: 640px; */
     margin: 14px auto 0;
     color: #5a6472;
     font-size: 15px;
     line-height: 1.7;
 }
 
+.industries-serve-section,
+.industries-serve-section .container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .industries-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(8, minmax(0, 1fr));
     padding: 15px;
     border: 1px solid #ececec;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .industry-box {
+    min-width: 0;
     padding: 10px;
     text-align: center;
     border-right: 1px solid #ececec;
@@ -3465,7 +3518,7 @@ section.newsletter-section {
     }
 
     .industries-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .industry-box {
@@ -3840,6 +3893,10 @@ section.newsletter-section {
         font-size: 14px;
     }
 
+    .feature-product-slider {
+        padding: 0 36px;
+    }
+
     .feature-product-slider .slick-arrow.slick-prev {
         left: 0;
     }
@@ -3849,7 +3906,7 @@ section.newsletter-section {
     }
 
     .industries-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .industry-box:nth-child(5),
@@ -7753,5 +7810,483 @@ section.terms-banner-section {
     }
     .machinery-catalogs {
         grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================
+   HOME — PROFESSIONAL SECTIONS
+===================================== */
+
+.home-section-intro {
+    max-width: 640px;
+    margin: 14px auto 0;
+    color: #5a6472;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Certificates */
+.home-certs-section {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.94)),
+        url(../images/divisions/energy-solutions.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-cert-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    height: 100%;
+    padding: 28px 18px;
+    background: #f8fafc;
+    border: 1px solid rgba(2, 26, 58, 0.08);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-cert-card:hover {
+    border-color: rgba(248, 114, 18, 0.45);
+    box-shadow: 0 14px 30px rgba(2, 26, 58, 0.08);
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.home-cert-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    background: rgba(248, 114, 18, 0.12);
+    color: var(--secondary);
+    font-size: 22px;
+}
+
+.home-cert-card h5 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.home-cert-card span {
+    color: #7a8491;
+    font-size: 13px;
+}
+
+/* Home industries */
+.home-industries-section {
+    background:
+        linear-gradient(rgba(245, 247, 250, 0.93), rgba(245, 247, 250, 0.95)),
+        url(../images/divisions/textile-dyes-and-chemicals.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+
+.home-industries-section .industry-box {
+    padding: 12px;
+}
+
+.home-industries-section .industry-round-shade {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0 0 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-industries-section .industry-round-shade img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.home-industries-section .industry-box:hover .industry-round-shade {
+    transform: none;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+}
+
+.home-industries-section .industry-box h4 {
+    font-size: 15px;
+}
+
+@media (max-width: 1199.98px) {
+    .home-industries-section .industries-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* How we work */
+.home-process-section {
+    background:
+        linear-gradient(rgba(2, 26, 58, 0.88), rgba(2, 26, 58, 0.9)),
+        url(../images/divisions/infrastructure-solutions.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.home-process-section .section-heading h2,
+.home-process-section .home-section-intro {
+    color: #fff;
+}
+
+.home-process-section .seprator {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.home-process-section .home-process-card {
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.home-process-steps > [class*="col-"] {
+    display: flex;
+}
+
+.home-process-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 22px;
+    background: #f8fafc;
+    border: 1px solid rgba(2, 26, 58, 0.08);
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-process-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 30px rgba(2, 26, 58, 0.08);
+}
+
+.home-process-num {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    border-radius: 50%;
+    background: var(--secondary);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    box-shadow: 0 6px 16px rgba(248, 114, 18, 0.35);
+}
+
+.home-process-media {
+    flex-shrink: 0;
+    width: 100%;
+    height: 170px;
+    margin: 0 0 16px;
+    border-radius: 0;
+    overflow: hidden;
+    background: #e9eef3;
+}
+
+.home-process-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.home-process-card:hover .home-process-media img {
+    transform: scale(1.04);
+    transition: transform 0.35s ease;
+}
+
+.home-process-card h5 {
+    margin: 0 16px 8px;
+    color: var(--primary);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-process-card p {
+    margin: 0 16px;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+@media (min-width: 992px) {
+    .home-process-num {
+        top: 14px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .home-process-media {
+        height: 190px;
+        margin-bottom: 18px;
+    }
+
+    .home-process-card h5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        margin-bottom: 10px;
+    }
+
+    .home-process-card p {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-process-media {
+        height: 140px;
+    }
+
+    .home-process-num {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Presence */
+.home-presence-section {
+    background:
+        linear-gradient(rgba(245, 247, 250, 0.93), rgba(255, 255, 255, 0.95)),
+        url(../images/divisions/security-solutions.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-presence-section .row > [class*="col-"] {
+    display: flex;
+}
+
+.home-presence-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 28px 24px;
+    background: #fff;
+    border: 1px solid rgba(2, 26, 58, 0.08);
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 10px 28px rgba(2, 26, 58, 0.05);
+}
+
+.home-presence-tag {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 12px;
+    padding: 5px 10px;
+    background: rgba(248, 114, 18, 0.12);
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.home-presence-card h5 {
+    margin: 0 0 10px;
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.home-presence-card > p {
+    margin: 0 0 16px;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* @media (min-width: 992px) {
+    .home-presence-card > p {
+        min-height: 66px;
+    }
+} */
+
+.home-presence-map-title {
+    margin: 8px 0 0;
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.home-presence-map .cu-map-frame {
+    border-radius: 12px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.home-presence-map .cu-map-frame iframe {
+    max-width: 100%;
+}
+
+.home-certs-section,
+.home-presence-section,
+.home-news-section,
+.fav-video-section,
+.counter-section,
+.cta-section {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 575.98px) {
+    .home-presence-map-title {
+        font-size: 22px;
+    }
+}
+
+.home-presence-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.home-presence-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.home-presence-card li:last-child {
+    margin-bottom: 0;
+}
+
+.home-presence-card li i {
+    margin-top: 3px;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.home-presence-card a {
+    color: #555;
+}
+
+.home-presence-card a:hover {
+    color: var(--secondary);
+}
+
+/* News teaser */
+.home-news-section {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.95)),
+        url(../images/divisions/office-solutions.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-news-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid rgba(2, 26, 58, 0.08);
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 28px rgba(2, 26, 58, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.home-news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(2, 26, 58, 0.1);
+    text-decoration: none;
+}
+
+.home-news-media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #e9eef3;
+}
+
+.home-news-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.home-news-card:hover .home-news-media img {
+    transform: scale(1.05);
+}
+
+.home-news-body {
+    padding: 18px 18px 22px;
+}
+
+.home-news-body .ne-eyebrow {
+    margin-bottom: 8px;
+}
+
+.home-news-body h5 {
+    margin: 0 0 8px;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.home-news-body p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+@media (max-width: 575.98px) {
+    .home-process-card,
+    .home-presence-card,
+    .home-cert-card {
+        padding: 22px 16px;
+    }
+
+    .home-certs-section .section-heading h2,
+    .home-process-section .section-heading h2,
+    .home-presence-section .section-heading h2,
+    .home-news-section .section-heading h2 {
+        font-size: 26px;
     }
 }

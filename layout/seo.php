@@ -7,9 +7,10 @@ if (!isset($fav_seo_pages)) {
     $fav_seo_pages = [
         'index.php' => [
             'slug' => '',
-            'title' => 'Industrial & Business Solutions Worldwide | Vawda',
-            'description' => 'Vawda delivers textile chemicals, industrial automation, energy, security, office and warehousing solutions to businesses worldwide — with technical expertise and reliable supply.',
-            'keywords' => 'Vawda, industrial solutions, textile chemicals, automation, energy solutions, global business partner',
+            'title' => 'FAV Group | Farid Ahmed Vawda — Industrial & Business Solutions Pakistan',
+            'description' => 'FAV Group (Farid Ahmed Vawda / Vawda) — industrial & business solutions since 1984. Textile dyes & chemicals, automation, energy, security, office, warehousing and manufacturing from Karachi, Lahore and Faisalabad.',
+            'keywords' => 'FAV Group, Farid Ahmed Vawda, Vawda, industrial solutions Pakistan, textile chemicals, industrial automation, energy solutions, security solutions, masterbatch, ISO 9001 Karachi',
+            'image' => '/assets/images/divisions/industrial-systems.jpg',
             'type' => 'website',
             'section' => 'Home',
             'breadcrumb' => 'Home',
@@ -276,7 +277,9 @@ $fav_seo_fallback = [
 $fav_seo = $fav_seo_pages[$fav_seo_current] ?? $fav_seo_fallback;
 $fav_seo_canonical = fav_seo_page_url($fav_seo_origin, $fav_seo['slug']);
 $fav_seo_logo = $fav_seo_origin . '/assets/images/logo/header/logo.png';
-$fav_seo_image = $fav_seo_logo;
+$fav_seo_image = !empty($fav_seo['image'])
+    ? $fav_seo_origin . $fav_seo['image']
+    : $fav_seo_logo;
 $fav_seo_title = $fav_seo['title'];
 $fav_seo_desc = $fav_seo['description'];
 $fav_seo_robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
@@ -300,15 +303,23 @@ $graph = [
     [
         '@type' => 'Organization',
         '@id' => $fav_seo_origin . '/#organization',
-        'name' => 'Vawda',
-        'alternateName' => ['FAV', 'FAV Group', 'Vawda Industrial & Business Solutions'],
+        'name' => 'FAV Group',
+        'legalName' => 'Vawda',
+        'alternateName' => ['FAV', 'FAV Group', 'Vawda', 'Farid Ahmed Vawda', 'Vawda Industrial & Business Solutions'],
         'url' => $fav_seo_origin . '/',
         'logo' => [
             '@type' => 'ImageObject',
             'url' => $fav_seo_logo,
         ],
+        'image' => $fav_seo_image,
         'email' => 'info@vawda.com',
         'telephone' => '+92-21-32550093',
+        'foundingDate' => '1984',
+        'founder' => [
+            '@type' => 'Person',
+            'name' => 'Farid Ahmed Vawda',
+            'jobTitle' => 'Chief Executive Officer',
+        ],
         'address' => [
             '@type' => 'PostalAddress',
             'streetAddress' => 'B-66/A, S.I.T.E., Area',
@@ -316,7 +327,18 @@ $graph = [
             'postalCode' => '75700',
             'addressCountry' => 'PK',
         ],
-        'areaServed' => 'PK',
+        'areaServed' => [
+            ['@type' => 'Country', 'name' => 'Pakistan'],
+        ],
+        'knowsAbout' => [
+            'Textile dyes and chemicals',
+            'Industrial automation',
+            'Energy solutions',
+            'Security solutions',
+            'Masterbatch',
+            'Warehousing solutions',
+            'Office solutions',
+        ],
         'foundingLocation' => [
             '@type' => 'Place',
             'name' => 'Karachi, Pakistan',
@@ -326,7 +348,8 @@ $graph = [
         '@type' => 'WebSite',
         '@id' => $fav_seo_origin . '/#website',
         'url' => $fav_seo_origin . '/',
-        'name' => 'Vawda',
+        'name' => 'FAV Group | Vawda',
+        'alternateName' => 'Farid Ahmed Vawda Industrial Solutions',
         'publisher' => ['@id' => $fav_seo_origin . '/#organization'],
         'inLanguage' => 'en',
     ],
@@ -339,7 +362,10 @@ $graph = [
         'isPartOf' => ['@id' => $fav_seo_origin . '/#website'],
         'about' => ['@id' => $fav_seo_origin . '/#organization'],
         'inLanguage' => 'en',
-        'primaryImageOfPage' => $fav_seo_image,
+        'primaryImageOfPage' => [
+            '@type' => 'ImageObject',
+            'url' => $fav_seo_image,
+        ],
     ],
     [
         '@type' => 'BreadcrumbList',
@@ -374,8 +400,8 @@ $json_ld = [
     <title><?= $e($fav_seo_title) ?></title>
     <meta name="description" content="<?= $e($fav_seo_desc) ?>">
     <meta name="keywords" content="<?= $e($fav_seo['keywords']) ?>">
-    <meta name="author" content="Vawda">
-    <meta name="publisher" content="Vawda">
+    <meta name="author" content="FAV Group | Farid Ahmed Vawda">
+    <meta name="publisher" content="FAV Group | Vawda">
     <meta name="robots" content="<?= $e($fav_seo_robots) ?>">
     <meta name="googlebot" content="<?= $e($fav_seo_robots) ?>">
     <meta name="theme-color" content="#0b1f3a">
@@ -396,12 +422,12 @@ $json_ld = [
     <link rel="dns-prefetch" href="https://pro.fontawesome.com">
     <meta property="og:locale" content="en_PK">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Vawda">
+    <meta property="og:site_name" content="FAV Group | Vawda">
     <meta property="og:title" content="<?= $e($fav_seo_title) ?>">
     <meta property="og:description" content="<?= $e($fav_seo_desc) ?>">
     <meta property="og:url" content="<?= $e($fav_seo_canonical) ?>">
     <meta property="og:image" content="<?= $e($fav_seo_image) ?>">
-    <meta property="og:image:alt" content="Vawda">
+    <meta property="og:image:alt" content="<?= $e($fav_seo_title) ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= $e($fav_seo_title) ?>">
     <meta name="twitter:description" content="<?= $e($fav_seo_desc) ?>">
