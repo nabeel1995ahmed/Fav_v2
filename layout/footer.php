@@ -41,7 +41,7 @@
                     <li><a href="./industrial-air-compressor.php">Industrial Air Compressor</a></li>
                     <li><a href="./confectionery.php">Confectionery</a></li>
                     <li><a href="./security-solution.php">Security Solutions</a></li>
-                    <li><a href="./printing-machines.php">Printing Machines</a></li>
+                    <li><a href="./industrial-machinery.php">Printing Machines</a></li>
                     <li><a href="./energy-solutions.php">Energy Solutions</a></li>
                     <li><a href="./office-furniture.php">Office Furniture</a></li>
                     <li><a href="./warehousing-solutions.php">Warehousing Solutons</a></li>

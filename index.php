@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=footer7">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=divisions9">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -34,14 +34,14 @@
 
                 <div class="col-lg-7">
                     <h1 class="hero-title">
-                        COMPLETE <span>INDUSTRIAL &
+                        TRUSTED <span>INDUSTRIAL &
                             BUSINESS </span>SOLUTIONS
                     </h1>
 
                     <p class="hero-text">
-                        From industrial chemicals to automation,
-                        energy and security — we deliver everything
-                        your business needs to grow.
+                        Serving industries worldwide with textile chemicals,
+                        automation, energy, security and workplace solutions —
+                        quality partners you can rely on.
                     </p>
 
                     <div class="hero-buttons">
@@ -62,12 +62,12 @@
 
                         <div class="feature-item">
                             <i class="fal fa-award"></i>
-                            Premium Quality <br> Products
+                            International <br> Standards
                         </div>
 
                         <div class="feature-item">
-                            <i class="fal fa-truck-moving"></i>
-                            Reliable Supply <br> Chain
+                            <i class="fal fa-globe"></i>
+                            Global Supply <br> Network
                         </div>
 
                         <div class="feature-item">
@@ -80,8 +80,8 @@
                             On-Time <br> Delivery
                         </div>
                         <div class="feature-item">
-                            <i class="fal fa-user"></i>
-                            Customer First <br> Approach
+                            <i class="fal fa-handshake"></i>
+                            Trusted Industry <br> Partner
                         </div>
 
                     </div>
@@ -99,208 +99,160 @@
          BUSINESS DIVISIONS
     ========================== -->
 
-    <section class="business-divisions py-5" id="business-divisions">
+    <section class="business-divisions py-5">
 
         <div class="container">
 
-            <div class="section-heading text-center mb-5">
+            <div class="section-heading text-center mb-5" id="business-divisions">
                 <h2>OUR BUSINESS DIVISIONS</h2>
                 <div class="seprator"></div>
+                <p class="divisions-intro">
+                    Eight specialised divisions delivering industrial excellence
+                    and business solutions across global markets.
+                </p>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-3 g-md-4 divisions-grid">
 
-                <!-- Card 1 -->
-
-                <div class="col-lg-3 col-md-6 col-6">
-                    <div class="division-card">
-                        <img src="./assets/images/divisions/textile-dyes-and-chemicals.svg" class="img-fluid" alt="">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/textile-dyes-and-chemicals.jpg" class="img-fluid" alt="Textile Chemicals">
+                        </div>
                         <div class="division-content">
-                            <div class="icon orange">
+                            <div class="icon orange" aria-hidden="true">
                                 <i class="fa fa-flask"></i>
                             </div>
-                            <h5>TEXTILE CHEMICALS</h5>
+                            <h5>Textile Chemicals</h5>
                             <ul>
-                                <li><a href="./textile-dyes-and-chemicals.php">Textile Dyes & Chemicals</a></li>
+                                <li><a href="./textile-dyes-and-chemicals.php">Textile Dyes &amp; Chemicals</a></li>
                                 <li><a href="./masterbatch.php">Masterbatch</a></li>
                                 <li><a href="./veechem-industries.php">Veechem Industries Pvt. Ltd.</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
-                <!-- Card 2 -->
-
-                <div class="col-lg-3 col-md-6 col-6">
-
-                    <div class="division-card">
-
-                        <img src="./assets/images/divisions/office-solutions.svg" class="img-fluid" alt="">
-
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/office-solutions.jpg" class="img-fluid" alt="Office Solutions">
+                        </div>
                         <div class="division-content">
-
-                            <div class="icon cyan">
+                            <div class="icon cyan" aria-hidden="true">
                                 <i class="fa fa-phone-office"></i>
                             </div>
-
-                            <h5>OFFICE SOLUTIONS</h5>
-
+                            <h5>Office Solutions</h5>
                             <ul>
-                                <li><a href="./toner-cartridges.php">Toner Cartridges</a></li>
                                 <li><a href="./office-supplies.php">Office Supplies</a></li>
                                 <li><a href="./office-furniture.php">Office Furniture</a></li>
                             </ul>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="col-lg-3 col-md-6 col-6">
-                    <div class="division-card">
-                        <img src="./assets/images/divisions/industrial-systems.svg" class="img-fluid" alt="">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/industrial-systems.jpg" class="img-fluid" alt="Industrial Systems">
+                        </div>
                         <div class="division-content">
-                            <div class="icon blue">
+                            <div class="icon blue" aria-hidden="true">
                                 <i class="fa fa-robot"></i>
                             </div>
-                            <h5>INDUSTRIAL SYSTEMS</h5>
+                            <h5>Industrial Systems</h5>
                             <ul>
                                 <li><a href="./industrial-automation-division.php">Industrial Automation Division</a></li>
                                 <li><a href="./industrial-air-compressor.php">Industrial Air Compressors</a></li>
                             </ul>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
 
-                <!-- Card 4 -->
-
-                <div class="col-lg-3 col-md-6 col-6">
-
-                    <div class="division-card">
-
-                        <img src="./assets/images/divisions/consumer-products.svg" class="img-fluid" alt="">
-
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/consumer-products.jpg" class="img-fluid" alt="Consumer Products">
+                        </div>
                         <div class="division-content">
-
-                            <div class="icon red">
+                            <div class="icon red" aria-hidden="true">
                                 <i class="fa fa-candy-cane"></i>
                             </div>
-
-                            <h5>CONSUMER PRODUCTS</h5>
-
+                            <h5>Consumer Products</h5>
                             <ul>
                                 <li><a href="./confectionery.php">Confectionery</a></li>
                             </ul>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
 
-                <!-- Card 5 -->
-
-                <div class="col-lg-3 col-md-6 col-6">
-
-                    <div class="division-card">
-
-                        <img src="./assets/images/divisions/energy-solutions.svg" class="img-fluid" alt="">
-
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/energy-solutions.jpg" class="img-fluid" alt="Energy Solutions">
+                        </div>
                         <div class="division-content">
-
-                            <div class="icon green">
+                            <div class="icon green" aria-hidden="true">
                                 <i class="fa fa-bolt"></i>
                             </div>
-
-                            <h5>ENERGY SOLUTIONS</h5>
-
+                            <h5>Energy Solutions</h5>
                             <ul>
-                                <li><a href="./energy-solutions.php">Energy Solution</a></li>
+                                <li><a href="./energy-solutions.php">Energy Solutions</a></li>
                             </ul>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
 
-                <!-- Card 6 -->
-
-                <div class="col-lg-3 col-md-6 col-6">
-
-                    <div class="division-card">
-
-                        <img src="./assets/images/divisions/security-solutions.svg" class="img-fluid" alt="">
-
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/security-solutions.jpg" class="img-fluid" alt="Security Solutions">
+                        </div>
                         <div class="division-content">
-
-                            <div class="icon purple">
+                            <div class="icon purple" aria-hidden="true">
                                 <i class="fa fa-shield-check"></i>
                             </div>
-
-                            <h5>SECURITY SOLUTIONS</h5>
-
+                            <h5>Security Solutions</h5>
                             <ul>
-                                <li><a href="./security-solution.php">Security Solution</a></li>
+                                <li><a href="./security-solution.php">Security Solutions</a></li>
                             </ul>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
 
-                <!-- Card 7 -->
-
-                <div class="col-lg-3 col-md-6 col-6">
-
-                    <div class="division-card">
-
-                        <img src="./assets/images/divisions/printing-solutions.svg" class="img-fluid" alt="">
-
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/printing-solutions.jpg" class="img-fluid" alt="Printing Solutions">
+                        </div>
                         <div class="division-content">
-
-                            <div class="icon pink">
+                            <div class="icon pink" aria-hidden="true">
                                 <i class="fa fa-print"></i>
                             </div>
-
-                            <h5>PRINTING SOLUTIONS</h5>
-
+                            <h5>Printing Solutions</h5>
                             <ul>
                                 <li><a href="./industrial-machinery.php">Printing Machines</a></li>
                             </ul>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
 
-                <!-- Card 8 -->
-
-                <div class="col-lg-3 col-md-6 col-6">
-
-                    <div class="division-card">
-
-                        <img src="./assets/images/divisions/infrastructure-solutions.svg" class="img-fluid" alt="">
-
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/infrastructure-solutions.jpg" class="img-fluid" alt="Infrastructure Solutions">
+                        </div>
                         <div class="division-content">
-
-                            <div class="icon orange">
+                            <div class="icon orange" aria-hidden="true">
                                 <i class="fa fa-warehouse"></i>
                             </div>
-
-                            <h5>INFRASTRUCTURE SOLUTIONS</h5>
-
+                            <h5>Infrastructure Solutions</h5>
                             <ul>
                                 <li><a href="./warehousing-solutions.php">Warehouse Solutions</a></li>
                             </ul>
                         </div>
-
-                    </div>
-
+                    </article>
                 </div>
-
-
 
             </div>
 
@@ -322,19 +274,16 @@
                             WHY CHOOSE VAWDA
                         </span>
                         <h2 class="section-title">
-                            Your Trusted Partner For Growth
+                            A Trusted Partner Across Industries
                         </h2>
                         <p class="text-muted mt-3">
-                            We are committed to delivering superior quality products and services with integrity,
-                            innovation and a customer-first approach.
+                            Since 1984, we have delivered quality products and technical support
+                            to manufacturers and businesses worldwide — with integrity, innovation
+                            and a commitment to long-term partnerships.
                         </p>
                         <div class="hero-buttons">
                             <a href="./about-us.php" class="btn btn-outline-light">
                                 ABOUT US <i class="fal fa-arrow-right"></i>
-                            </a>
-                            <a href="./assets/images/home-page/Group%20Profile.pdf" class="btn btn-warning text-white" target="_blank" rel="noopener noreferrer">
-                                GROUP PROFILE
-                                <i class="fal fa-file-pdf"></i>
                             </a>
                         </div>
                     </div>
@@ -346,7 +295,7 @@
                                 <i class="fa fa-award"></i>
                                 <h5>Premium <br> Quality</h5>
                                 <p>
-                                    International standards you can trust
+                                    Products aligned with global quality standards
                                 </p>
                             </div>
                         </div>
@@ -355,7 +304,7 @@
                                 <i class="fa fa-network-wired"></i>
                                 <h5>Reliable <br> Supply Chain</h5>
                                 <p>
-                                    Timely delivery every time
+                                    Consistent, on-time delivery worldwide
                                 </p>
                             </div>
                         </div>
@@ -364,19 +313,54 @@
                                 <i class="fa fa-screwdriver"></i>
                                 <h5>Expert <br> Support</h5>
                                 <p>
-                                    Technical expertise at every step
+                                    Technical guidance at every stage
                                 </p>
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-lg-3 feature-card-box">
                             <div class="feature-card">
                                 <i class="fa fa-users"></i>
-                                <h5>100% <br> Satisfaction</h5>
+                                <h5>Client-Focused <br> Service</h5>
                                 <p>
-                                    Customer satisfaction is our prionty
+                                    Long-term partnerships built on trust
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         FAV GROUP VIDEO
+    ========================== -->
+
+    <section class="fav-video-section py-5" id="fav-group-video">
+        <div class="container">
+            <div class="section-heading text-center mb-4">
+                <h2>FAV GROUP VIDEO</h2>
+                <div class="seprator"></div>
+                <p class="fav-video-intro">
+                    Discover how FAV Group delivers industrial and business solutions worldwide.
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-8">
+                    <div class="fav-video-frame">
+                        <video
+                            id="fav-group-video-player"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                            controls
+                            preload="auto"
+                            poster="./assets/images/home-page/why-we-choose-us-background.jpeg"
+                            aria-label="FAV Group company video">
+                            <source src="./assets/images/home-page/F%20A%20V%20VIDEO.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -426,7 +410,7 @@
                             <i class="fal fa-stopwatch"></i>
                             <div class="counter-text">
                                 <h3 class="counter" data-count="20">0+</h3>
-                                <p>Years Experience</p>
+                                <p>Years of Experience</p>
                             </div>
                         </div>
                     </div>
@@ -443,7 +427,7 @@
 
         <div class="container">
             <div class="section-heading text-center mb-4">
-                <h2>OUR TRUSTED PARTNERS</h2>
+                <h2>OUR GLOBAL PARTNERS</h2>
                 <div class="seprator"></div>
             </div>
             <div class="row align-items-center justify-content-center g-4">
@@ -529,16 +513,6 @@
                             </a>
                         </div>
                         <div class="feature-product-box">
-                            <a href="./toner-cartridges.php">
-                                <div class="feature-img">
-                                    <img src="./assets/images/products-and-solutions/toner-cartridges/toner-cartridges.svg" alt="">
-                                </div>
-                                <div class="feature-title">
-                                    <h4>Toner Cartridges</h4>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="feature-product-box">
                             <a href="./office-supplies.php">
                                 <div class="feature-img">
                                     <img src="./assets/images/products-and-solutions/office-supplies/office-supplies.svg" alt="">
@@ -589,9 +563,9 @@
                             </a>
                         </div>
                         <div class="feature-product-box">
-                            <a href="./printing-machines.php">
+                            <a href="./industrial-machinery.php">
                                 <div class="feature-img">
-                                    <img src="./assets/images/products-and-solutions/printing-machines/printing-machines.svg" alt="">
+                                    <img src="./assets/images/products-and-solutions/industrial-machinery/main-banner.svg" alt="">
                                 </div>
                                 <div class="feature-title">
                                     <h4>Printing Machines</h4>
@@ -624,7 +598,7 @@
                                     <img src="./assets/images/products-and-solutions/warehousing-solutions/warehousing-solutions.svg" alt="">
                                 </div>
                                 <div class="feature-title">
-                                    <h4>Warehousing Solutons</h4>
+                                    <h4>Warehousing Solutions</h4>
                                 </div>
                             </a>
                         </div>
@@ -651,9 +625,9 @@
                 <div class="testimonial-card">
                     <i class="fa fa-quote-left quote-icon"></i>
                     <p>
-                        Vawda has been an exceptional partner for our
-                        business. Their product quality and support
-                        have exceeded expectations.
+                        Vawda has been a dependable partner for our
+                        operations. Product quality and technical
+                        support consistently meet international expectations.
                     </p>
                     <div class="client-info">
                         <img src="./assets/images/clients/client1.svg" alt="" class="client-img">
@@ -667,9 +641,9 @@
                 <div class="testimonial-card">
                     <i class="fa fa-quote-left quote-icon"></i>
                     <p>
-                        From automation to energy solutions,
-                        everything under one roof. Professional
-                        team and excellent service.
+                        From industrial automation to energy solutions,
+                        everything under one roof. A professional team
+                        with reliable service delivery.
                     </p>
                     <div class="client-info">
                         <img src="./assets/images/clients/client2.svg" alt="" class="client-img">
@@ -683,9 +657,9 @@
                 <div class="testimonial-card">
                     <i class="fa fa-quote-left quote-icon"></i>
                     <p>
-                        Reliable, efficient and customer-focused.
-                        We are completely satisfied with the
-                        services and support.
+                        Reliable, efficient and client-focused.
+                        We value the consistency of their products
+                        and after-sales support.
                     </p>
                     <div class="client-info">
                         <img src="./assets/images/clients/client3.svg" alt="" class="client-img">
@@ -699,9 +673,9 @@
                 <div class="testimonial-card">
                     <i class="fa fa-quote-left quote-icon"></i>
                     <p>
-                        Vawda has been an exceptional partner for our
-                        business. Their product quality and support
-                        have exceeded expectations.
+                        Vawda has been a dependable partner for our
+                        operations. Product quality and technical
+                        support consistently meet international expectations.
                     </p>
                     <div class="client-info">
                         <img src="./assets/images/clients/client1.svg" alt="" class="client-img">
@@ -715,9 +689,9 @@
                 <div class="testimonial-card">
                     <i class="fa fa-quote-left quote-icon"></i>
                     <p>
-                        From automation to energy solutions,
-                        everything under one roof. Professional
-                        team and excellent service.
+                        From industrial automation to energy solutions,
+                        everything under one roof. A professional team
+                        with reliable service delivery.
                     </p>
                     <div class="client-info">
                         <img src="./assets/images/clients/client2.svg" alt="" class="client-img">
@@ -731,9 +705,9 @@
                 <div class="testimonial-card">
                     <i class="fa fa-quote-left quote-icon"></i>
                     <p>
-                        Reliable, efficient and customer-focused.
-                        We are completely satisfied with the
-                        services and support.
+                        Reliable, efficient and client-focused.
+                        We value the consistency of their products
+                        and after-sales support.
                     </p>
                     <div class="client-info">
                         <img src="./assets/images/clients/client3.svg" alt="" class="client-img">
@@ -757,12 +731,12 @@
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <h2>
-                        Ready to Find the Right Solution
+                        Looking for the Right Solution
                         for Your Business?
                     </h2>
                     <p>
-                        Get expert advice and the best products
-                        for your industry.
+                        Speak with our specialists for tailored products
+                        and technical guidance for your industry.
                     </p>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
@@ -930,6 +904,54 @@
     $(window).on('scroll', function () {
         startCounters();
     });
+
+    function scrollToAnchor(targetId) {
+        var target = document.getElementById(targetId);
+        if (!target) return false;
+        var header = document.querySelector('.main-header');
+        var headerOffset = header ? header.offsetHeight : 95;
+        var top = target.getBoundingClientRect().top + window.pageYOffset - headerOffset - 12;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+        return true;
+    }
+
+    $(document).on('click', 'a[href="#business-divisions"]', function (e) {
+        e.preventDefault();
+        if (scrollToAnchor('business-divisions')) {
+            history.pushState(null, '', '#business-divisions');
+        }
+    });
+
+    if (window.location.hash === '#business-divisions') {
+        setTimeout(function () {
+            scrollToAnchor('business-divisions');
+        }, 50);
+    }
+
+    var favVideo = document.getElementById('fav-group-video-player');
+    if (favVideo) {
+        favVideo.muted = true;
+        var tryPlay = function () {
+            var playPromise = favVideo.play();
+            if (playPromise && typeof playPromise.catch === 'function') {
+                playPromise.catch(function () {});
+            }
+        };
+        tryPlay();
+        favVideo.addEventListener('loadeddata', tryPlay);
+        if ('IntersectionObserver' in window) {
+            var videoObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        tryPlay();
+                    } else {
+                        favVideo.pause();
+                    }
+                });
+            }, { threshold: 0.35 });
+            videoObserver.observe(favVideo);
+        }
+    }
 
 });
 </script>

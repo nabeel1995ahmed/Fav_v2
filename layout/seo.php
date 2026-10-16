@@ -7,9 +7,9 @@ if (!isset($fav_seo_pages)) {
     $fav_seo_pages = [
         'index.php' => [
             'slug' => '',
-            'title' => 'Industrial & Business Solutions in Pakistan | Vawda',
-            'description' => 'Vawda supplies industrial chemicals, automation, energy, security, office and warehousing solutions from Karachi with technical expertise and reliable delivery.',
-            'keywords' => 'Vawda, industrial solutions Pakistan, textile chemicals, automation, energy solutions, office supplies Karachi',
+            'title' => 'Industrial & Business Solutions Worldwide | Vawda',
+            'description' => 'Vawda delivers textile chemicals, industrial automation, energy, security, office and warehousing solutions to businesses worldwide — with technical expertise and reliable supply.',
+            'keywords' => 'Vawda, industrial solutions, textile chemicals, automation, energy solutions, global business partner',
             'type' => 'website',
             'section' => 'Home',
             'breadcrumb' => 'Home',
@@ -122,14 +122,14 @@ if (!isset($fav_seo_pages)) {
             'section' => 'Products',
             'breadcrumb' => 'Security Solutions',
         ],
-        'printing-machines.php' => [
-            'slug' => 'printing-machines',
-            'title' => 'Printing Machines | Vawda',
-            'description' => 'Professional printing equipment for industrial and commercial output, including DTF, UV, DTG and sublimation machines from Vawda.',
-            'keywords' => 'printing machines, DTF printer, UV printer, DTG, sublimation',
+        'industrial-machinery.php' => [
+            'slug' => 'industrial-machinery',
+            'title' => 'Industrial Machinery | Vawda',
+            'description' => 'Professional industrial machinery for printing, weaving and sizing — including DTF, UV, DTG and sublimation equipment from Vawda.',
+            'keywords' => 'industrial machinery, printing machines, DTF printer, UV printer, weaving, sizing',
             'type' => 'product',
             'section' => 'Products',
-            'breadcrumb' => 'Printing Machines',
+            'breadcrumb' => 'Industrial Machinery',
         ],
         'energy-solutions.php' => [
             'slug' => 'energy-solutions',
