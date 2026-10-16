@@ -267,7 +267,7 @@
                             <h5>PRINTING SOLUTIONS</h5>
 
                             <ul>
-                                <li><a href="./printing-machines.php">Printing Machines</a></li>
+                                <li><a href="./industrial-machinery.php">Printing Machines</a></li>
                             </ul>
                         </div>
 

@@ -1485,8 +1485,8 @@ a {
 .security-solution-hero{
     background-image: url(../images/products-and-solutions/security-solutions/main-banner.svg);
 }
-.printing-machines-hero {
-    background-image: url(../images/products-and-solutions/printing-machines/main-banner.svg);
+.industrial-machinery-hero {
+    background-image: url(../images/products-and-solutions/industrial-machinery/main-banner.svg);
 }
 .energy-solutions-hero {
     background-image: url(../images/products-and-solutions/energy-solutions/main-banner.svg);
@@ -3066,8 +3066,8 @@ section.newsletter-section {
     .security-solution-hero{
     background-image: url(../images/products-and-solutions/security-solutions/main_banner_tablet.svg);
     }
-    .printing-machines-hero {
-        background-image: url(../images/products-and-solutions/printing-machines/main_banner_tablet.svg);
+    .industrial-machinery-hero {
+        background-image: url(../images/products-and-solutions/industrial-machinery/main_banner_tablet.svg);
     }
     .energy-solutions-hero {
         background-image: url(../images/products-and-solutions/energy-solutions/main_banner_tablet.svg);
@@ -3438,8 +3438,8 @@ section.newsletter-section {
     section.security-solution-hero{
     background-image: url(../images/products-and-solutions/security-solutions/main_banner_tablet.svg);
     }
-    section.printing-machines-hero {
-        background-image: url(../images/products-and-solutions/printing-machines/main_banner_mobile.svg);
+    section.industrial-machinery-hero {
+        background-image: url(../images/products-and-solutions/industrial-machinery/main_banner_mobile.svg);
     }
     section.energy-solutions-hero {
         background-image: url(../images/products-and-solutions/energy-solutions/main_banner_mobile.svg);
@@ -7288,3 +7288,179 @@ section.terms-banner-section {
     }
 }
 
+/* =====================================================
+   INDUSTRIAL MACHINERY
+   Section > Category > Sub products > Catalogs
+===================================================== */
+
+.industrial-machinery {
+    --machinery-accent: #f47b20;   /* change this one value to recolor the whole section */
+    background: #fff;
+}
+
+/* ===== Category ===== */
+.machinery-category {
+    margin-bottom: 4rem;
+}
+.machinery-category:last-child {
+    margin-bottom: 0;
+}
+
+.machinery-category__title {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: .6rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.machinery-category__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 70px;
+    height: 2px;
+    background: var(--machinery-accent);
+}
+
+/* ===== Sub products (image + sub heading) ===== */
+.machinery-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* laptop / desktop: 3 per row */
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.machinery-product {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.machinery-product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+}
+
+.machinery-product__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+    padding: 1rem;
+}
+.machinery-product__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.machinery-product__title {
+    margin: 0;
+    padding: .85rem 1rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    border-top: 1px solid #eee;
+    transition: color .25s ease, border-color .25s ease;
+}
+.machinery-product:hover .machinery-product__title {
+    color: var(--machinery-accent);
+    border-top-color: var(--machinery-accent);
+}
+
+/* ===== PDF catalogs ===== */
+.machinery-catalogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.machinery-catalog {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+.machinery-catalog:hover {
+    border-color: var(--machinery-accent);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    transform: translateY(-2px);
+}
+
+.machinery-catalog__icon {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+    color: #dc3545;
+    background: rgba(220, 53, 69, .08);
+    border-radius: 10px;
+}
+
+.machinery-catalog__info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+.machinery-catalog__title {
+    font-weight: 600;
+    line-height: 1.3;
+}
+.machinery-catalog__type {
+    font-size: .85rem;
+    color: #777;
+}
+
+.machinery-catalog__action {
+    flex: 0 0 auto;
+    color: #999;
+    transition: color .25s ease;
+}
+.machinery-catalog:hover .machinery-catalog__action {
+    color: var(--machinery-accent);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+/* Tablet: 2 per row */
+@media (max-width: 991.98px) {
+    .machinery-products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 575.98px) {
+    .machinery-category {
+        margin-bottom: 3rem;
+    }
+    .machinery-category__title {
+        font-size: 1.3rem;
+    }
+    .machinery-products {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .machinery-catalogs {
+        grid-template-columns: 1fr;
+    }
+}

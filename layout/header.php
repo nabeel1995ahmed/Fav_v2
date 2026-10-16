@@ -15,7 +15,7 @@ $page_nav_map = [
     'industrial-air-compressor.php' => 'products',
     'confectionery.php' => 'products',
     'security-solution.php' => 'products',
-    'machines.php' => 'products',
+    'industrial-machinery.php' => 'products',
     'energy-solutions.php' => 'products',
     'office-furniture.php' => 'products',
     'warehousing-solutions.php' => 'products',
@@ -82,7 +82,7 @@ function dropdown_active($href, $current_page) {
                             <li><a href="./industrial-air-compressor.php" class="dropdown-item<?= dropdown_active('./industrial-air-compressor.php', $current_page) ?>">Industrial Air Compressor</a></li>
                             <li><a href="./confectionery.php" class="dropdown-item<?= dropdown_active('./confectionery.php', $current_page) ?>">Confectionery</a></li>
                             <li><a href="./security-solution.php" class="dropdown-item<?= dropdown_active('./security-solution.php', $current_page) ?>">Security Solutions</a></li>
-                            <li><a href="./machines.php" class="dropdown-item<?= dropdown_active('./machines.php', $current_page) ?>">Machines</a></li>
+                            <li><a href="./industrial-machinery.php" class="dropdown-item<?= dropdown_active('./industrial-machinery.php', $current_page) ?>">Industrial Machinery</a></li>
                             <li><a href="./energy-solutions.php" class="dropdown-item<?= dropdown_active('./energy-solutions.php', $current_page) ?>">Energy Solutions</a></li>
                             <li><a href="./office-furniture.php" class="dropdown-item<?= dropdown_active('./office-furniture.php', $current_page) ?>">Office Furniture</a></li>
                             <li><a href="./warehousing-solutions.php" class="dropdown-item<?= dropdown_active('./warehousing-solutions.php', $current_page) ?>">Warehousing Solutions</a></li>

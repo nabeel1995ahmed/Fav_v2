@@ -87,8 +87,8 @@
                             <i class="fa fa-paper-plane"></i>
                         </a>
 
-                        <a href="./assets/images/products-and-solutions/industrial-air-compressor/favianair-brochure.pdf" class="btn btn-outline-light" target="_blank" rel="noopener">
-                            DOWNLOAD BROCHURE
+                        <a href="#product-categories" class="btn btn-outline-light">
+                            EXPLORE PRODUCTS
                             <i class="fal fa-arrow-right"></i>
                         </a>
 

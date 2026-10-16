@@ -87,8 +87,8 @@
                             <i class="fa fa-paper-plane"></i>
                         </a>
 
-                        <a href="#" class="btn btn-outline-light">
-                            DOWNLOAD BROCHURE
+                        <a href="#product-categories" class="btn btn-outline-light">
+                            EXPLORE PRODUCTS
                             <i class="fal fa-arrow-right"></i>
                         </a>
 
@@ -199,7 +199,7 @@
          BUSINESS DIVISIONS
     ========================== -->
 
-    <section class="business-divisions py-5">
+    <section class="business-divisions py-5" id="product-categories">
         <div class="container">
             <div class="section-heading text-center mb-5">
                 <h2>OUR PRODUCT CATEGORIES</h2>
