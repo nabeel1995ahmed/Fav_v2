@@ -1450,7 +1450,7 @@ a {
 
 .hero-section {
     background-size: cover;
-    background-position: top;
+    background-position: center;
     padding: 100px 0;
     color: #fff;
     position: relative;
