@@ -103,7 +103,7 @@
             <div class="row gy-2 align-items-center">
                 <div class="col-12 col-md-6">
                     <div class="footer-bottom">
-                        © 2024 Vawda. All Rights Reserved.
+                        © 2026 Vawda. All Rights Reserved.
                     </div>
                 </div>
                 <div class="col-12 col-md-6">

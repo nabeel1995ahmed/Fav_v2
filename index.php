@@ -474,7 +474,7 @@
                         <div class="counter-box">
                             <i class="fal fa-building"></i>
                             <div class="counter-text">
-                                <h3 class="counter" data-count="8">0+</h3>
+                                <h3 class="counter" data-count="8">1+</h3>
                                 <p>Business Divisions</p>
                             </div>
                         </div>
@@ -484,7 +484,7 @@
                         <div class="counter-box">
                             <i class="fal fa-box-open"></i>
                             <div class="counter-text">
-                                <h3 class="counter" data-count="500">0+</h3>
+                                <h3 class="counter" data-count="500">1+</h3>
                                 <p>Products</p>
                             </div>
                         </div>
@@ -494,7 +494,7 @@
                         <div class="counter-box">
                             <i class="fal fa-users"></i>
                             <div class="counter-text">
-                                <h3 class="counter" data-count="1000">0+</h3>
+                                <h3 class="counter" data-count="1000">1+</h3>
                                 <p>Happy Clients</p>
                             </div>
                         </div>
@@ -504,7 +504,7 @@
                         <div class="counter-box">
                             <i class="fal fa-stopwatch"></i>
                             <div class="counter-text">
-                                <h3 class="counter" data-count="40">0+</h3>
+                                <h3 class="counter" data-count="40">1+</h3>
                                 <p>Years of Experience</p>
                             </div>
                         </div>
@@ -627,14 +627,14 @@
 
     <section class="fav-video-section py-5" id="fav-group-video">
         <div class="container">
-            <div class="section-heading text-center mb-4">
+           <!-- <div class="section-heading text-center mb-4">
                 <h2>FAV GROUP VIDEO</h2>
                 <div class="seprator"></div>
                 <p class="fav-video-intro">
                     See how FAV Group — Farid Ahmed Vawda — delivers industrial
                     and business solutions worldwide.
                 </p>
-            </div>
+            </div> -->
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 col-xl-8">
                     <div class="fav-video-frame">
