@@ -212,7 +212,7 @@
                             <img
                                 src="./assets/images/products-and-solutions/masterbatch/additive-masterbatch.svg"
                                 class="img-fluid"
-                                alt="Sizing"
+                                alt="Additive Masterbatch"
                             >
                         </div>
                     </div>
@@ -239,18 +239,21 @@
                             <p class="product-text">
                                 Enhance properties like UV resistance, flame retardancy, and durability.
                             </p>
+                            <a href="./masterbatch-products.php#black-masterbatch" class="btn btn-warning text-white mt-3">
+                                EXPLORE BLACK MASTERBATCH <i class="fal fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/masterbatch/black-masterbatch.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/masterbatch/black-masterbatch.svg" class="img-fluid" alt="Black Masterbatch">
                         </div>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/masterbatch/color-masterbatch.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/masterbatch/color-masterbatch.svg" class="img-fluid" alt="Color Masterbatch">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
@@ -279,7 +282,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/masterbatch/filler-masterbatch.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/masterbatch/filler-masterbatch.svg" class="img-fluid" alt="Filler Masterbatch">
                         </div>
                     </div>
                 </div>
@@ -322,7 +325,7 @@
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/masterbatch/white-masterbatch.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/masterbatch/white-masterbatch.svg" class="img-fluid" alt="White Masterbatch">
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
@@ -334,6 +337,9 @@
                             <p class="product-text">
                                 Custom solutions for unique industrial requirements.
                             </p>
+                            <a href="./masterbatch-products.php#white-masterbatch" class="btn btn-warning text-white mt-3">
+                                EXPLORE WHITE MASTERBATCH <i class="fal fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div> 
@@ -349,11 +355,14 @@
                             <p class="product-text">
                                 High-quality pigments for consistent and vibrant colors in plastics.
                             </p>
+                            <a href="./masterbatch-products.php#liquid-masterbatch" class="btn btn-warning text-white mt-3">
+                                EXPLORE LIQUID MASTERBATCH <i class="fal fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                         <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/masterbatch/liquid-masterbatch.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/masterbatch/liquid-masterbatch.svg" class="img-fluid" alt="Liquid Masterbatch">
                         </div>
                     </div>
                 </div>
