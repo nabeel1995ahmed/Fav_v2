@@ -1,5 +1,16 @@
 <?php
 $dyestuffs_standalone = !empty($dyestuffs_standalone);
+
+// Folder that holds the product shade charts / comparison images
+$dyestuffs_img = './assets/images/products-and-solutions/textile-dyes-and-chemicals/dyestuffs/';
+
+// Renders one captioned image
+$dye_figure = function ($file, $alt, $caption) use ($dyestuffs_img) {
+    echo '<figure class="dyestuff-figure">'
+        . '<img src="' . htmlspecialchars($dyestuffs_img . $file) . '" class="img-fluid" alt="' . htmlspecialchars($alt, ENT_QUOTES) . '" loading="lazy">'
+        . '<figcaption>' . htmlspecialchars($caption, ENT_QUOTES) . '</figcaption>'
+        . '</figure>';
+};
 ?>
 <section class="dyestuffs-range-section<?= $dyestuffs_standalone ? ' dyestuffs-range-standalone' : '' ?> pb-5">
     <div class="container">
@@ -90,6 +101,7 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
 
                             <div class="tab-content" id="reactiveProductContent">
 
+                                <!-- Everzol -->
                                 <div class="tab-pane fade show active" id="everzol-product" role="tabpanel" aria-labelledby="everzol-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -160,9 +172,70 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Recommended Dyes by Shade &amp; Performance</h5>
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Pale-Medium Shades</strong>
+                                                        <p>Everzol Yellow LX, Red LX, Blue LX<br><em>Supplementary:</em> Navy LX, Blue BRF 150%, Yellow CGL, Red C-3B, Blue BB</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Excellent Light-Fastness in Pale Shades</strong>
+                                                        <p>Everzol Yellow LX, Red LF-2B, Red LF-B, Blue LX, Grey LF<br><em>Supplementary:</em> Blue BRF 150%, Brilliant Blue R s/p, Blue ED-G, Dark Blue LF</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Brilliant Yellow, Blue &amp; Green Shades</strong>
+                                                        <p>Everzol Yellow 3GL, Brilliant Yellow 4GL, Turq. Blue G, Blue ED-G<br><em>Supplementary:</em> Brilliant Blue R s/p, Yellow ED-2G, Royal Blue E-FR</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Red, Orange &amp; Scarlet Shades</strong>
+                                                        <p>Everzol Yellow 3RS, Orange FC, Orange 3R, Scarlet FC, Scarlet 3GF, Red BS, Red 3BS<br><em>Supplementary:</em> Golden Yellow RNL, Brilliant Red F2B</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Royal Blue &amp; Violet Shades</strong>
+                                                        <p>Everzol Red 3BS, Red FC, Red 6B, Brilliant Blue R s/p, Blue ED-G, Royal Blue E-FR<br><em>Supplementary:</em> Rubine ED, Blue FC</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Medium-Heavy Shades</strong>
+                                                        <p>Everzol Yellow 3RS, Red 3BS, Navy Blue FBN, Black B<br><em>Supplementary:</em> Golden Yellow RNL, Red BS, Navy Blue RGB</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>High Fastness to Chlorinated Water</strong>
+                                                        <p>Everzol Yellow 3RS, Red 3BS, Navy Blue FBN</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>UK-TO (BS-1006-1998) Multicycle Laundering</strong>
+                                                        <p>Everzol Yellow 3RS, Red 3BS, Navy Blue FBN</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Black Shades</strong>
+                                                        <p>Everzol Black GR, Black GRN, Black N, Black NR, Black GSP, Black MW, Black LNS, Black DGL, Black DRL</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol FC -->
                                 <div class="tab-pane fade" id="everzol-fc-product" role="tabpanel" aria-labelledby="everzol-fc-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -185,9 +258,14 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 <li>Wider gamut than conventional reactive dyes</li>
                                             </ul>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Chart</h5>
+                                            <?php $dye_figure('everzol-fc-shade-chart.jpg', 'Everzol FC shade chart showing Flavine FC, Orange FC, Scarlet FC, Red FC and Blue FC at 0.3% and 3.0%', 'Everzol FC — Flavine, Orange, Scarlet, Red and Blue at 0.3% and 3.0%'); ?>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol ED -->
                                 <div class="tab-pane fade" id="everzol-ed-product" role="tabpanel" aria-labelledby="everzol-ed-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -199,6 +277,7 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                         <p class="dyestuff-product-lead">
                                             Everzol ED is a high color-yield, eco-efficient reactive range with excellent build-up. Mainly designed for cellulose dyeing at 60°C, with selected items suitable for continuous dyeing or cold pad-batch. Supports cost efficiency, energy savings, and lower CO<sub>2</sub> emission.
                                         </p>
+                                        <p class="dyestuff-product-lead"><strong>A novel reactive dyestuff range with superb color yield and eco-efficiency.</strong></p>
                                         <div class="row g-4">
                                             <div class="col-lg-6">
                                                 <div class="dyestuff-info-card">
@@ -210,6 +289,7 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                         <li>Excellent reproducibility</li>
                                                         <li>High fixation with easy wash-off</li>
                                                         <li>Warm dyeing with energy savings</li>
+                                                        <li>Selected dyes suitable for continuous dyeing and C.P.B</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -225,9 +305,14 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Chart</h5>
+                                            <?php $dye_figure('everzol-ed-shade-chart.jpg', 'Everzol ED shade chart with yellow, orange, red, blue, navy and black shades', 'Everzol ED shade chart — items marked with a dot are suitable for cold pad-batch dyeing'); ?>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol Black ED-3R -->
                                 <div class="tab-pane fade" id="everzol-black-ed3r-product" role="tabpanel" aria-labelledby="everzol-black-ed3r-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -266,9 +351,21 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Comparison</h5>
+                                            <div class="row g-4">
+                                                <div class="col-md-6">
+                                                    <?php $dye_figure('black-ed3r-commercial-black-shade.jpg', 'Commercial reactive black dye fabric sample with DE 2.73, greenish shade', 'Commercial reactive black — DE 2.73, greenish'); ?>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <?php $dye_figure('black-ed3r-on-tone-shade.jpg', 'Everzol Black ED-3R fabric sample with DE 0.15, on tone', 'Everzol Black ED-3R — DE 0.15, on tone'); ?>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol Black EDN -->
                                 <div class="tab-pane fade" id="everzol-edn-product" role="tabpanel" aria-labelledby="everzol-edn-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -306,9 +403,25 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Wash-off Comparison <span>(Everzol Black EDN vs Commercial Reactive Dyes)</span></h5>
+                                            <div class="row g-4">
+                                                <div class="col-md-6">
+                                                    <?php $dye_figure('black-edn-wash-off-1.jpg', 'Dye residue in wash-off baths from 30°C to 98°C and back to 30°C', 'Dye residue across wash-off temperatures (30°C → 60°C → 98°C → 80°C → 60°C → 30°C)'); ?>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <?php $dye_figure('black-edn-wash-off-2.jpg', 'Dye residue in wash-off baths from 30°C to 98°C and back to 30°C for the comparison dye', 'Dye residue across wash-off temperatures (30°C → 60°C → 98°C → 80°C → 60°C → 30°C)'); ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Cotton / Nylon / Lycra Cross-Dyeing</h5>
+                                            <?php $dye_figure('black-edn-cross-dyeing.jpg', 'Cross-dyeing comparison of Everzol Black EDN and commercial reactive dyes on cotton, nylon and lycra', 'Everzol Black EDN vs commercial reactive dyes on cotton, nylon and lycra'); ?>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol CS -->
                                 <div class="tab-pane fade" id="everzol-cs-product" role="tabpanel" aria-labelledby="everzol-cs-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -331,9 +444,27 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 <li>Strong compatibility for emerized fabric and cold pad-batch critical colors</li>
                                             </ul>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Dyeing on Emerized Fabric for Critical Color by Cold Pad-Batch</h5>
+                                            <p>
+                                                Emerized fabric without face-back sidedness is achieved thanks to the combination of Everzol CS dyes, which have a synchronal uptake mechanism on the fabric. The results show excellent compatibility of Everzol CS dyes, delivering high reproducibility and practically trouble-free dyeing with no tailing or shade variation during padding and fixation.
+                                            </p>
+                                            <div class="row g-4">
+                                                <div class="col-lg-6">
+                                                    <?php $dye_figure('everzol-cs-series.jpg', 'Everzol CS Series dye samples, Taiwan Excellence Gold Award 2026', 'Everzol CS Series'); ?>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <?php $dye_figure('everzol-cs-shade-chart.jpg', 'Everzol CS shade chart: Yellow, Orange, Red Brown, Olive and Grey CS at 5 g/l and 20 g/l', 'Everzol CS shade chart at 5 g/l and 20 g/l'); ?>
+                                                </div>
+                                                <div class="col-12">
+                                                    <?php $dye_figure('everzol-cs-emerized-face-back.jpg', 'Khaki, olive and grey shades on emerized fabric, face and back, with Everzol CS recipes', 'Khaki, olive and grey shades on emerized fabric — face and back, with recipes in g/l'); ?>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol ED-G -->
                                 <div class="tab-pane fade" id="everzol-edg-product" role="tabpanel" aria-labelledby="everzol-edg-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -345,20 +476,53 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                         <p class="dyestuff-product-lead">
                                             Everzol Black ED-G and Black ED-R are reactive black dyes designed for fashion-driven deep shades with low effluent and easy wash-off. They offer high color yield, economical deep black recipes, and reduced nylon/elastane cross-dyeing on blend fabrics.
                                         </p>
-                                        <div class="dyestuff-info-card">
-                                            <h5>Key Advantages</h5>
-                                            <ul class="dyestuff-check-list">
-                                                <li>Low effluent with easy wash-off</li>
-                                                <li>Very low nylon &amp; elastane (Lycra) cross-dyeing in C/N/L blends</li>
-                                                <li>Suitable for discharge printing</li>
-                                                <li>High color yield for deep shades</li>
-                                                <li>Strong wet, washing, perspiration, and rubbing fastness</li>
-                                                <li>Supports multi-cycle oxidative laundering performance (UK-TO)</li>
-                                            </ul>
+                                        <p class="dyestuff-product-lead"><strong>Reactive black dyes with low effluents and easy wash-off.</strong></p>
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="dyestuff-info-card">
+                                                    <h5>Key Advantages</h5>
+                                                    <ul class="dyestuff-check-list">
+                                                        <li>Low effluent with easy wash-off</li>
+                                                        <li>Very low nylon &amp; elastane (Lycra) cross-dyeing in C/N/L blends</li>
+                                                        <li>Suitable for discharge printing</li>
+                                                        <li>High color yield for deep shades</li>
+                                                        <li>Strong wet, washing, perspiration, and rubbing fastness</li>
+                                                        <li>Supports multi-cycle oxidative laundering performance (UK-TO)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="dyestuff-info-card">
+                                                    <h5>Unique Fastness Properties</h5>
+                                                    <ul class="dyestuff-check-list">
+                                                        <li>Wet fastness</li>
+                                                        <li>Washing fastness</li>
+                                                        <li>Perspiration fastness</li>
+                                                        <li>Multi-cycle oxidative laundering test (UK-TO)</li>
+                                                        <li>Dry/wet rubbing fastness</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Exhaust &amp; Cold Pad-Batch Results</h5>
+                                            <?php $dye_figure('black-edg-exhaust-cpb.png', 'Everzol Black ED-G and ED-R fabric samples dyed by exhaust at 2% and 6% and cold pad-batch at 20 g/l and 60 g/l', 'Black ED-G and ED-R — exhaust dyeing (2%, 6%) and cold pad-batch (20 g/l, 60 g/l)'); ?>
+                                        </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Wash-off &amp; Cross-Dyeing Performance</h5>
+                                            <div class="row g-4">
+                                                <div class="col-lg-5">
+                                                    <?php $dye_figure('black-edg-wash-off.png', 'Wash-off comparison of Everzol Black ED-G 5%, Black ED-R 5% and Reactive Black N 10%', 'Wash-off: Black ED-G 5%, Black ED-R 5% vs Reactive Black N 10%'); ?>
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <?php $dye_figure('black-edg-cross-dyeing.png', 'Cross-dyeing on cotton, nylon and lycra for Everzol Black ED-G, Black ED-R and Reactive Black N', 'Cotton / nylon / lycra cross-dyeing: Black ED-G and ED-R vs Reactive Black N'); ?>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol LX & LF -->
                                 <div class="tab-pane fade" id="everzol-lxlf-product" role="tabpanel" aria-labelledby="everzol-lxlf-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -396,9 +560,28 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Range</h5>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Everzol LX</strong>
+                                                        <p>Yellow LX, Red LX, Blue LX, Navy LX</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Everzol LF</strong>
+                                                        <p>Red LF-B, Red LF-2B, Dark Blue LF, Grey LF</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <?php $dye_figure('everzol-lx-lf-shade-chart.jpg', 'Everzol LX and LF shade chart at 0.1% and 1% with supplementary brilliant yellow and blue dyes', 'Everzol LX & LF shade chart at 0.1% and 1%'); ?>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol ERC -->
                                 <div class="tab-pane fade" id="everzol-erc-product" role="tabpanel" aria-labelledby="everzol-erc-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -420,9 +603,36 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 <li>Strong support for fashion and macaron color recipes</li>
                                             </ul>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Range</h5>
+                                            <ul class="dyestuff-app-list mb-3">
+                                                <li>Lemon</li>
+                                                <li>Amber</li>
+                                                <li>Yellow</li>
+                                                <li>Carrot</li>
+                                                <li>Saffron</li>
+                                                <li>Coral</li>
+                                                <li>Pink</li>
+                                                <li>Light Red</li>
+                                                <li>Rose</li>
+                                                <li>Burnt Orange</li>
+                                                <li>Deep Orange</li>
+                                                <li>Cardinal</li>
+                                                <li>Bordeaux</li>
+                                                <li>Turquoise Blue</li>
+                                                <li>Sky Blue</li>
+                                                <li>Blue</li>
+                                                <li>Dark Blue</li>
+                                                <li>Navy</li>
+                                                <li>Marine</li>
+                                                <li>Black</li>
+                                            </ul>
+                                            <?php $dye_figure('everzol-erc-shade-chart.png', 'Everzol ERC shade range from Lemon ERC to Black ERC', 'Everzol ERC shade range'); ?>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everzol Yellow CE-N -->
                                 <div class="tab-pane fade" id="everzol-yellow-cen-product" role="tabpanel" aria-labelledby="everzol-yellow-cen-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -456,6 +666,10 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                     </ul>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Chart</h5>
+                                            <?php $dye_figure('everzol-yellow-cen-shade-chart.jpg', 'Everzol Yellow CE-N with Red LF-B, Red LF-2B, Red ED-7BN, Blue C-BRF and Blue L-ED at 10 g/l and 30 g/l', 'Yellow CE-N and trichromatic partners at 10 g/l and 30 g/l'); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -495,6 +709,7 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
 
                             <div class="tab-content" id="acidProductContent">
 
+                                <!-- Everacid A / N / S -->
                                 <div class="tab-pane fade show active" id="everacid-product" role="tabpanel" aria-labelledby="everacid-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -524,9 +739,145 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Everacid A Dyes</h5>
+                                            <div class="row g-4">
+                                                <div class="col-lg-7">
+                                                    <p class="fw-semibold mb-2">Properties</p>
+                                                    <ul class="dyestuff-check-list">
+                                                        <li>High light fastness for pale shades</li>
+                                                        <li>High wet fastness in pale shades; medium shades need after-treatment</li>
+                                                        <li>Outstanding migration and excellent levelling properties</li>
+                                                        <li>Very good coverage on physical barriness, e.g. barré</li>
+                                                        <li>Full color yield in trichromatic combinations</li>
+                                                        <li>Metal-free</li>
+                                                        <li>Simple dyeing method</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <p class="fw-semibold mb-2">Dyes</p>
+                                                    <ul class="dyestuff-app-list">
+                                                        <li>Yellow A-FG</li>
+                                                        <li>Yellow A-4R</li>
+                                                        <li>Red A-RL</li>
+                                                        <li>Bordeaux A-RL</li>
+                                                        <li>Blue A-RRL</li>
+                                                        <li>Blue A-RL</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Everacid N Dyes</h5>
+                                            <div class="row g-4">
+                                                <div class="col-lg-7">
+                                                    <p class="fw-semibold mb-2">Properties</p>
+                                                    <ul class="dyestuff-check-list">
+                                                        <li>Good build-up for medium-heavy shades</li>
+                                                        <li>Moderate to excellent light fastness properties</li>
+                                                        <li>Good wet fastness for medium depths; heavy shades require after-treatment</li>
+                                                        <li>Medium to good migration</li>
+                                                        <li>Good coverage on barriness</li>
+                                                        <li>Trichromatic and suitable for single dyeing</li>
+                                                        <li>Simple dyeing method</li>
+                                                        <li>Mainly metal-free (except blacks)</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <p class="fw-semibold mb-2">Dyes</p>
+                                                    <ul class="dyestuff-app-list">
+                                                        <li>Yellow N-5GW</li>
+                                                        <li>Yellow N-MR</li>
+                                                        <li>Yellow N-3RL</li>
+                                                        <li>Yellow N-3R</li>
+                                                        <li>Orange N-G</li>
+                                                        <li>Orange N-GTL</li>
+                                                        <li>Red N-B</li>
+                                                        <li>Red N-2BL</li>
+                                                        <li>Red N-FGS</li>
+                                                        <li>Red N-RFL</li>
+                                                        <li>Red N-RFN</li>
+                                                        <li>Red Brown N-V</li>
+                                                        <li>Rubine N-5BL</li>
+                                                        <li>Turq. Blue N-GRL</li>
+                                                        <li>Blue N-AFN</li>
+                                                        <li>Blue N-RL</li>
+                                                        <li>Cyanine N-5R</li>
+                                                        <li>Dark Green N-A</li>
+                                                        <li>Black LDN</li>
+                                                        <li>Black MR</li>
+                                                        <li>Black LD</li>
+                                                        <li>Black ACE</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Everacid S Dyes</h5>
+                                            <div class="row g-4">
+                                                <div class="col-lg-7">
+                                                    <p class="fw-semibold mb-2">Properties</p>
+                                                    <ul class="dyestuff-check-list">
+                                                        <li>Brilliant acid dyes</li>
+                                                        <li>Very good build-up and levelness on nylon</li>
+                                                        <li>Excellent light fastness properties for deep shades</li>
+                                                        <li>Very high wet fastness properties in deep shades</li>
+                                                        <li>Moderate coverage on barriness</li>
+                                                        <li>Good compatibility</li>
+                                                        <li>Simple dyeing method</li>
+                                                        <li>Medium migration</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <p class="fw-semibold mb-2">Dyes</p>
+                                                    <ul class="dyestuff-app-list">
+                                                        <li>Yellow S-7G</li>
+                                                        <li>Yellow S-4GL</li>
+                                                        <li>Orange S-GSN</li>
+                                                        <li>Red S-GS</li>
+                                                        <li>Red S-3B</li>
+                                                        <li>Red S-BL</li>
+                                                        <li>Red S-GWN</li>
+                                                        <li>Rhodamine S-BN</li>
+                                                        <li>Violet S-RWN</li>
+                                                        <li>Blue S-BLW</li>
+                                                        <li>Blue S-2R</li>
+                                                        <li>Turq. S-5G</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Recommended Trichromatic Dyes</h5>
+                                            <div class="row g-3">
+                                                <div class="col-md-4">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Pale-Medium Shades</strong>
+                                                        <p>Everacid Yellow A-4R, Red A-RL, Blue A-RL</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Medium Shades</strong>
+                                                        <p>Everacid Yellow N-3R, Red N-2BL, Blue N-RL</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="dyestuff-shade-box">
+                                                        <strong>Deep Shades</strong>
+                                                        <p>Everacid Orange N-GTL, Rubine N-5BL, Cyanine N-5R</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everset PA -->
                                 <div class="tab-pane fade" id="ever-pa-product" role="tabpanel" aria-labelledby="ever-pa-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -562,9 +913,28 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Range</h5>
+                                            <ul class="dyestuff-app-list mb-3">
+                                                <li>Yellow PA-4G</li>
+                                                <li>Yellow PA-2G</li>
+                                                <li>Yellow PA</li>
+                                                <li>Orange PA-2R</li>
+                                                <li>Red PA-3G</li>
+                                                <li>Red PA</li>
+                                                <li>Red PA-4B</li>
+                                                <li>Bordeaux PA</li>
+                                                <li>Blue PA-2R</li>
+                                                <li>Blue PA</li>
+                                                <li>Navy PA</li>
+                                                <li>Black PA-R</li>
+                                            </ul>
+                                            <?php $dye_figure('everset-pa-shade-chart.jpg', 'Everset PA shade chart at 1/12N and 1/1N standard depth', 'Everset PA shade chart at 1/12N and 1/1N'); ?>
+                                        </div>
                                     </div>
                                 </div>
 
+                                <!-- Everacid S -->
                                 <div class="tab-pane fade" id="ever-s-product" role="tabpanel" aria-labelledby="ever-s-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -576,6 +946,9 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                         <p class="dyestuff-product-lead">
                                             Everacid S delivers brilliant acid dyes optimized for single-shade nylon dyeing, including nylon/elastane goods where wet fastness and shade versatility matter for bulk production.
                                         </p>
+                                        <p class="dyestuff-product-lead">
+                                            The Everacid S range is specially designed for brilliant colors on nylon and is dominant in single shade dyeing. For certain shades, shading with Everacid N and S dyes can be combined.
+                                        </p>
                                         <div class="dyestuff-info-card">
                                             <h5>Key Advantages</h5>
                                             <ul class="dyestuff-check-list">
@@ -583,11 +956,19 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 <li>Focused on efficient single-shade dyeing</li>
                                                 <li>Strong wet fastness performance</li>
                                                 <li>Versatile for nylon and nylon/elastane substrates</li>
+                                                <li>Very good build-up and levelness on nylon</li>
+                                                <li>Excellent light fastness and very high wet fastness in deep shades</li>
+                                                <li>Good compatibility and a simple dyeing method</li>
                                             </ul>
+                                        </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Shade Chart <span>(Nylon Knits)</span></h5>
+                                            <?php $dye_figure('everacid-s-shade-chart.jpg', 'Everacid S shade chart on nylon knits at 1/12N and 1/1N', 'Everacid S shade chart on nylon knits at 1/12N and 1/1N'); ?>
                                         </div>
                                     </div>
                                 </div>
 
+                                <!-- Everacid Black X-BWE -->
                                 <div class="tab-pane fade" id="ever-xbw-product" role="tabpanel" aria-labelledby="ever-xbw-tab" tabindex="0">
                                     <div class="dyestuff-product-panel">
                                         <div class="dyestuff-product-header">
@@ -608,6 +989,7 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                         <li>Excellent dye absorption efficiency</li>
                                                         <li>Reduced wastewater versus conventional black routes</li>
                                                         <li>Deep, durable black appearance</li>
+                                                        <li>37% lower recipe and 98% lower optical residual versus commercial acid black</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -621,6 +1003,10 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                     </ul>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="dyestuff-info-card mt-4">
+                                            <h5>Dyeing Residue Comparison</h5>
+                                            <?php $dye_figure('everacid-black-xbwe-residue.jpg', 'Dyeing residue and three wash-off baths for commercial acid black 9.5% versus Everacid Black X-BWE 6.0%', 'Commercial acid black 9.5% vs Everacid Black X-BWE 6.0% — 37% less recipe, 98% less optical residual'); ?>
                                         </div>
                                     </div>
                                 </div>
@@ -652,7 +1038,7 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                 </p>
                                 <div class="row g-4">
                                     <div class="col-lg-6">
-                                        <div class="dyestuff-info-card">
+                                        <div class="dyestuff-info-card h-100">
                                             <h5>Everjet AT — Acid Ink for Textile</h5>
                                             <ul class="dyestuff-check-list">
                                                 <li>Acid ink system for nylon and polyamide digital print</li>
@@ -660,10 +1046,26 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 <li>Suitable for fashion, sport, and technical nylon prints</li>
                                                 <li>Compatible with industrial digital print workflows</li>
                                             </ul>
+                                            <p class="fw-semibold mt-3 mb-2">Colors</p>
+                                            <ul class="dyestuff-app-list mb-3">
+                                                <li>Cyan</li>
+                                                <li>Light Cyan</li>
+                                                <li>Magenta</li>
+                                                <li>Light Magenta</li>
+                                                <li>Yellow</li>
+                                                <li>Orange</li>
+                                                <li>Black</li>
+                                                <li>Grey</li>
+                                                <li>Red</li>
+                                                <li>Blue</li>
+                                                <li>Flavine</li>
+                                                <li>Rhodamine</li>
+                                            </ul>
+                                            <?php $dye_figure('everjet-at-colors.jpg', 'Everjet AT color chart: cyan, light cyan, magenta, light magenta, yellow, orange, black, grey, red, blue, flavine and rhodamine', 'Everjet AT color chart'); ?>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="dyestuff-info-card">
+                                        <div class="dyestuff-info-card h-100">
                                             <h5>Everjet RT — Reactive Ink for Textile</h5>
                                             <ul class="dyestuff-check-list">
                                                 <li>Reactive ink system for cotton, viscose, and cellulose blends</li>
@@ -671,6 +1073,20 @@ $dyestuffs_standalone = !empty($dyestuffs_standalone);
                                                 <li>Supports direct-to-fabric and related digital processes</li>
                                                 <li>Designed for consistent bulk production quality</li>
                                             </ul>
+                                            <p class="fw-semibold mt-3 mb-2">Colors</p>
+                                            <ul class="dyestuff-app-list mb-3">
+                                                <li>Light Cyan</li>
+                                                <li>Cyan</li>
+                                                <li>Light Magenta</li>
+                                                <li>Magenta</li>
+                                                <li>Yellow</li>
+                                                <li>Black</li>
+                                                <li>Grey</li>
+                                                <li>Orange</li>
+                                                <li>Red</li>
+                                                <li>Blue</li>
+                                            </ul>
+                                            <?php $dye_figure('everjet-rt-colors.jpg', 'Everjet RT color chart on mercerized cotton and silk: light cyan, cyan, light magenta, magenta, yellow, black, grey, orange, red and blue', 'Everjet RT color chart on mercerized cotton and silk'); ?>
                                         </div>
                                     </div>
                                 </div>
