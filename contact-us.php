@@ -254,12 +254,11 @@
 
                         <div class="cu-aside-social">
                             <span>Follow Us</span>
-                            <div class="cu-social-links">
-                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                            </div>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/FAVgroupofcompanies" aria-label="Vawda on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/farid-ahmed-vawda-co/posts/?feedView=all" aria-label="Vawda on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@favgroupofcompanies" aria-label="Vawda on YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +278,7 @@
             <div class="cu-map-frame">
                 <iframe
                     title="Vawda Head Office Location"
-                    src="https://www.google.com/maps?q=B-66/A,+S.I.T.E.,+Karachi,+Pakistan&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7520615111976!2d67.0040625!3d24.9064375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fd95cc00001%3A0x2b481f4b69f4ce0c!2sFAV%20Group%20of%20Companies!5e0!3m2!1sen!2s!4v1793779466755!5m2!1sen!2s"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     allowfullscreen></iframe>

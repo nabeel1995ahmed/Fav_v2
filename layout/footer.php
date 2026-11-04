@@ -10,10 +10,9 @@
                     advanced technology and reliable services to industries across the globe.
                 </p>
                 <div class="footer-social">
-                    <a href="#" aria-label="Vawda on Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Vawda on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Vawda on Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Vawda on YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/FAVgroupofcompanies" aria-label="Vawda on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/farid-ahmed-vawda-co/posts/?feedView=all" aria-label="Vawda on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@favgroupofcompanies" aria-label="Vawda on YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div class="col-12 col-lg-2 footer-col footer-col-links">
