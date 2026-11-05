@@ -7613,6 +7613,15 @@ section.terms-banner-section {
     overflow: hidden;
 }
 
+.iac-catalog-downloads {
+    padding-top: 8px;
+    border-top: 1px solid rgba(2, 26, 58, 0.08);
+}
+
+.iac-catalog-downloads .product-pdf-label {
+    margin-bottom: 14px;
+}
+
 .iac-product-specs {
     margin-top: auto;
     padding-top: 8px;

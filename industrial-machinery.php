@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=im-tabs1">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=im-tabs2">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -401,20 +401,23 @@
                         </div>
 
                         <?php if (!empty($category['catalogs'])): ?>
-                        <div class="machinery-catalogs mt-4">
-                            <?php foreach ($category['catalogs'] as $catalog): ?>
-                            <a class="machinery-catalog"
-                               href="<?= htmlspecialchars($catalogPath . rawurlencode($catalog['file'])) ?>"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                <span class="machinery-catalog__icon"><i class="fal fa-file-pdf"></i></span>
-                                <span class="machinery-catalog__info">
-                                    <span class="machinery-catalog__title"><?= htmlspecialchars($catalog['title']) ?></span>
-                                    <span class="machinery-catalog__type">View PDF</span>
-                                </span>
-                                <span class="machinery-catalog__action"><i class="fal fa-external-link"></i></span>
-                            </a>
-                            <?php endforeach; ?>
+                        <div class="iac-catalog-downloads mt-4">
+                            <span class="product-pdf-label">Catalogs &amp; Brochures</span>
+                            <div class="veechem-cert-grid">
+                                <?php foreach ($category['catalogs'] as $catalog): ?>
+                                <a class="veechem-cert-card"
+                                   href="<?= htmlspecialchars($catalogPath . rawurlencode($catalog['file'])) ?>"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                                    <span class="veechem-cert-meta">
+                                        <span class="veechem-cert-title"><?= htmlspecialchars($catalog['title']) ?></span>
+                                        <span class="veechem-cert-type">View PDF</span>
+                                    </span>
+                                    <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                                </a>
+                                <?php endforeach; ?>
+                            </div>
                         </div>
                         <?php endif; ?>
                     </div>
