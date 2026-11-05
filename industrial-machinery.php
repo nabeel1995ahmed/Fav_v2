@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=im-tabs2">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=im-tabs4">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -402,7 +402,10 @@
 
                         <?php if (!empty($category['catalogs'])): ?>
                         <div class="iac-catalog-downloads mt-4">
-                            <span class="product-pdf-label">Catalogs &amp; Brochures</span>
+                            <h4 class="iac-catalog-downloads__title">
+                                <i class="fal fa-file-pdf" aria-hidden="true"></i>
+                                Catalogs &amp; Brochures
+                            </h4>
                             <div class="veechem-cert-grid">
                                 <?php foreach ($category['catalogs'] as $catalog): ?>
                                 <a class="veechem-cert-card"
