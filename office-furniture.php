@@ -76,7 +76,7 @@
                             </li>
                             <li>
                                 <span><i class="fal fa-check-circle"></i></span>
-                                <p>Professional Design</p>
+                                <p>BIFA Approved</p>
                             </li>
                         </ul>
                     </div>

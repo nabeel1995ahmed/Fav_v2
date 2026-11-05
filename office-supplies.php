@@ -86,11 +86,13 @@
                         <a href="./contact-us.php" class="btn btn-warning text-white">REQUEST A QUOTE
                             <i class="fa fa-paper-plane"></i>
                         </a>
-
-                        <a href="#product-categories" class="btn btn-outline-light">
-                            EXPLORE PRODUCTS
-                            <i class="fal fa-arrow-right"></i>
-                        </a>
+<a href="./assets/images/products-and-solutions/office-supplies/supplies-catalogue.pdf"
+   class="btn btn-outline-light"
+   target="_blank"
+   rel="noopener noreferrer">
+    DOWNLOAD CATALOGUE
+    <i class="fal fa-eye"></i>
+</a>
 
                     </div>
 

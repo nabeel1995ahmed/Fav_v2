@@ -352,7 +352,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-4 align-items-center m-0 product-section">
+                <div class="d-none row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
                             <img src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/favo-radiator-coolant.svg" class="img-fluid" alt="">
@@ -370,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-4 align-items-center m-0 product-section">
+                <div class="d-none row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">

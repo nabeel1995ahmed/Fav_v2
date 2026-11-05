@@ -8469,3 +8469,40 @@ section.terms-banner-section {
     line-height: 1.4;
     color: #6c757d;
 }
+
+/* Security page: full image + full cards */
+.security-products .iac-product-grid {
+    align-items: start;
+}
+
+.security-products .iac-product-card {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+}
+
+.security-products .iac-product-media {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.security-products .iac-product-media img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+}
+
+.security-products .iac-product-body p,
+.security-products .iac-product-body h5 {
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    line-clamp: unset !important;
+    overflow: visible !important;
+    max-height: none !important;
+}

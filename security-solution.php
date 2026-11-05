@@ -15,7 +15,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/styling/style.css">
-
+   <link rel="stylesheet" href="./assets/styling/style.css?v=iac-tabs2">
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
 
@@ -198,90 +198,140 @@
          BUSINESS DIVISIONS
     ========================== -->
 
+    <!-- =========================
+         PRODUCT CATEGORIES
+    ========================== -->
+
     <section id="product-categories" class="business-divisions py-5">
         <div class="container">
             <div class="section-heading text-center mb-5">
                 <h2>OUR PRODUCT CATEGORIES</h2>
                 <div class="seprator"></div>
             </div>
-            <div class="product-main-section">
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/security-solutions/hivideo-camera.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
-                        </div>
-                    </div>
 
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">01</span>
-                                <h5>HIVIDEO CCTV</h5>
-                            </div>
-                            <p class="product-text">
-                               Complete range of CCTV Systems.
-                            </p>
+            <?php
+            $imgBase = './assets/images/products-and-solutions/security-solutions';
+
+            $categories = [
+                [
+                    'id' => 'hivideo-cctv',
+                    'title' => 'HIVIDEO CCTV',
+                    'short' => 'HIVIDEO CCTV',
+                    'products' => [
+                        [
+                            'name' => 'HIVIDEO CCTV',
+                            'image' => 'hivideo-camera.svg',
+                            'text' => 'Complete range of CCTV Systems.',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 'poe-switch',
+                    'title' => 'Linkff PoE Switch',
+                    'short' => 'PoE Switch',
+                    'products' => [
+                        [
+                            'name' => 'Linkff PoE Switch',
+                            'image' => 'poe-switch.svg',
+                            'text' => 'Complete range of PoE Switches.',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 'project-series-ip-cctv',
+                    'title' => 'Project Series IP CCTV',
+                    'short' => 'Project IP CCTV',
+                    'products' => [
+                        [
+                            'name' => 'Project Series IP CCTV',
+                            'image' => 'project-series-ip-cctv.svg',
+                            'text' => 'Complete range of customized Project IP CCTV.',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 'project-series-ip-nvr',
+                    'title' => "TT INT'L Project Series IP NVR",
+                    'short' => 'Project IP NVR',
+                    'products' => [
+                        [
+                            'name' => "TT INT'L Project Series IP NVR",
+                            'image' => 'project-series-ip-dvr-nvr.svg',
+                            'text' => 'Complete range for project base NVR Systems.',
+                        ],
+                    ],
+                ],
+            ];
+
+            $categories = array_values(array_filter($categories, static function ($category) {
+                return !empty($category['products']);
+            }));
+            ?>
+
+            <div class="iac-catalog">
+                <ul class="nav nav-tabs iac-category-tabs" id="iacCategoryTabs" role="tablist">
+                    <?php foreach ($categories as $categoryIndex => $category):
+                        $tabId = 'iac-' . $category['id'];
+                        $isActive = $categoryIndex === 0;
+                    ?>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link<?= $isActive ? ' active' : '' ?>"
+                            id="<?= htmlspecialchars($tabId) ?>-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#<?= htmlspecialchars($tabId) ?>"
+                            type="button"
+                            role="tab"
+                            aria-controls="<?= htmlspecialchars($tabId) ?>"
+                            aria-selected="<?= $isActive ? 'true' : 'false' ?>"
+                        >
+                            <?= htmlspecialchars($category['short'] ?? $category['title']) ?>
+                        </button>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <div class="tab-content iac-category-content" id="iacCategoryTabContent">
+                    <?php foreach ($categories as $categoryIndex => $category):
+                        $tabId = 'iac-' . $category['id'];
+                        $isActive = $categoryIndex === 0;
+                    ?>
+                    <div
+                        class="tab-pane fade<?= $isActive ? ' show active' : '' ?>"
+                        id="<?= htmlspecialchars($tabId) ?>"
+                        role="tabpanel"
+                        aria-labelledby="<?= htmlspecialchars($tabId) ?>-tab"
+                        tabindex="0"
+                    >
+                        <div class="iac-category-intro">
+                            <span class="product-subheading"><?= htmlspecialchars($category['title']) ?></span>
+                            <p><?= count($category['products']) ?> product<?= count($category['products']) === 1 ? '' : 's' ?> in this range</p>
+                        </div>
+
+                        <div class="iac-product-grid">
+                            <?php foreach ($category['products'] as $productIndex => $product):
+                                $imageSrc = $imgBase . '/' . $product['image'];
+                                $alt = htmlspecialchars($product['name']);
+                                $number = str_pad((string) ($productIndex + 1), 2, '0', STR_PAD_LEFT);
+                            ?>
+                            <article class="iac-product-card">
+                                <div class="iac-product-media">
+                                    <span class="iac-product-number"><?= $number ?></span>
+                                    <img src="<?= htmlspecialchars($imageSrc) ?>" alt="<?= $alt ?>">
+                                </div>
+                                <div class="iac-product-body">
+                                    <h5><?= $alt ?></h5>
+                                    <p><?= htmlspecialchars($product['text']) ?></p>
+                                    <?php if (!empty($product['specs'])): ?>
+                                    <strong class="iac-product-specs"><?= htmlspecialchars($product['specs']) ?></strong>
+                                    <?php endif; ?>
+                                </div>
+                            </article>
+                            <?php endforeach; ?>
                         </div>
                     </div>
+                    <?php endforeach; ?>
                 </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">02</span>
-                                <h5>Linkff PoE Switch</h5>
-                            </div>
-                            <p class="product-text">
-                                Complete range of PoE Switches.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/security-solutions/poe-switch.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/security-solutions/project-series-ip-cctv.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">03</span>
-                                <h5>Project Series IP CCTV</h5>
-                            </div>
-                            <p class="product-text">
-                                Complete range of customized Project IP CCTV.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">04</span>
-                                <h5>TT INT'L Project Series IP NVR</h5>
-                            </div>
-                            <p class="product-text">
-                                Complete range for project base NVR Systems.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/security-solutions/project-series-ip-dvr-nvr.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>                                
             </div>
         </div>
     </section>
