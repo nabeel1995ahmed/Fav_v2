@@ -31,20 +31,7 @@
             'logo' => 'principals-jintex-corporation-limited.png',
             'text' => 'Established in 1978, Jintex is built on integrity, innovation, service and care. Continuous process improvement has made it one of Asia’s leading specialty chemical manufacturers.',
         ],
-        [
-            'category' => 'textiles',
-            'label' => 'Textiles',
-            'name' => 'Resil Chemicals Pvt Ltd',
-            'logo' => 'principals-resil-chemicals-pvt-ltd.png',
-            'text' => 'Resil developed one of the widest silicone portfolios for fabric finishing, combining application knowledge with products that transform textile performance.',
-        ],
-        [
-            'category' => 'textiles',
-            'label' => 'Textiles',
-            'name' => 'Zydex Industries',
-            'logo' => 'principals-zydex-industries.png',
-            'text' => 'Zydex commercializes eco-friendly water-based polymer technologies for sizing, dyeing and finishing — delivering performance and process economics for modern mills.',
-        ],
+
         [
             'category' => 'textiles',
             'label' => 'Textiles',
