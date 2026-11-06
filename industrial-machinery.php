@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=im-tabs4">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -196,140 +196,239 @@
 
 
     <!-- =========================
-         BUSINESS DIVISIONS
+         PRODUCT CATEGORIES
     ========================== -->
 
+    <section id="product-categories" class="business-divisions industrial-machinery py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <h2>OUR PRODUCT CATEGORIES</h2>
+                <div class="seprator"></div>
+            </div>
 
+            <?php
+            $imgBase = './assets/images/products-and-solutions/industrial-machinery';
 
-<?php
-$machinery_base = './assets/images/products-and-solutions/industrial-machinery/';
+            $categories = [
+                [
+                    'id' => 'printing',
+                    'title' => 'Printing Machines',
+                    'short' => 'Printing Machines',
+                    'folder' => 'digital-machine',
+                    'products' => [
+                        [
+                            'name' => 'Oval Printing Machine',
+                            'image' => 'digital-machine/oval-printing-machine.svg',
+                            'text' => 'High-speed oval screen printing for apparel and textile decoration with consistent multi-station output.',
+                        ],
+                        [
+                            'name' => 'DTF Printer',
+                            'image' => 'digital-machine/dtf-printers.svg',
+                            'text' => 'Direct-to-film printing for vibrant transfers on garments and mixed fabrics with strong wash durability.',
+                        ],
+                        [
+                            'name' => 'DTG Printer',
+                            'image' => 'digital-machine/dtg-printers.svg',
+                            'text' => 'Direct-to-garment printing for detailed, soft-hand designs on cotton and blend apparel.',
+                        ],
+                        [
+                            'name' => 'UV Flatbed Printer',
+                            'image' => 'digital-machine/uv-flatbed-printers.svg',
+                            'text' => 'UV flatbed printing on rigid and specialty media for signage, industrial marking and promotional products.',
+                        ],
+                        [
+                            'name' => 'Sublimation Printer',
+                            'image' => 'digital-machine/sublimation-printers.svg',
+                            'text' => 'Dye-sublimation output for polyester textiles, sportswear and soft-signage applications.',
+                        ],
+                        [
+                            'name' => 'Eco Solvent Printer',
+                            'image' => 'digital-machine/eco-solvent-printers.svg',
+                            'text' => 'Eco-solvent wide-format printing for durable indoor and outdoor graphics and banners.',
+                        ],
+                        [
+                            'name' => 'Laser Marking Machine',
+                            'image' => 'digital-machine/laser-marking-machine.svg',
+                            'text' => 'Precision laser marking for industrial coding, branding and permanent part identification.',
+                        ],
+                        [
+                            'name' => 'Laser Engraving',
+                            'image' => 'digital-machine/laser-engraving.svg',
+                            'text' => 'Laser engraving solutions for fine detail on metals, plastics and specialty materials.',
+                        ],
+                        [
+                            'name' => 'Sublimation Roll Transfer',
+                            'image' => 'digital-machine/sublimation-roll-transfer.svg',
+                            'text' => 'Roll-to-roll sublimation transfer for continuous textile and soft-signage production.',
+                        ],
+                        [
+                            'name' => 'Heat Press Machine',
+                            'image' => 'digital-machine/heat-press-machine.svg',
+                            'text' => 'Reliable heat press equipment for transfer applications across apparel and promotional goods.',
+                        ],
+                    ],
+                    'catalogs' => [
+                        ['file' => 'catalog.pdf', 'title' => 'Catalog'],
+                    ],
+                ],
+                [
+                    'id' => 'weaving',
+                    'title' => 'Weaving Machine',
+                    'short' => 'Weaving Machine',
+                    'folder' => 'weaving',
+                    'products' => [
+                        [
+                            'name' => 'Towel AirJet',
+                            'image' => 'weaving/towel-airjet.svg',
+                            'text' => 'Air-jet weaving for towel production with high speed, stable quality and efficient yarn handling.',
+                        ],
+                        [
+                            'name' => 'Fabric AirJet',
+                            'image' => 'weaving/fabric-airjet.svg',
+                            'text' => 'Air-jet looms for fabric weaving focused on productivity, fabric quality and reduced operating cost.',
+                        ],
+                        [
+                            'name' => 'Water Jet',
+                            'image' => 'weaving/water-jet.svg',
+                            'text' => 'Water-jet weaving machines suited for synthetic fabrics requiring clean, high-speed weft insertion.',
+                        ],
+                        [
+                            'name' => 'Repair Looms',
+                            'image' => 'weaving/repair-looms.svg',
+                            'text' => 'Loom repair and support solutions to restore weaving efficiency and extend machine service life.',
+                        ],
+                    ],
+                    'catalogs' => [
+                        ['file' => 'air-jet-machinery.pdf', 'title' => 'Air Jet Machinery'],
+                        ['file' => 'water-jet-catalog.pdf', 'title' => 'Water Jet Catalog'],
+                    ],
+                ],
+                [
+                    'id' => 'sizing',
+                    'title' => 'Sizing Machine',
+                    'short' => 'Sizing Machine',
+                    'folder' => 'sizing',
+                    'products' => [
+                        [
+                            'name' => 'Direct Warping',
+                            'image' => 'sizing/direct-warping.svg',
+                            'text' => 'Direct warping systems for preparing high-quality warp beams with accurate tension control.',
+                        ],
+                        [
+                            'name' => 'Section Warping',
+                            'image' => 'sizing/sectional-warping.svg',
+                            'text' => 'Sectional warping for patterned and multi-colour warps with precise section build-up.',
+                        ],
+                        [
+                            'name' => 'Sizing Machinery',
+                            'image' => 'sizing/sizing-machine.svg',
+                            'text' => 'Textile sizing machinery that strengthens warp yarns for smoother weaving and fewer breakages.',
+                        ],
+                    ],
+                    'catalogs' => [
+                        ['file' => 'Catalog.pdf', 'title' => 'Catalog'],
+                        ['file' => 'FAV Jiacheng_Servo_Sizing_Machine_Features.pdf', 'title' => 'FAV Jiacheng Servo Sizing Machine Features'],
+                        ['file' => 'machine-parameter.pdf', 'title' => 'Machine Parameters'],
+                        ['file' => 'Textile Sizing Flyer.pdf', 'title' => 'Textile Sizing Flyer'],
+                    ],
+                ],
+            ];
 
-// Turns "pw-1215-uv-printer.svg" into "pw-1215-uv-printer" for the sub product modifier class
-function machinery_slug(string $file): string {
-    return trim(preg_replace('/[^a-z0-9]+/', '-', strtolower(pathinfo($file, PATHINFO_FILENAME))), '-');
-}
+            $categories = array_values(array_filter($categories, static function ($category) {
+                return !empty($category['products']);
+            }));
+            ?>
 
-$machinery_categories = [
-    [
-        'slug'   => 'printing',
-        'title'  => 'Printing Machines',
-        'folder' => 'digital-machine/',
-        'products' => [
-            ['file' => 'oval-printing-machine.svg',         'title' => 'Oval Printing Machine',         'alt' => 'Oval Printing Machine'],
-            ['file' => 'dtf-printers.svg',  'title' => 'DTF Printer',  'alt' => 'DTF Printer'],
-            ['file' => 'dtg-printers.svg',  'title' => 'DTG Printer',  'alt' => 'DTG Printer'],
-            ['file' => 'uv-flatbed-printers.svg',    'title' => 'UV Flatbed Printer',    'alt' => 'UV Flatbed Printer'],
-            ['file' => 'sublimation-printers.svg',   'title' => 'Sublimation Printer',   'alt' => 'Sublimation Printer'],
-            ['file' => 'eco-solvent-printers.svg', 'title' => 'Eco Solvent Printer', 'alt' => 'Eco Solvent Printer'],
-            ['file' => 'laser-marking-machine.svg',        'title' => 'Laser Marking Machine',        'alt' => 'Laser Marking Machine'],
-            ['file' => 'laser-engraving.svg',  'title' => 'Laser Engraving',  'alt' => 'Laser Engraving'],
-            ['file' => 'sublimation-roll-transfer.svg',  'title' => 'Sublimation Roll Transfer',  'alt' => 'Sublimation Roll Transfer'],
-            ['file' => 'heat-press-machine.svg',  'title' => 'Heat Press Machine',  'alt' => 'Heat Press Machine'],
-        ],
-        'catalogs' => [
-            ['file' => 'catalog.pdf', 'title' => 'Catalog'],
-        ],
-    ],
-    [
-        'slug'   => 'weaving',
-        'title'  => 'Weaving Machine',
-        'folder' => 'weaving/',
-        'products' => [
-            ['file' => 'towel-airjet.svg',  'title' => 'Towel AirJet',  'alt' => 'Towel AirJet weaving machine'],
-            ['file' => 'fabric-airjet.svg', 'title' => 'Fabric AirJet', 'alt' => 'Fabric AirJet weaving machine'],
-            ['file' => 'water-jet.svg',     'title' => 'Water Jet',     'alt' => 'Water Jet weaving machine'],
-            ['file' => 'repair-looms.svg',  'title' => 'Repair Looms',  'alt' => 'Repair Looms'],
-        ],
-        'catalogs' => [
-            ['file' => 'air-jet-machinery.pdf', 'title' => 'Air Jet Machinery'],
-            ['file' => 'water-jet-catalog.pdf', 'title' => 'Water Jet Catalog'],
-        ],
-    ],
-    [
-        'slug'   => 'sizing',
-        'title'  => 'Sizing Machine',
-        'folder' => 'sizing/',
-        'products' => [
-            ['file' => 'direct-warping.svg',    'title' => 'Direct Warping',    'alt' => 'Direct Warping machine'],
-            ['file' => 'sectional-warping.svg', 'title' => 'Section Warping',   'alt' => 'Section Warping machine'],
-            ['file' => 'sizing-machine.svg',    'title' => 'Sizing Machinery',  'alt' => 'Sizing Machinery'],
-        ],
-        'catalogs' => [
-            ['file' => 'Catalog.pdf', 'title' => 'Catalog'],
-            ['file' => 'FAV Jiacheng_Servo_Sizing_Machine_Features.pdf', 'title' => 'FAV Jiacheng Servo Sizing Machine Features'],
-            ['file' => 'machine-parameter.pdf', 'title' => 'Machine Parameters'],
-            ['file' => 'Textile Sizing Flyer.pdf', 'title' => 'Textile Sizing Flyer'],
-        ],
-    ],
-    /*[
-        'slug'   => 'laboratory',
-        'title'  => 'Laboratory & Testing Equipment',
-        'folder' => 'laboratory-testing/',
-        'products' => [
-            ['file' => 'lab-1.svg', 'title' => 'Laboratory Equipment', 'alt' => 'Laboratory Equipment'],
-        ],
-        'catalogs' => [
-            ['file' => 'Laboratory Catalog.pdf', 'title' => 'Laboratory & Testing Catalog'],
-        ],
-    ], */
-];
-?>
+            <div class="iac-catalog">
+                <ul class="nav nav-tabs iac-category-tabs" id="imCategoryTabs" role="tablist">
+                    <?php foreach ($categories as $categoryIndex => $category):
+                        $tabId = 'im-' . $category['id'];
+                        $isActive = $categoryIndex === 0;
+                    ?>
+                    <li class="nav-item" role="presentation">
+                        <button
+                            class="nav-link<?= $isActive ? ' active' : '' ?>"
+                            id="<?= htmlspecialchars($tabId) ?>-tab"
+                            data-bs-toggle="tab"
+                            data-bs-target="#<?= htmlspecialchars($tabId) ?>"
+                            type="button"
+                            role="tab"
+                            aria-controls="<?= htmlspecialchars($tabId) ?>"
+                            aria-selected="<?= $isActive ? 'true' : 'false' ?>"
+                        >
+                            <?= htmlspecialchars($category['short'] ?? $category['title']) ?>
+                        </button>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
 
-<section id="product-categories" class="industrial-machinery py-5">
-    <div class="container">
-
-        <div class="industrial-machinery__header section-heading text-center mb-5">
-            <h2>OUR PRODUCT CATEGORIES</h2>
-            <div class="seprator"></div>
-        </div>
-
-        <?php foreach ($machinery_categories as $cat):
-            $path = $machinery_base . $cat['folder'];
-        ?>
-            <div class="machinery-category machinery-category--<?= htmlspecialchars($cat['slug']) ?> animate-on-scroll"
-                 id="<?= htmlspecialchars($cat['slug']) ?>-machinery">
-
-                <h3 class="machinery-category__title"><?= htmlspecialchars($cat['title']) ?></h3>
-
-                <!-- Sub products: image + sub heading -->
-                <div class="machinery-products">
-                    <?php foreach ($cat['products'] as $product): ?>
-                        <div class="machinery-product machinery-product--<?= machinery_slug($product['file']) ?>">
-                            <div class="machinery-product__media">
-                                <img class="machinery-product__img img-fluid"
-                                     src="<?= htmlspecialchars($path . rawurlencode($product['file'])) ?>"
-                                     alt="<?= htmlspecialchars($product['alt']) ?>"
-                                     loading="lazy">
-                            </div>
-                            <h4 class="machinery-product__title"><?= htmlspecialchars($product['title']) ?></h4>
+                <div class="tab-content iac-category-content" id="imCategoryTabContent">
+                    <?php foreach ($categories as $categoryIndex => $category):
+                        $tabId = 'im-' . $category['id'];
+                        $isActive = $categoryIndex === 0;
+                        $catalogPath = $imgBase . '/' . $category['folder'] . '/';
+                    ?>
+                    <div
+                        class="tab-pane fade<?= $isActive ? ' show active' : '' ?>"
+                        id="<?= htmlspecialchars($tabId) ?>"
+                        role="tabpanel"
+                        aria-labelledby="<?= htmlspecialchars($tabId) ?>-tab"
+                        tabindex="0"
+                    >
+                        <div class="iac-category-intro">
+                            <span class="product-subheading"><?= htmlspecialchars($category['title']) ?></span>
+                            <p><?= count($category['products']) ?> product<?= count($category['products']) === 1 ? '' : 's' ?> in this range</p>
                         </div>
+
+                        <div class="iac-product-grid">
+                            <?php foreach ($category['products'] as $productIndex => $product):
+                                $productNumber = $productIndex + 1;
+                                $imageSrc = $imgBase . '/' . $product['image'];
+                                $alt = htmlspecialchars($product['name']);
+                                $number = str_pad((string) $productNumber, 2, '0', STR_PAD_LEFT);
+                            ?>
+                            <article class="iac-product-card">
+                                <div class="iac-product-media">
+                                    <span class="iac-product-number"><?= $number ?></span>
+                                    <img src="<?= htmlspecialchars($imageSrc) ?>" alt="<?= $alt ?>" loading="lazy">
+                                </div>
+                                <div class="iac-product-body">
+                                    <h5><?= $alt ?></h5>
+                                    <p><?= htmlspecialchars($product['text']) ?></p>
+                                </div>
+                            </article>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <?php if (!empty($category['catalogs'])): ?>
+                        <div class="iac-catalog-downloads mt-4">
+                            <h4 class="iac-catalog-downloads__title">
+                                <i class="fal fa-file-pdf" aria-hidden="true"></i>
+                                Catalogs &amp; Brochures
+                            </h4>
+                            <div class="veechem-cert-grid">
+                                <?php foreach ($category['catalogs'] as $catalog): ?>
+                                <a class="veechem-cert-card"
+                                   href="<?= htmlspecialchars($catalogPath . rawurlencode($catalog['file'])) ?>"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                                    <span class="veechem-cert-meta">
+                                        <span class="veechem-cert-title"><?= htmlspecialchars($catalog['title']) ?></span>
+                                        <span class="veechem-cert-type">View PDF</span>
+                                    </span>
+                                    <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                                </a>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
+                    </div>
                     <?php endforeach; ?>
                 </div>
-
-                <!-- PDF catalogs -->
-                <?php if (!empty($cat['catalogs'])): ?>
-                    <div class="machinery-catalogs">
-                        <?php foreach ($cat['catalogs'] as $catalog): ?>
-                            <a class="machinery-catalog"
-                               href="<?= htmlspecialchars($path . rawurlencode($catalog['file'])) ?>"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                <span class="machinery-catalog__icon"><i class="fal fa-file-pdf"></i></span>
-                                <span class="machinery-catalog__info">
-                                    <span class="machinery-catalog__title"><?= htmlspecialchars($catalog['title']) ?></span>
-                                    <span class="machinery-catalog__type">View PDF</span>
-                                </span>
-                                <span class="machinery-catalog__action"><i class="fal fa-external-link"></i></span>
-                            </a>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif; ?>
-
             </div>
-        <?php endforeach; ?>
-
-    </div>
-</section>
+        </div>
+    </section>
         <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
