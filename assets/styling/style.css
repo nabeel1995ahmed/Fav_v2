@@ -165,6 +165,10 @@ a {
     align-items: stretch !important;
 }
 
+#favo-paints {
+    scroll-margin-top: 107px;
+}
+
 .product-section > [class*="col-"] {
     display: flex;
 }

@@ -17,6 +17,15 @@
     <link rel="stylesheet" href="./assets/styling/style.css">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
+    <script>
+        window.__scrollToFavoPaints = (window.location.hash === '#favo-paints');
+        if (window.__scrollToFavoPaints) {
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+    </script>
 </head>
 
 <body>
@@ -335,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-4 align-items-center m-0 product-section">
+                <div class="row g-4 align-items-center m-0 product-section" id="favo-paints">
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
@@ -688,6 +697,52 @@
     });
 
 });
+
+(function () {
+    if (!window.__scrollToFavoPaints) {
+        return;
+    }
+
+    function offsetTop(el) {
+        var top = 0;
+        while (el) {
+            top += el.offsetTop;
+            el = el.offsetParent;
+        }
+        return top;
+    }
+
+    function scrollToFavoPaints() {
+        var target = document.getElementById('favo-paints');
+        if (!target) {
+            return;
+        }
+
+        var header = document.querySelector('.main-header');
+        var headerHeight = header ? header.offsetHeight : 95;
+        var top = offsetTop(target) - headerHeight - 12;
+
+        window.scrollTo(0, Math.max(0, top));
+    }
+
+    function finish() {
+        scrollToFavoPaints();
+        if (window.location.hash !== '#favo-paints') {
+            history.replaceState(null, '', window.location.pathname + window.location.search + '#favo-paints');
+        }
+    }
+
+    if (document.readyState === 'complete') {
+        finish();
+    } else {
+        window.addEventListener('load', finish);
+    }
+
+    window.addEventListener('pageshow', finish);
+    setTimeout(finish, 50);
+    setTimeout(finish, 250);
+    setTimeout(finish, 600);
+})();
 </script>
 
 </html>

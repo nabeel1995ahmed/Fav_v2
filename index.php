@@ -115,7 +115,7 @@
                 <h2>OUR BUSINESS DIVISIONS</h2>
                 <div class="seprator"></div>
                 <p class="divisions-intro">
-                    Eight specialised divisions of FAV Group delivering industrial
+                    Ten specialised divisions of FAV Group delivering industrial
                     excellence and business solutions across global markets.
                 </p>
             </div>
@@ -134,7 +134,6 @@
                             <h5>Textile Chemicals</h5>
                             <ul>
                                 <li><a href="./textile-dyes-and-chemicals.php">Textile Dyes &amp; Chemicals</a></li>
-                                <li><a href="./masterbatch.php">Masterbatch</a></li>
                                 <li><a href="./veechem-industries.php">Veechem Industries Pvt. Ltd.</a></li>
                             </ul>
                         </div>
@@ -257,6 +256,40 @@
                             <h5>Infrastructure Solutions</h5>
                             <ul>
                                 <li><a href="./warehousing-solutions.php">Warehouse Solutions</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/plastico.jpg" class="img-fluid" alt="Plastico">
+                        </div>
+                        <div class="division-content">
+                            <div class="icon cyan" aria-hidden="true">
+                                <i class="fa fa-cube"></i>
+                            </div>
+                            <h5>Plastico</h5>
+                            <ul>
+                                <li><a href="./masterbatch.php">Masterbatch</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/favo-paint.jpg" class="img-fluid" alt="Favo Paint">
+                        </div>
+                        <div class="division-content">
+                            <div class="icon pink" aria-hidden="true">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <h5>Favo Paint</h5>
+                            <ul>
+                                <li><a href="./veechem-industries.php#favo-paints">FAVO Paints</a></li>
                             </ul>
                         </div>
                     </article>
