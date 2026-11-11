@@ -328,10 +328,11 @@
                             <p class="product-text">
                                 Veechem Industry functions as formulator and standardization of entire range of products for Textile Leather & Paint Industry.
                             </p>
+                            <a href="./textile-auxiliaries-detail.php#textile-auxiliaries-detail" class="product-explore-link">
+                                Textile Auxiliaries Detail
+                                <i class="fal fa-arrow-right" aria-hidden="true"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-12 m-0">
-                        <?php include __DIR__ . '/layout/veechem-textile-auxiliaries.php'; ?>
                     </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">

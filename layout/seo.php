@@ -60,6 +60,15 @@ if (!isset($fav_seo_pages)) {
             'section' => 'Products',
             'breadcrumb' => 'Veechem Industries Pvt. Ltd.',
         ],
+        'textile-auxiliaries-detail.php' => [
+            'slug' => 'textile-auxiliaries-detail',
+            'title' => 'Textile Auxiliaries Detail | Veechem Industries | Vawda',
+            'description' => 'Explore Veechem textile auxiliaries: desizers, wetting agents, sequestering agents, dyeing auxiliaries, softeners and finishing chemicals.',
+            'keywords' => 'textile auxiliaries, Veechem auxiliaries, desizer, wetting agent, dyeing auxiliaries, softener Pakistan',
+            'type' => 'product',
+            'section' => 'Products',
+            'breadcrumb' => 'Textile Auxiliaries Detail',
+        ],
         'toner-cartridges.php' => [
             'slug' => 'toner-cartridges',
             'title' => 'Toner Cartridges | Vawda',

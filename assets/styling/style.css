@@ -496,6 +496,18 @@ a {
     background: #f87212;
 }
 
+.veechem-aux-detail-page {
+    scroll-margin-top: 107px;
+}
+
+.veechem-aux-detail-page .veechem-aux-panel {
+    margin-top: 0;
+}
+
+.veechem-aux-detail-page .veechem-aux-panel .table-responsive {
+    max-height: none;
+}
+
 .veechem-aux-panel {
     width: 100%;
     margin-top: 8px;
