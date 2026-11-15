@@ -33,7 +33,7 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-7">
-                    <span class="hero-label">FAV GROUP — Farid Ahmed Vawda</span>
+                    <!-- <span class="hero-label">FAV GROUP — Farid Ahmed Vawda</span> -->
                     <h1 class="hero-title">
                         TRUSTED <span>INDUSTRIAL &
                             BUSINESS </span>SOLUTIONS
