@@ -515,14 +515,13 @@
                 <div class="seprator"></div>
             </div>
             <?php
-            $veechem_cert_base = './assets/images/products-and-solutions/pigment-powders-and-emulsions/certifications/';
+            $veechem_cert_base = './assets/images/certificates/Veechem/';
             $veechem_certs = [
-                ['file' => 'GCL GOTS S4 Letter of Approval ( Scanned Copy ).pdf', 'title' => 'GOTS Letter of Approval'],
-                ['file' => 'Letter of approval Veechem Updated_CERTIFICATE.pdf', 'title' => 'Letter of Approval'],
-                ['file' => 'VEECHEM INDUSTRIES (PVT) LTD._ChemCheckSummary_23-06-2026 (1).pdf', 'title' => 'ChemCheck Summary'],
-                ['file' => 'Veechem Industries (Pvt.) Ltd. - EMS - 2026.pdf', 'title' => 'EMS Certificate 2026'],
-                ['file' => 'Veechem Industries (Pvt.) Ltd. - QMS - 2026.pdf', 'title' => 'QMS Certificate 2026'],
-                ['file' => 'VEECHEM INDUSTRIES PVT LTD - ZDHC CERTIFICATE.PDF', 'title' => 'ZDHC Certificate'],
+                ['file' => 'Veechem-ISO-9001-2015.pdf', 'title' => 'ISO 9001:2015', 'type' => 'Quality Management'],
+                ['file' => 'ISO-14001-2015.pdf', 'title' => 'ISO 14001:2015', 'type' => 'Environmental Management'],
+                ['file' => 'ISO-45001-2018.jpg', 'title' => 'ISO 45001:2018', 'type' => 'Occupational Health & Safety'],
+                ['file' => 'GCL GOTS S4.pdf', 'title' => 'GOTS', 'type' => 'Organic Textile'],
+                ['file' => 'ZDHC-level-3.pdf', 'title' => 'ZDHC Level 3', 'type' => 'Chemical Management'],
             ];
             ?>
             <div class="veechem-cert-grid">
@@ -531,10 +530,10 @@
                         href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                        <span class="veechem-cert-icon"><i class="fal fa-file-<?= pathinfo($cert['file'], PATHINFO_EXTENSION) === 'pdf' ? 'pdf' : 'image' ?>"></i></span>
                         <span class="veechem-cert-meta">
                             <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
-                            <span class="veechem-cert-type">View PDF</span>
+                            <span class="veechem-cert-type"><?= htmlspecialchars($cert['type']) ?></span>
                         </span>
                         <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
                     </a>

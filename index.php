@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=homepro23">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=homepro24">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -122,7 +122,7 @@
 
             <div class="row g-3 g-md-4 divisions-grid">
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/textile-dyes-and-chemicals.jpg" class="img-fluid" alt="Textile Chemicals">
@@ -140,7 +140,41 @@
                     </article>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/plastico.jpg" class="img-fluid" alt="Plastico">
+                        </div>
+                        <div class="division-content">
+                            <div class="icon cyan" aria-hidden="true">
+                                <i class="fa fa-cube"></i>
+                            </div>
+                            <h5>Plastico</h5>
+                            <ul>
+                                <li><a href="./masterbatch.php">Masterbatch</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
+                    <article class="division-card">
+                        <div class="division-media">
+                            <img src="./assets/images/divisions/favo-paint.jpg" class="img-fluid" alt="Favo Paint">
+                        </div>
+                        <div class="division-content">
+                            <div class="icon pink" aria-hidden="true">
+                                <i class="fa fa-paint-brush"></i>
+                            </div>
+                            <h5>Favo Paint</h5>
+                            <ul>
+                                <li><a href="./veechem-industries.php#favo-paints">FAVO Paints</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/office-solutions.jpg" class="img-fluid" alt="Office Solutions">
@@ -158,7 +192,7 @@
                     </article>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/industrial-systems.jpg" class="img-fluid" alt="Industrial Systems">
@@ -176,7 +210,7 @@
                     </article>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/consumer-products.jpg" class="img-fluid" alt="Consumer Products">
@@ -193,7 +227,7 @@
                     </article>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/energy-solutions.jpg" class="img-fluid" alt="Energy Solutions">
@@ -210,7 +244,7 @@
                     </article>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/security-solutions.jpg" class="img-fluid" alt="Security Solutions">
@@ -227,7 +261,7 @@
                     </article>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/printing-solutions.jpg" class="img-fluid" alt="Printing Solutions">
@@ -244,7 +278,7 @@
                     </article>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-6 col-lg-4 division-col">
                     <article class="division-card">
                         <div class="division-media">
                             <img src="./assets/images/divisions/infrastructure-solutions.jpg" class="img-fluid" alt="Infrastructure Solutions">
@@ -256,40 +290,6 @@
                             <h5>Infrastructure Solutions</h5>
                             <ul>
                                 <li><a href="./warehousing-solutions.php">Warehouse Solutions</a></li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <article class="division-card">
-                        <div class="division-media">
-                            <img src="./assets/images/divisions/plastico.jpg" class="img-fluid" alt="Plastico">
-                        </div>
-                        <div class="division-content">
-                            <div class="icon cyan" aria-hidden="true">
-                                <i class="fa fa-cube"></i>
-                            </div>
-                            <h5>Plastico</h5>
-                            <ul>
-                                <li><a href="./masterbatch.php">Masterbatch</a></li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <article class="division-card">
-                        <div class="division-media">
-                            <img src="./assets/images/divisions/favo-paint.jpg" class="img-fluid" alt="Favo Paint">
-                        </div>
-                        <div class="division-content">
-                            <div class="icon pink" aria-hidden="true">
-                                <i class="fa fa-paint-brush"></i>
-                            </div>
-                            <h5>Favo Paint</h5>
-                            <ul>
-                                <li><a href="./veechem-industries.php#favo-paints">FAVO Paints</a></li>
                             </ul>
                         </div>
                     </article>
@@ -452,37 +452,44 @@
                 <h2>QUALITY &amp; CERTIFICATIONS</h2>
                 <div class="seprator"></div>
                 <p class="home-section-intro">
-                    ISO 9001 since 2003, plus EcoCert and Halal credentials —
+                    ISO 9001, ISO 14001, ISO 45001, ISO 22000, Halal, GOTS and ZDHC —
                     quality systems you can verify.
                 </p>
             </div>
             <div class="row g-3 justify-content-center home-certs-grid">
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="./certificates.php" class="home-cert-card">
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="./certificates.php#fav" class="home-cert-card">
                         <div class="home-cert-icon"><i class="fal fa-award"></i></div>
                         <h5>ISO 9001</h5>
-                        <span>Certified since 2003</span>
+                        <span>FAV, Plastico &amp; Veechem</span>
                     </a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="./certificates.php" class="home-cert-card">
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="./certificates.php#veechem" class="home-cert-card">
                         <div class="home-cert-icon"><i class="fal fa-leaf"></i></div>
-                        <h5>EcoCert</h5>
-                        <span>Environmental standards</span>
+                        <h5>ISO 14001</h5>
+                        <span>Environmental management</span>
                     </a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="./certificates.php" class="home-cert-card">
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="./certificates.php#plastico" class="home-cert-card">
                         <div class="home-cert-icon"><i class="fal fa-certificate"></i></div>
                         <h5>Halal</h5>
-                        <span>Certified manufacturing</span>
+                        <span>Plastico 2026–2027</span>
                     </a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="./certificates.php" class="home-cert-card">
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="./certificates.php#veechem" class="home-cert-card">
                         <div class="home-cert-icon"><i class="fal fa-shield-check"></i></div>
-                        <h5>BVQI</h5>
-                        <span>British accreditation</span>
+                        <h5>GOTS &amp; ZDHC</h5>
+                        <span>Veechem textile standards</span>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <a href="./certificates.php#plastico" class="home-cert-card">
+                        <div class="home-cert-icon"><i class="fal fa-utensils"></i></div>
+                        <h5>ISO 22000</h5>
+                        <span>Food safety management</span>
                     </a>
                 </div>
             </div>

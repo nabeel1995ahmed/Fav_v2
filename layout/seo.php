@@ -179,9 +179,9 @@ if (!isset($fav_seo_pages)) {
         ],
         'certificates.php' => [
             'slug' => 'certificates',
-            'title' => 'Certificates | ISO, EcoCert & Halal | Vawda',
-            'description' => 'View Vawda Group certificates including ISO 9001, EcoCert and Halal quality credentials for industrial and confectionery operations in Pakistan.',
-            'keywords' => 'Vawda certificates, ISO 9001, EcoCert, Halal certificate, BVQI',
+            'title' => 'Certificates | ISO, Halal, GOTS & ZDHC | Vawda',
+            'description' => 'View Vawda Group certificates for FAV, Plastico and Veechem, including ISO 9001, ISO 14001, ISO 45001, ISO 22000, Halal, GOTS and ZDHC.',
+            'keywords' => 'Vawda certificates, ISO 9001, ISO 14001, ISO 22000, Halal certificate, GOTS, ZDHC, Plastico, Veechem',
             'type' => 'website',
             'section' => 'Company',
             'breadcrumb' => 'Certificates',
