@@ -71,26 +71,26 @@
 
                         <div class="feature-item">
                             <i class="fal fa-award"></i>
-                            International <br> Standards
+                            Global <br> Reach
                         </div>
 
                         <div class="feature-item">
                             <i class="fal fa-globe"></i>
-                            Global Supply <br> Network
+                            Local  <br> Commentment
                         </div>
 
                         <div class="feature-item">
                             <i class="fal fa-lightbulb"></i>
-                            Technical <br> Expertise
+                            Technical Experties & <br> Application Support
                         </div>
 
                         <div class="feature-item">
                             <i class="fal fa-clock"></i>
-                            On-Time <br> Delivery
+                            Reliable Supply & <br> On time Delivery
                         </div>
                         <div class="feature-item">
                             <i class="fal fa-handshake"></i>
-                            Trusted Industry <br> Partner
+                            Long Term <br> Industrial Partnership
                         </div>
 
                     </div>
@@ -380,7 +380,7 @@
                             A Trusted Partner Across Industries
                         </h2>
                         <p class="text-muted mt-3">
-                            Since 1984, FAV Group — Farid Ahmed Vawda — has delivered quality
+                            Since 1982, FAV Group — Farid Ahmed Vawda — has delivered quality
                             products and technical support to manufacturers and businesses
                             worldwide, with integrity, innovation and long-term partnerships.
                         </p>
@@ -976,13 +976,13 @@
 */ ?>
 
 <!-- =========================
-     NEWS & EVENTS
+     NEWS & INSIGHTS
 ========================== -->
 
     <section class="home-news-section py-5">
         <div class="container">
             <div class="section-heading text-center mb-4">
-                <h2>NEWS &amp; EVENTS</h2>
+                <h2>NEWS &amp; INSIGHTS</h2>
                 <div class="seprator"></div>
                 <p class="home-section-intro">
                     Recent exhibitions, milestones and company moments from FAV Group.

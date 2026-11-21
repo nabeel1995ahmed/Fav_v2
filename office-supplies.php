@@ -243,11 +243,11 @@
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/office-supplies/premium-inks.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/office-supplies/shaker-inks.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="row g-4 align-items-center m-0 product-section">
+                <!-- <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
                             <img src="./assets/images/products-and-solutions/office-supplies/shaker-inks.svg" class="img-fluid" alt="">
@@ -263,12 +263,12 @@
                                Reliable shaker inks developed for consistent ink application and dependable performance in compatible printing systems.               </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">04</span>
+                                <span class="product-number">03</span>
                                 <h5>Powder Refill Bags</h5>
                             </div>
                             <p class="product-text">
@@ -295,7 +295,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">05</span>
+                                <span class="product-number">04</span>
                                 <h5>Copier Spare Parts</h5>
                             </div>
                             <p class="product-text">
@@ -307,7 +307,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">06</span>
+                                <span class="product-number">05</span>
                                 <h5>Inkjet Photo Paper</h5>
                             </div>
                             <p class="product-text">
@@ -329,7 +329,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">07</span>
+                                <span class="product-number">06</span>
                                 <h5>Equipment</h5>
                             </div>
                             <p class="product-text">

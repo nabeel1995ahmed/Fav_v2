@@ -8,7 +8,7 @@ if (!isset($fav_seo_pages)) {
         'index.php' => [
             'slug' => '',
             'title' => 'FAV Group | Farid Ahmed Vawda — Industrial & Business Solutions Pakistan',
-            'description' => 'FAV Group (Farid Ahmed Vawda / Vawda) — industrial & business solutions since 1984. Textile dyes & chemicals, automation, energy, security, office, warehousing and manufacturing from Karachi, Lahore and Faisalabad.',
+            'description' => 'FAV Group (Farid Ahmed Vawda / Vawda) — industrial & business solutions since 1982. Textile dyes & chemicals, automation, energy, security, office, warehousing and manufacturing from Karachi, Lahore and Faisalabad.',
             'keywords' => 'FAV Group, Farid Ahmed Vawda, Vawda, industrial solutions Pakistan, textile chemicals, industrial automation, energy solutions, security solutions, masterbatch, ISO 9001 Karachi',
             'image' => '/assets/images/divisions/industrial-systems.jpg',
             'type' => 'website',
@@ -170,8 +170,8 @@ if (!isset($fav_seo_pages)) {
         ],
         'about-us.php' => [
             'slug' => 'about-us',
-            'title' => 'About Us | Vawda Group Since 1984',
-            'description' => 'Vawda Group has served textile, plastics and industrial markets since 1984. ISO 9001 certified, with head office in Karachi and offices in Lahore and Faisalabad.',
+            'title' => 'About Us | Vawda Group Since 1982',
+            'description' => 'Vawda Group has served textile, plastics and industrial markets since 1982. ISO 9001 certified, with head office in Karachi and offices in Lahore and Faisalabad.',
             'keywords' => 'about Vawda, FAV Group, Farid Ahmed Vawda, ISO 9001, textile chemicals Pakistan',
             'type' => 'website',
             'section' => 'Company',
@@ -197,12 +197,12 @@ if (!isset($fav_seo_pages)) {
         ],
         'news-events.php' => [
             'slug' => 'news-events',
-            'title' => 'News & Events | Vawda',
+            'title' => 'News & Insights | Vawda',
             'description' => 'Company announcements, industry highlights and upcoming exhibitions from Vawda Industrial and Business Solutions in Karachi, Pakistan.',
             'keywords' => 'Vawda news, industrial exhibitions, company events',
             'type' => 'website',
             'section' => 'News',
-            'breadcrumb' => 'News & Events',
+            'breadcrumb' => 'News & Insights',
         ],
         'careers.php' => [
             'slug' => 'careers',
@@ -323,7 +323,7 @@ $graph = [
         'image' => $fav_seo_image,
         'email' => 'info@vawda.com',
         'telephone' => '+92-21-32550093',
-        'foundingDate' => '1984',
+        'foundingDate' => '1982',
         'founder' => [
             '@type' => 'Person',
             'name' => 'Farid Ahmed Vawda',

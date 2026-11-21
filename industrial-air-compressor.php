@@ -396,12 +396,12 @@
                             'text' => 'Manual and automatic drain valves remove condensate, oil and contaminants from receivers, filters and pipelines to prevent corrosion and protect air quality.',
                         ],
                         [
-                            'name' => 'New & Used Air Ends',
+                            'name' => 'Air Line Filter / Cartridges',
                             'image' => 'multi-brand/new-used-air-ends.svg',
                             'text' => 'New precision-engineered screw air ends delivering high efficiency, durability, low noise and long service life for new installs or upgrades.',
                         ],
                         [
-                            'name' => 'Used / Reconditioned Air Ends',
+                            'name' => 'New & Used / Reconditioned Air Ends',
                             'image' => 'multi-brand/used-reconditioned-air-ends.svg',
                             'text' => 'Inspected, repaired and performance-tested reconditioned air ends with replaced bearings, seals and worn parts—a cost-effective industrial option.',
                         ],

@@ -97,7 +97,7 @@ function dropdown_active($href, $current_page) {
                         <a class="nav-link<?= nav_active('certificates', $active_nav) ?>" href="./certificates.php" data-nav="certificates">Certificates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link<?= nav_active('news', $active_nav) ?>" href="./news-events.php" data-nav="news">News & Events</a>
+                        <a class="nav-link<?= nav_active('news', $active_nav) ?>" href="./news-events.php" data-nav="news">News & Insights</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link<?= nav_active('careers', $active_nav) ?>" href="./careers.php" data-nav="careers">Careers</a>

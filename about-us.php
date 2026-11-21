@@ -29,7 +29,7 @@
             <p class="cu-banner-text">
                 Importers and indenters of textile dyes, finishing chemicals, lab equipment,
                 machinery, industrial inverters, air compressors, toner and security equipment —
-                with manufacturing in masterbatch, pigments and confectionery since 1984.
+                with manufacturing in masterbatch, pigments and confectionery since 1982.
             </p>
             <div class="hero-buttons">
                 <a href="#about-content" class="btn btn-warning text-white">
@@ -49,7 +49,7 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="op-stat-card">
-                        <h3>1984</h3>
+                        <h3>1982</h3>
                         <p>Founded</p>
                     </div>
                 </div>
@@ -93,9 +93,9 @@
                 <div class="col-lg-8">
                     <article class="about-panel is-active" id="panel-overview">
                         <span class="ne-eyebrow">INTRODUCTION &amp; OVERVIEW</span>
-                        <h2>Leading since 1984</h2>
+                        <h2>Leading since 1982</h2>
                         <p>
-                            Vawda Group is one of the leading groups striving for excellence since 1984 as a
+                            Vawda Group is one of the leading groups striving for excellence since 1982 as a
                             local provider of dyes and chemicals to textile industries. One of the subsidiaries
                             of Vawda Group, FAV Plastico (Pvt.) Limited, deals in high quality resins and
                             masterbatches for manufacturing plastics. Another sister concern, Veechem Industries
@@ -236,7 +236,7 @@
                         <div class="row g-3 mt-1">
                             <div class="col-md-6">
                                 <div class="about-person-card">
-                                    <h4>Yaqoob Muhammad Vawda</h4>
+                                    <h4>Yaqoob Muhammad Vawda (Late)</h4>
                                     <p>Chairman</p>
                                 </div>
                             </div>
@@ -254,20 +254,20 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="about-person-card">
-                                    <h4>Raza Kazi</h4>
-                                    <p>Director Finance</p>
+                                    <h4>Saadia Farid Ahmed Vawda</h4>
+                                    <p>Director</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="about-person-card">
-                                    <h4>Aamna Vawda</h4>
-                                    <p>Manager Coordination</p>
+                                    <h4>Jahanzeb Mirza</h4>
+                                    <p>Director</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="about-person-card">
-                                    <h4>Abdul Hafeez</h4>
-                                    <p>General Manager Sales &amp; Marketing</p>
+                                    <h4>Umer Vawda</h4>
+                                    <p>Director</p>
                                 </div>
                             </div>
                         </div>

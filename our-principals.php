@@ -181,7 +181,7 @@
                         </div>
                         <div class="col-6">
                             <div class="op-stat-card">
-                                <h3>5</h3>
+                                <h3>10+</h3>
                                 <p>Industry Segments</p>
                             </div>
                         </div>

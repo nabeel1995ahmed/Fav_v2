@@ -302,11 +302,11 @@
                 <ul>
                     <li><a href="./">Home</a></li>
                     <li><i class="fal fa-angle-right"></i></li>
-                    <li><span>News & Events</span></li>
+                    <li><span>News & Insights</span></li>
                 </ul>
             </div>
             <span class="hero-label">STAY UPDATED</span>
-            <h1 class="hero-title">NEWS &amp; <span>EVENTS</span></h1>
+            <h1 class="hero-title">NEWS &amp; <span>INSIGHTS</span></h1>
             <p class="ne-banner-text">
                 Explore highlights from exhibitions, company gatherings, and industry moments
                 captured across Vawda Industrial &amp; Business Solutions.

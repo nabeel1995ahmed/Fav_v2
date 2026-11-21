@@ -27,7 +27,7 @@
             <span class="hero-label reveal-up d1">JOIN THE TEAM</span>
             <h1 class="hero-title reveal-up d2">BUILD YOUR <span>CAREER</span></h1>
             <p class="cu-banner-text reveal-up d3">
-                Since 1984, Vawda has grown with people who take ownership,
+                Since 1982, Vawda has grown with people who take ownership,
                 solve real industrial problems, and deliver right first time.
                 Come work with a team that values quality, integrity and growth.
             </p>
@@ -89,14 +89,14 @@
                             <i class="fal fa-award"></i>
                         </div>
                         <h3>Trusted Name</h3>
-                        <p>ISO 9001 certified operations and global principals since 1984.</p>
+                        <p>ISO 9001 certified operations and global principals since 1982.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="careers-roles-section" id="open-roles">
+    <!-- <section class="careers-roles-section" id="open-roles">
         <div class="container">
             <div class="cu-section-head text-center reveal-up">
                 <span class="ne-eyebrow">CURRENT OPENINGS</span>
@@ -174,7 +174,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="cu-form-section" id="apply-now">
         <div class="container">

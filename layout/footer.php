@@ -23,7 +23,7 @@
                     <li><a href="./#featured-product-section">Products</a></li>
                     <li><a href="./our-principals.php">Our Principals</a></li>
                     <li><a href="./certificates.php">Certificates</a></li>
-                    <li><a href="./news-events.php">News & Events</a></li>
+                    <li><a href="./news-events.php">News & Insights</a></li>
                     <li><a href="./careers.php">Careers</a></li>
                     <li><a href="./contact-us.php">Contact Us</a></li>
                 </ul>
