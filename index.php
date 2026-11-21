@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=homepro24">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=homepro26">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -456,45 +456,64 @@
                     quality systems you can verify.
                 </p>
             </div>
-            <div class="row g-3 justify-content-center home-certs-grid">
-                <div class="col-6 col-md-4 col-lg">
-                    <a href="./certificates.php#fav" class="home-cert-card">
-                        <div class="home-cert-icon"><i class="fal fa-award"></i></div>
-                        <h5>ISO 9001</h5>
-                        <span>FAV, Plastico &amp; Veechem</span>
+            <?php
+            $homeCertThumbBase = './assets/images/certificates/thumbs';
+            $homeCertHighlights = [
+                [
+                    'title' => 'ISO 9001',
+                    'text' => 'FAV, Plastico & Veechem',
+                    'thumb' => 'FAV/FAV-ISO-9001-2015.jpg',
+                    'href' => './certificates.php#cert-fav',
+                ],
+                [
+                    'title' => 'ISO 14001',
+                    'text' => 'Environmental management',
+                    'thumb' => 'Veechem/ISO-14001-2015.jpg',
+                    'href' => './certificates.php#cert-veechem',
+                ],
+                [
+                    'title' => 'Halal',
+                    'text' => 'Plastico 2026–2027',
+                    'thumb' => 'Plastico/IHC-Halal-Certificate.jpg',
+                    'href' => './certificates.php#cert-plastico',
+                ],
+                [
+                    'title' => 'GOTS & ZDHC',
+                    'text' => 'Veechem textile standards',
+                    'thumb' => 'Veechem/GCL-GOTS-S4.jpg',
+                    'href' => './certificates.php#cert-veechem',
+                ],
+                [
+                    'title' => 'ISO 22000',
+                    'text' => 'Food safety management',
+                    'thumb' => 'Plastico/ISO-22000-2018.jpg',
+                    'href' => './certificates.php#cert-plastico',
+                ],
+            ];
+            ?>
+            <div class="home-certs-grid">
+                <?php foreach ($homeCertHighlights as $cert): ?>
+                    <a href="<?= htmlspecialchars($cert['href']) ?>" class="home-cert-card">
+                        <div class="home-cert-frame">
+                            <div class="home-cert-preview">
+                                <img src="<?= htmlspecialchars($homeCertThumbBase . '/' . $cert['thumb']) ?>"
+                                    alt="<?= htmlspecialchars($cert['title']) ?>"
+                                    loading="lazy">
+                            </div>
+                        </div>
+                        <div class="home-cert-body">
+                            <h5><?= htmlspecialchars($cert['title']) ?></h5>
+                            <span><?= htmlspecialchars($cert['text']) ?></span>
+                            <em class="home-cert-action">
+                                View certificate
+                                <i class="fal fa-arrow-right"></i>
+                            </em>
+                        </div>
                     </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg">
-                    <a href="./certificates.php#veechem" class="home-cert-card">
-                        <div class="home-cert-icon"><i class="fal fa-leaf"></i></div>
-                        <h5>ISO 14001</h5>
-                        <span>Environmental management</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg">
-                    <a href="./certificates.php#plastico" class="home-cert-card">
-                        <div class="home-cert-icon"><i class="fal fa-certificate"></i></div>
-                        <h5>Halal</h5>
-                        <span>Plastico 2026–2027</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg">
-                    <a href="./certificates.php#veechem" class="home-cert-card">
-                        <div class="home-cert-icon"><i class="fal fa-shield-check"></i></div>
-                        <h5>GOTS &amp; ZDHC</h5>
-                        <span>Veechem textile standards</span>
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg">
-                    <a href="./certificates.php#plastico" class="home-cert-card">
-                        <div class="home-cert-icon"><i class="fal fa-utensils"></i></div>
-                        <h5>ISO 22000</h5>
-                        <span>Food safety management</span>
-                    </a>
-                </div>
+                <?php endforeach; ?>
             </div>
             <div class="hero-buttons justify-content-center mt-4">
-                <a href="./certificates.php" class="btn btn-warning text-white">
+                <a href="./certificates.php#certificate-gallery" class="btn btn-warning text-white">
                     VIEW ALL CERTIFICATES
                     <i class="fal fa-arrow-right"></i>
                 </a>
