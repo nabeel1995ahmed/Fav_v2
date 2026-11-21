@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=im-tabs4">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=im-tabs6">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -332,6 +332,82 @@
                         ['file' => 'Textile Sizing Flyer.pdf', 'title' => 'Textile Sizing Flyer'],
                     ],
                 ],
+                [
+                    'id' => 'lab-equipment',
+                    'title' => 'Lab Equipment',
+                    'short' => 'Lab Equipment',
+                    'folder' => 'lab-equipment',
+                    'products' => [
+                        [
+                            'name' => 'Fibre Testing',
+                            'image' => 'lab-equipment/fibre-testing.png',
+                            'pdf' => 'fibre-testing.pdf',
+                            'text' => 'Laboratory fibre testing equipment for strength, length, fineness and related quality checks.',
+                        ],
+                        [
+                            'name' => 'Yarn Testing',
+                            'image' => 'lab-equipment/yarn-testing.png',
+                            'pdf' => 'yarn-testing.pdf',
+                            'text' => 'Yarn testing systems covering count, twist, crimp, strength and production quality control.',
+                        ],
+                        [
+                            'name' => 'Fabric Testing',
+                            'image' => 'lab-equipment/fabric-testing.jpg',
+                            'pdf' => 'FAV-Fabric-Testing.pdf',
+                            'text' => 'Fabric testing instruments for stretch, tearing, bursting, abrasion and related performance checks.',
+                        ],
+                        [
+                            'name' => 'Fabric Comfort & Style',
+                            'image' => 'lab-equipment/fabric-testing-comfortable.jpg',
+                            'pdf' => 'FAV-Fabric-Testing-Comfortable.pdf',
+                            'text' => 'Comfort and style fabric testing for count, thickness, shrinkage and hand-feel related evaluation.',
+                        ],
+                        [
+                            'name' => 'Fabric Color Fastness',
+                            'image' => 'lab-equipment/fabric-color-fastness.jpg',
+                            'pdf' => 'fabric-color-fastness.pdf',
+                            'text' => 'Color fastness testing for rubbing, washing, perspiration, light and related fabric performance.',
+                        ],
+                        [
+                            'name' => 'Garment Testing',
+                            'image' => 'lab-equipment/garment-testing.png',
+                            'pdf' => 'garment-testing.pdf',
+                            'text' => 'Garment testing equipment for flammability, down-proofing and finished apparel quality checks.',
+                        ],
+                        [
+                            'name' => 'Dyeing & Finishing',
+                            'image' => 'lab-equipment/dyeing-and-finishing.jpg',
+                            'pdf' => 'dyeing-and-finishing-fav-.pdf',
+                            'text' => 'Laboratory dyeing and finishing machines for sample dyeing, washing and process development.',
+                        ],
+                        [
+                            'name' => 'Lab Spinning / Knitting',
+                            'image' => 'lab-equipment/lab-spinning-knitting.png',
+                            'pdf' => 'lab-spinning-knitting.pdf',
+                            'text' => 'Lab-scale spinning, weaving and knitting equipment for sampling and process trials.',
+                        ],
+                        [
+                            'name' => 'General Lab Equipment',
+                            'image' => 'lab-equipment/general.png',
+                            'pdf' => 'general.pdf',
+                            'text' => 'General laboratory tools including sample cutters, balances and temperature/humidity instruments.',
+                        ],
+                    ],
+                ],
+                [
+                    'id' => 'pigment-dispersion-machine',
+                    'title' => 'Pigment Dispersion Machine',
+                    'short' => 'Pigment Dispersion',
+                    'folder' => 'pigment-dispersion-machine',
+                    'products' => [
+                        [
+                            'name' => 'Pigment Dispersion Machine',
+                            'image' => 'pigment-dispersion-machine/pigment-dispersion-machine.png',
+                            'pdf' => 'Pigment Dispersion Machine.pdf',
+                            'text' => 'Bead mills, three-roller mills and dispersion equipment for pigment grinding, mixing and fine particle processing.',
+                        ],
+                    ],
+                ],
             ];
 
             $categories = array_values(array_filter($categories, static function ($category) {
@@ -386,6 +462,9 @@
                                 $imageSrc = $imgBase . '/' . $product['image'];
                                 $alt = htmlspecialchars($product['name']);
                                 $number = str_pad((string) $productNumber, 2, '0', STR_PAD_LEFT);
+                                $pdfHref = !empty($product['pdf'])
+                                    ? $catalogPath . rawurlencode($product['pdf'])
+                                    : null;
                             ?>
                             <article class="iac-product-card">
                                 <div class="iac-product-media">
@@ -395,6 +474,12 @@
                                 <div class="iac-product-body">
                                     <h5><?= $alt ?></h5>
                                     <p><?= htmlspecialchars($product['text']) ?></p>
+                                    <?php if ($pdfHref): ?>
+                                        <a class="iac-product-pdf" href="<?= htmlspecialchars($pdfHref) ?>" target="_blank" rel="noopener noreferrer">
+                                            <i class="fal fa-file-pdf" aria-hidden="true"></i>
+                                            <span>View PDF</span>
+                                        </a>
+                                    <?php endif; ?>
                                 </div>
                             </article>
                             <?php endforeach; ?>

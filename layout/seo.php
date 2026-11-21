@@ -63,8 +63,8 @@ if (!isset($fav_seo_pages)) {
         'textile-auxiliaries-detail.php' => [
             'slug' => 'textile-auxiliaries-detail',
             'title' => 'Textile Auxiliaries Detail | Veechem Industries | Vawda',
-            'description' => 'Explore Veechem textile auxiliaries: desizers, wetting agents, sequestering agents, dyeing auxiliaries, softeners and finishing chemicals.',
-            'keywords' => 'textile auxiliaries, Veechem auxiliaries, desizer, wetting agent, dyeing auxiliaries, softener Pakistan',
+            'description' => 'Explore Veechem textile auxiliaries: sizing chemicals, desizers, wetting agents, sequestering agents, dyeing auxiliaries, softeners and finishing chemicals.',
+            'keywords' => 'textile auxiliaries, Veechem auxiliaries, sizing chemicals, desizer, wetting agent, dyeing auxiliaries, softener Pakistan',
             'type' => 'product',
             'section' => 'Products',
             'breadcrumb' => 'Textile Auxiliaries Detail',

@@ -67,11 +67,15 @@
                     </h1>
 
                     <p class="hero-text">
-                        Full product range of Veechem textile auxiliaries for pretreatment, dyeing and finishing processes.
+                        Full product range of Veechem textile auxiliaries for sizing, pretreatment, dyeing and finishing processes.
                     </p>
 
                     <div class="hero-list">
                         <ul>
+                            <li>
+                                <span><i class="fal fa-check-circle"></i></span>
+                                <p>Sizing Chemicals</p>
+                            </li>
                             <li>
                                 <span><i class="fal fa-check-circle"></i></span>
                                 <p>Desizer & Wetting</p>
@@ -82,11 +86,7 @@
                             </li>
                             <li>
                                 <span><i class="fal fa-check-circle"></i></span>
-                                <p>Dyeing Auxiliaries</p>
-                            </li>
-                            <li>
-                                <span><i class="fal fa-check-circle"></i></span>
-                                <p>Finishing Softeners</p>
+                                <p>Dyeing & Finishing</p>
                             </li>
                         </ul>
                     </div>

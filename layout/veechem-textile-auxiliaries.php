@@ -1,5 +1,10 @@
 <?php
 $veechem_aux_categories = [
+    'sizing' => [
+        'label' => 'Sizing',
+        'layout' => 'sizing',
+        'products' => [],
+    ],
     'desizer' => [
         'label' => 'Desizer',
         'products' => [
@@ -114,30 +119,34 @@ $veechem_aux_first = array_key_first($veechem_aux_categories);
                 role="tabpanel"
                 aria-labelledby="veechem-aux-<?= htmlspecialchars($key) ?>-tab"
                 tabindex="0">
-                <div class="table-responsive">
-                    <table class="table veechem-aux-table mb-0">
-                        <thead>
-                            <tr>
-                                <th>Products</th>
-                                <th>Purpose</th>
-                                <th>Appearance</th>
-                                <th>Ionicity</th>
-                                <th>Technical Advantages</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php foreach ($category['products'] as $product): ?>
+                <?php if (($category['layout'] ?? '') === 'sizing'): ?>
+                    <?php include __DIR__ . '/veechem-sizing-chemicals.php'; ?>
+                <?php else: ?>
+                    <div class="table-responsive">
+                        <table class="table veechem-aux-table mb-0">
+                            <thead>
                                 <tr>
-                                    <td><?= htmlspecialchars($product[0]) ?></td>
-                                    <td><?= htmlspecialchars($product[1]) ?></td>
-                                    <td><?= htmlspecialchars($product[2]) ?></td>
-                                    <td><?= htmlspecialchars($product[3]) ?></td>
-                                    <td><?= htmlspecialchars($product[4]) ?></td>
+                                    <th>Products</th>
+                                    <th>Purpose</th>
+                                    <th>Appearance</th>
+                                    <th>Ionicity</th>
+                                    <th>Technical Advantages</th>
                                 </tr>
-                            <?php endforeach; ?>
-                        </tbody>
-                    </table>
-                </div>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($category['products'] as $product): ?>
+                                    <tr>
+                                        <td><?= htmlspecialchars($product[0]) ?></td>
+                                        <td><?= htmlspecialchars($product[1]) ?></td>
+                                        <td><?= htmlspecialchars($product[2]) ?></td>
+                                        <td><?= htmlspecialchars($product[3]) ?></td>
+                                        <td><?= htmlspecialchars($product[4]) ?></td>
+                                    </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                <?php endif; ?>
             </div>
         <?php endforeach; ?>
     </div>

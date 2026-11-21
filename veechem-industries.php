@@ -216,39 +216,6 @@
             </div>
             <div class="product-main-section">
                 <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
-                        <div class="product-details">
-                            <div class="product-head">
-                                <span class="product-number">01</span>
-                                <div class="product-head-text">
-                                    <h5>Sizing</h5>
-                                    <span class="product-subheading">Sizing Chemicals</span>
-                                </div>
-                            </div>
-                            <p class="product-text">
-                                To improve weavability to the warp and /or to overcome inherent
-                                deficiencies of the yarn to withstand the stresses and strains
-                                of weaving. This can be attained by improving primarily the
-                                abrasion resistance of the yarn. This in turn is achieved with
-                                the formation of a film around the yarn along with some
-                                penetration of sizing chemicals.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/pigment-powders-and-emulsions/sizing.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
-                        </div>
-                    </div>
-                    <div class="col-12 m-0">
-                        <?php include __DIR__ . '/layout/veechem-sizing-chemicals.php'; ?>
-                    </div>
-                </div>
-                <div class="row g-4 align-items-center m-0 product-section">
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
                             <img
@@ -262,7 +229,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">02</span>
+                                <span class="product-number">01</span>
                                 <h5>Pigment Powder</h5>
                             </div>
                             <p class="product-text">
@@ -275,7 +242,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">03</span>
+                                <span class="product-number">02</span>
                                 <h5>Pigment Emulsion</h5>
                             </div>
                             <p class="product-text">
@@ -331,7 +298,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">04</span>
+                                <span class="product-number">03</span>
                                 <h5>Textile Auxiliaries</h5>
                             </div>
                             <p class="product-text">
@@ -348,7 +315,7 @@
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
-                                <span class="product-number">05</span>
+                                <span class="product-number">04</span>
                                 <h5>FAVO Paints</h5>
                             </div>
                             <p class="product-text">
