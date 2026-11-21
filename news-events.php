@@ -30,40 +30,40 @@
     };
 
     $categoryMeta = [
-        'picnic' => [
-            'label' => 'Picnic',
-            'pattern' => '/picnic/i',
-            'blurb' => 'Annual team outings and celebrations',
-            'order' => 1,
-        ],
         'textile' => [
             'label' => 'Textile',
             'pattern' => '/textile/i',
             'blurb' => 'Textile Asia exhibitions and showcases',
-            'order' => 2,
+            'order' => 1,
         ],
         'plastico' => [
             'label' => 'Plastico',
             'pattern' => '/plastico/i',
             'blurb' => '3P Plastico industry exhibitions',
-            'order' => 3,
-        ],
-        'milestone' => [
-            'label' => 'Milestone',
-            'pattern' => '/milestone/i',
-            'blurb' => 'Company achievements and recognitions',
-            'order' => 4,
+            'order' => 2,
         ],
         'food-expo' => [
             'label' => 'Food Expo',
             'pattern' => '/food\s*expo|mera\s*brand/i',
             'blurb' => 'Mera Brand Pakistan Food Expo',
+            'order' => 3,
+        ],
+        'dps' => [
+            'label' => 'DPS',
+            'pattern' => '/\bdps\b/i',
+            'blurb' => 'DPS event highlights',
+            'order' => 4,
+        ],
+        'china' => [
+            'label' => 'China',
+            'pattern' => '/china/i',
+            'blurb' => 'International visits and collaborations',
             'order' => 5,
         ],
-        'august' => [
-            'label' => '14 August',
-            'pattern' => '/^august\b/i',
-            'blurb' => 'Independence Day celebrations',
+        'milestone' => [
+            'label' => 'Milestone',
+            'pattern' => '/milestone/i',
+            'blurb' => 'Company achievements and recognitions',
             'order' => 6,
         ],
         'meeting' => [
@@ -72,22 +72,22 @@
             'blurb' => 'Corporate meetings and gatherings',
             'order' => 7,
         ],
+        'august' => [
+            'label' => '14 August',
+            'pattern' => '/^august\b/i',
+            'blurb' => 'Independence Day celebrations',
+            'order' => 8,
+        ],
         'eid' => [
             'label' => 'Eid Lunch',
             'pattern' => '/eid/i',
             'blurb' => 'Eid-ul-Fitr team lunch moments',
-            'order' => 8,
-        ],
-        'china' => [
-            'label' => 'China',
-            'pattern' => '/china/i',
-            'blurb' => 'International visits and collaborations',
             'order' => 9,
         ],
-        'dps' => [
-            'label' => 'DPS',
-            'pattern' => '/\bdps\b/i',
-            'blurb' => 'DPS event highlights',
+        'picnic' => [
+            'label' => 'Picnic',
+            'pattern' => '/picnic/i',
+            'blurb' => 'Annual team outings and celebrations',
             'order' => 10,
         ],
     ];
