@@ -533,7 +533,7 @@
                         <div class="counter-box">
                             <i class="fal fa-building"></i>
                             <div class="counter-text">
-                                <h3 class="counter" data-count="8">1+</h3>
+                                <h3 class="counter" data-count="10">1+</h3>
                                 <p>Business Divisions</p>
                             </div>
                         </div>
