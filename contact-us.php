@@ -125,35 +125,89 @@
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
-                    <article class="cu-branch-card">
-                        <span class="cu-branch-tag">Head Office</span>
+                    <article class="cu-branch-card is-head-office">
+                        <div class="cu-branch-card-top">
+                            <span class="cu-branch-icon" aria-hidden="true"><i class="fal fa-building"></i></span>
+                            <span class="cu-branch-tag">Head Office</span>
+                        </div>
                         <h3>Karachi</h3>
-                        <p>B-66/A, S.I.T.E. Area, Karachi-75700, Pakistan.</p>
+                        <p class="cu-branch-address">
+                            <i class="fal fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>B-66/A, S.I.T.E. Area, Karachi-75700, Pakistan.</span>
+                        </p>
                         <ul>
-                            <li><i class="fal fa-phone-alt"></i><a href="tel:+922132550093">+92 (21) 32550093-98</a></li>
-                            <li><i class="fal fa-envelope"></i><a href="mailto:info@vawda.com">info@vawda.com</a></li>
+                            <li>
+                                <span class="cu-branch-contact-icon" aria-hidden="true"><i class="fal fa-phone-alt"></i></span>
+                                <div>
+                                    <span class="cu-branch-contact-label">Phone</span>
+                                    <a href="tel:+922132550093">+92 (21) 32550093-98</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="cu-branch-contact-icon" aria-hidden="true"><i class="fal fa-envelope"></i></span>
+                                <div>
+                                    <span class="cu-branch-contact-label">Email</span>
+                                    <a href="mailto:info@vawda.com">info@vawda.com</a>
+                                </div>
+                            </li>
                         </ul>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="cu-branch-card">
-                        <span class="cu-branch-tag">Liaison Office</span>
+                        <div class="cu-branch-card-top">
+                            <span class="cu-branch-icon" aria-hidden="true"><i class="fal fa-map-marker-alt"></i></span>
+                            <span class="cu-branch-tag">Liaison Office</span>
+                        </div>
                         <h3>Lahore</h3>
-                        <p>307-E, Nadir Street, Ferry Meadow Lane, West Canal Bank, Lahore.</p>
+                        <p class="cu-branch-address">
+                            <i class="fal fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>307-E, Nadir Street, Ferry Meadow Lane, West Canal Bank, Lahore.</span>
+                        </p>
                         <ul>
-                            <li><i class="fal fa-phone-alt"></i><a href="tel:+924236113239">+92 (42) 36113239</a></li>
-                            <li><i class="fal fa-fax"></i><span>+92 (42) 35292819</span></li>
+                            <li>
+                                <span class="cu-branch-contact-icon" aria-hidden="true"><i class="fal fa-phone-alt"></i></span>
+                                <div>
+                                    <span class="cu-branch-contact-label">Phone</span>
+                                    <a href="tel:+924236113239">+92 (42) 36113239</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="cu-branch-contact-icon" aria-hidden="true"><i class="fal fa-fax"></i></span>
+                                <div>
+                                    <span class="cu-branch-contact-label">Fax</span>
+                                    <span>+92 (42) 35292819</span>
+                                </div>
+                            </li>
                         </ul>
                     </article>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <article class="cu-branch-card">
-                        <span class="cu-branch-tag">Liaison Office</span>
+                        <div class="cu-branch-card-top">
+                            <span class="cu-branch-icon" aria-hidden="true"><i class="fal fa-map-marker-alt"></i></span>
+                            <span class="cu-branch-tag">Liaison Office</span>
+                        </div>
                         <h3>Faisalabad</h3>
-                        <p>P-68, Vawda House, Vawda Street 4, Zia Town, Faisalabad.</p>
+                        <p class="cu-branch-address">
+                            <i class="fal fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>P-68, Vawda House, Vawda Street 4, Zia Town, Faisalabad.</span>
+                        </p>
                         <ul>
-                            <li><i class="fal fa-phone-alt"></i><a href="tel:+92418524576">+92 (41) 8524576</a></li>
-                            <li><i class="fal fa-fax"></i><span>+92 (41) 8524947</span></li>
+                            <li>
+                                <span class="cu-branch-contact-icon" aria-hidden="true"><i class="fal fa-phone-alt"></i></span>
+                                <div>
+                                    <span class="cu-branch-contact-label">Phone</span>
+                                    <a href="tel:+92418524576">+92 (41) 8524576</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="cu-branch-contact-icon" aria-hidden="true"><i class="fal fa-fax"></i></span>
+                                <div>
+                                    <span class="cu-branch-contact-label">Fax</span>
+                                    <span>+92 (41) 8524947</span>
+                                </div>
+                            </li>
                         </ul>
                     </article>
                 </div>
@@ -271,17 +325,50 @@
     ========================== -->
     <section class="cu-map-section">
         <div class="container">
-            <div class="cu-section-head text-center">
-                <span class="ne-eyebrow">FIND US</span>
-                <h2>Visit Our Head Office</h2>
-            </div>
-            <div class="cu-map-frame">
-                <iframe
-                    title="Vawda Head Office Location"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7520615111976!2d67.0040625!3d24.9064375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fd95cc00001%3A0x2b481f4b69f4ce0c!2sFAV%20Group%20of%20Companies!5e0!3m2!1sen!2s!4v1793779466755!5m2!1sen!2s"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen></iframe>
+            <div class="home-presence-map-panel">
+                <div class="home-presence-map-info">
+                    <span class="ne-eyebrow">FIND US</span>
+                    <h2 class="home-presence-map-title">Visit Our Head Office</h2>
+                    <p class="home-presence-map-text">
+                        Meet our team at the FAV Group head office in Karachi’s S.I.T.E. Area.
+                    </p>
+                    <ul class="home-presence-map-details">
+                        <li>
+                            <i class="fal fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>B-66/A, S.I.T.E. Area, Karachi-75700, Pakistan.</span>
+                        </li>
+                        <li>
+                            <i class="fal fa-phone-alt" aria-hidden="true"></i>
+                            <a href="tel:+922132550093">+92 (21) 32550093-98</a>
+                        </li>
+                        <li>
+                            <i class="fal fa-clock" aria-hidden="true"></i>
+                            <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+                        </li>
+                    </ul>
+                    <div class="home-presence-map-actions">
+                        <a
+                            href="https://www.google.com/maps/dir/?api=1&destination=FAV+Group+of+Companies,+B-66/A,+S.I.T.E.+Area,+Karachi"
+                            class="btn btn-warning text-white"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            GET DIRECTIONS
+                            <i class="fal fa-location-arrow"></i>
+                        </a>
+                        <a href="#contact-form" class="btn btn-outline-primary">
+                            SEND A MESSAGE
+                            <i class="fal fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-presence-map-embed cu-map-frame">
+                    <iframe
+                        title="Vawda Head Office Location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7520615111976!2d67.0040625!3d24.9064375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fd95cc00001%3A0x2b481f4b69f4ce0c!2sFAV%20Group%20of%20Companies!5e0!3m2!1sen!2s!4v1793779466755!5m2!1sen!2s"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
