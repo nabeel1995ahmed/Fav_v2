@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner4">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>

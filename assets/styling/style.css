@@ -1562,6 +1562,14 @@ a {
 }
 
 @media (max-width: 767.98px) {
+    .hero-section {
+        height: auto;
+        min-height: 0;
+        padding: 48px 0 56px;
+        align-items: flex-start;
+        overflow: visible;
+    }
+
     .home-page-hero.hero-section {
         height: auto;
         min-height: 0;
@@ -1587,8 +1595,8 @@ a {
         line-height: 1.65;
         margin: 16px 0 0;
         max-width: 36em;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .home-page-hero .hero-buttons {
@@ -1598,8 +1606,8 @@ a {
         gap: 10px;
         width: 100%;
         max-width: 340px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .home-page-hero .hero-buttons .btn,
@@ -1619,16 +1627,26 @@ a {
         margin-top: 28px;
         justify-content: center;
         gap: 12px 18px;
-        padding: 0 8px;
+        padding: 0;
     }
 
     .home-page-hero .feature-item {
         font-size: 12px;
         gap: 6px;
         max-width: 140px;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-start;
+        text-align: left;
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-page-hero .feature-item:last-child {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     .home-page-hero .feature-item i {
@@ -1675,11 +1693,21 @@ a {
 
     .home-page-hero .hero-features {
         gap: 10px 12px;
+        justify-content: center;
     }
 
     .home-page-hero .feature-item {
         max-width: 46%;
         flex: 1 1 40%;
+    }
+
+    .home-page-hero .feature-item:last-child {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     .call-us.mobile-call .call-text span {
@@ -1704,17 +1732,20 @@ a {
 ===================================== */
 
 .hero-section {
+    background-color: #001945;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     padding: 100px 0;
     color: #fff;
     position: relative;
     overflow: hidden;
     max-width: 100%;
     height: calc(100vh - 95px);
-    overflow: hidden;
     display: flex;
     align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .home-page-hero {
@@ -1810,6 +1841,8 @@ section.careers-banner-section {
 .hero-section .container {
     position: relative;
     z-index: 1;
+    /* Keep Bootstrap container width so banner content has left inset */
+    width: 100%;
 }
 
 .hero-tag {
@@ -1889,6 +1922,18 @@ span.hero-label {
     font-weight: 600;
     line-height: normal;
     text-align: left;
+}
+
+.home-page-hero .feature-item:last-child {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-page-hero .feature-item:last-child i {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .feature-item i {
@@ -2448,6 +2493,29 @@ span.hero-label {
 
 .why-us a.btn.btn-outline-light {
     color: #fff;
+    border-color: rgba(255, 255, 255, 0.85);
+    background: transparent;
+}
+
+.why-us a.btn.btn-outline-light:hover,
+.why-us a.btn.btn-outline-light:focus,
+.why-us a.btn.btn-outline-light:active {
+    color: #021a3a !important;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.why-us a.btn.btn-outline-light:hover i,
+.why-us a.btn.btn-outline-light:focus i,
+.why-us a.btn.btn-outline-light:active i {
+    color: #021a3a !important;
+}
+
+.why-us .choose-text .hero-buttons .btn-warning:hover,
+.why-us .choose-text .hero-buttons .btn-warning:focus {
+    background: var(--secondary) !important;
+    color: #fff !important;
+    border-color: var(--secondary) !important;
 }
 
 .feature-card-box {
@@ -2472,6 +2540,24 @@ span.hero-label {
     font-size: 35px;
     color: #ffffff;
     margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+    .why-us .feature-card i {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+
+    .why-us .feature-card h5 {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .why-us .feature-card i {
+        font-size: 54px;
+        margin-bottom: 26px;
+    }
 }
 
 .feature-card h5 {
@@ -2573,6 +2659,15 @@ span.hero-label {
     bottom: 0;
 }
 
+.gallery-slider {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.gallery-slider .slick-list {
+    overflow: hidden;
+}
+
 .gallery-slider .gallery-image {
     margin: 0 5px;
 }
@@ -2580,6 +2675,7 @@ span.hero-label {
 .gallery-slider .gallery-image img {
     border-radius: 8px;
     height: 175px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -3670,7 +3766,10 @@ section.newsletter-section {
     }
 
     .hero-section {
-        padding: 50px 0px;
+        height: auto;
+        min-height: 0;
+        padding: 56px 0 64px;
+        overflow: visible;
     }
 
     .home-page-hero {
@@ -4053,7 +4152,7 @@ section.newsletter-section {
     }
 
     section.hero-section {
-        text-align: center;
+        text-align: left;
     }
 
     section.home-page-hero {
@@ -4087,7 +4186,7 @@ section.newsletter-section {
     background-image: url(../images/products-and-solutions/confectionery/main-banner-mobile.svg);
     }
     section.security-solution-hero{
-    background-image: url(../images/products-and-solutions/security-solutions/main_banner_tablet.svg);
+    background-image: url(../images/products-and-solutions/security-solutions/main_banner_mobile.svg);
     }
     section.industrial-machinery-hero {
         background-image: url(../images/products-and-solutions/industrial-machinery/main_banner_mobile.svg);
@@ -4103,7 +4202,7 @@ section.newsletter-section {
     }
     .hero-features,
     .hero-buttons {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .hero-title {
@@ -4892,6 +4991,9 @@ section.newsletter-section {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
 }
 
 .ne-gallery-filters {
@@ -4899,7 +5001,9 @@ section.newsletter-section {
     flex-wrap: wrap;
     gap: 8px;
     justify-content: flex-start;
-    max-width: none;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     padding-top: 4px;
     border-top: 1px solid rgba(0, 24, 52, 0.08);
 }
@@ -5335,12 +5439,21 @@ body.ne-lightbox-open {
         height: 250px;
     }
 
+    .ne-filter-stack,
+    .ne-subfilters-wrap {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .ne-gallery-filters,
     .ne-subfilters-list {
         flex-wrap: nowrap;
         overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 100%;
         padding-bottom: 4px;
         -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
     }
 
     .ne-filter-btn,
@@ -5527,6 +5640,26 @@ section.contact-us-banner-section {
     padding: 42px 36px;
     background: #fff;
     border: 1px solid #ececec;
+    max-width: 100%;
+}
+
+.cu-form-section .row.g-5,
+.careers-roles-section .row.g-5 {
+    --bs-gutter-x: 3rem;
+}
+
+@media (max-width: 767.98px) {
+    .cu-form-section .row.g-5,
+    .careers-roles-section .row.g-5,
+    .row.g-5 {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 1.5rem;
+    }
+
+    .cu-form-panel,
+    .cu-aside-panel {
+        padding: 28px 20px;
+    }
 }
 
 .cu-form-panel h2,
@@ -7013,7 +7146,8 @@ section.terms-banner-section {
     background:
         linear-gradient(120deg, rgba(0, 16, 36, 0.96) 0%, rgba(0, 24, 52, 0.9) 55%, rgba(0, 20, 44, 0.84) 100%),
         url(../images/products-and-solutions/industrial-automation-division/main-banner.svg) center/cover no-repeat;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
     scroll-margin-top: 0;
 }
 
@@ -7045,6 +7179,23 @@ section.terms-banner-section {
     background: linear-gradient(135deg, rgba(56, 189, 248, 0.18), transparent 70%);
     transform: rotate(28deg);
     pointer-events: none;
+}
+
+@media (max-width: 991.98px) {
+    .iad-partners-section::before {
+        right: -40px;
+        width: 260px;
+        height: 260px;
+        top: -20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .iad-partners-section::before {
+        right: -24px;
+        width: 180px;
+        height: 180px;
+    }
 }
 
 .iad-partners-heading {
@@ -9355,4 +9506,320 @@ section.terms-banner-section {
     line-clamp: unset !important;
     overflow: visible !important;
     max-height: none !important;
+}
+/* =====================================
+   GLOBAL RESPONSIVE SAFETY
+===================================== */
+
+html,
+body {
+    overflow-x: clip;
+    max-width: 100%;
+}
+
+img,
+svg,
+video,
+iframe {
+    max-width: 100%;
+}
+
+.hero-section,
+.ne-banner-section,
+.contact-us-banner-section,
+.iad-partners-section {
+    overflow-x: hidden;
+}
+
+.ne-banner-shape,
+.cu-banner-shape {
+    max-width: 40vw;
+    max-height: 40vw;
+}
+
+.main-header .container {
+    min-width: 0;
+}
+
+.why-detail-section [class*='col-'],
+.iac-catalog,
+.cert-catalog,
+.ne-gallery-section .container {
+    max-width: 100%;
+    min-width: 0;
+}
+
+.why-detail-section,
+.why-detail-section .container,
+.why-detail-section .row,
+.why-detail-section .gallery-slider,
+.why-detail-section .col-lg-8 {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.gallery-slider.slick-initialized,
+.gallery-slider.slick-slider {
+    overflow: hidden !important;
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-brand img {
+        height: 56px;
+        width: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-brand img {
+        height: 48px;
+        width: auto;
+    }
+
+    .hero-buttons {
+        max-width: 100%;
+    }
+
+    .hero-buttons .btn,
+    .hero-buttons .btn-warning,
+    .hero-buttons .btn-outline-light {
+        max-width: 100%;
+    }
+
+    .hero-list {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-list ul {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .iac-category-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .iac-category-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .home-presence-map-panel,
+    .home-presence-map-embed,
+    .home-presence-map-embed iframe,
+    .cu-map-frame,
+    .cu-map-frame iframe {
+        max-width: 100%;
+    }
+
+    .footer-section .row > [class*='col-'] {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .section-heading h2,
+    .cu-section-head h2 {
+        font-size: 24px;
+        line-height: 1.25;
+        word-break: break-word;
+    }
+
+    .detail-cta-wrapper .hero-buttons,
+    .cta-section .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .detail-cta-wrapper .hero-buttons .btn,
+    .cta-section .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* =====================================
+   BANNER IMAGE FIT + SHARPNESS
+===================================== */
+
+.hero-section,
+.about-banner-section,
+.cert-banner-section,
+.op-banner-section,
+.careers-banner-section,
+.contact-us-banner-section,
+.privacy-banner-section,
+.terms-banner-section,
+.news-and-events-hero {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+}
+
+/* Keep product subjects in frame on wide desktop crop */
+@media (min-width: 993px) {
+    .textile-dyes-and-chemicals-hero,
+    .masterbatch-hero,
+    .veechem-industries-hero,
+    .toner-cartridges-hero,
+    .office-supplies-hero,
+    .industrial-automation-division-hero,
+    .industrial-air-compressor-hero,
+    .confectionery-hero,
+    .security-solution-hero,
+    .industrial-machinery-hero,
+    .energy-solutions-hero,
+    .office-furniture-hero,
+    .warehousing-solutions-hero {
+        background-position: right center !important;
+    }
+
+    /* Home banner: show full composition on large screens (avoid cover crop) */
+    .home-page-hero.hero-section {
+        height: auto !important;
+        min-height: 0 !important;
+        aspect-ratio: 1500 / 800;
+        max-height: calc(100vh - 95px);
+        background-size: 100% 100% !important;
+        -webkit-background-size: 100% 100% !important;
+        background-position: center center !important;
+    }
+
+    .home-page-hero {
+        background-position: center center !important;
+    }
+
+    .about-banner-section,
+    .cert-banner-section,
+    .op-banner-section,
+    .careers-banner-section,
+    .contact-us-banner-section,
+    .privacy-banner-section,
+    .terms-banner-section,
+    .news-and-events-hero {
+        background-position: center 40% !important;
+    }
+}
+
+/* Tablet: use dedicated assets; avoid extreme vertical crop */
+@media (max-width: 992px) {
+    .hero-section {
+        background-position: center center !important;
+    }
+
+    .home-page-hero {
+        background-position: center top !important;
+    }
+
+    .about-banner-section,
+    .cert-banner-section,
+    .op-banner-section,
+    .careers-banner-section,
+    .contact-us-banner-section,
+    .privacy-banner-section,
+    .terms-banner-section,
+    .news-and-events-hero {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 110px 0 88px !important;
+        background-position: center 35% !important;
+    }
+}
+
+/* Mobile: portrait assets + shorter photo banners for less crop / more sharpness */
+@media (max-width: 767.98px) {
+    .hero-section {
+        height: auto !important;
+        min-height: 0 !important;
+        background-position: center center !important;
+    }
+
+    .home-page-hero {
+        background-position: center top !important;
+        background-size: 100% auto !important;
+        -webkit-background-size: 100% auto !important;
+        min-height: min(100vh - 72px, calc(100vw * 1.78)) !important;
+    }
+
+    /* Product mobile SVGs are portrait — match asset width, keep full art */
+    .textile-dyes-and-chemicals-hero,
+    .masterbatch-hero,
+    .veechem-industries-hero,
+    .toner-cartridges-hero,
+    .office-supplies-hero,
+    .industrial-automation-division-hero,
+    .industrial-air-compressor-hero,
+    .confectionery-hero,
+    .security-solution-hero,
+    .industrial-machinery-hero,
+    .energy-solutions-hero,
+    .office-furniture-hero,
+    .warehousing-solutions-hero {
+        background-size: 100% auto !important;
+        -webkit-background-size: 100% auto !important;
+        background-position: center top !important;
+        min-height: min(100vh - 72px, calc(100vw * 1.78)) !important;
+    }
+
+    /* JPG content banners: full-width image (no side crop) + brand fill below */
+    .about-banner-section,
+    .cert-banner-section,
+    .op-banner-section,
+    .careers-banner-section,
+    .contact-us-banner-section,
+    .privacy-banner-section,
+    .terms-banner-section,
+    .news-and-events-hero {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 100px 0 64px !important;
+        background-color: #001945 !important;
+        background-position: center top !important;
+        background-size: 100% auto !important;
+        -webkit-background-size: 100% auto !important;
+    }
+
+    /* Show more of the photo; keep text readable */
+    .hero-section::after {
+        background: linear-gradient(
+            180deg,
+            rgba(0, 25, 69, 0.62) 0%,
+            rgba(0, 25, 69, 0.48) 42%,
+            rgba(0, 25, 69, 0.72) 100%
+        );
+    }
+}
+
+@media (max-width: 575.98px) {
+    .about-banner-section,
+    .cert-banner-section,
+    .op-banner-section,
+    .careers-banner-section,
+    .contact-us-banner-section,
+    .privacy-banner-section,
+    .terms-banner-section,
+    .news-and-events-hero {
+        padding: 92px 0 56px !important;
+        background-position: center top !important;
+        background-size: 100% auto !important;
+    }
+
+    .home-page-hero {
+        background-position: center top !important;
+        background-size: 100% auto !important;
+        -webkit-background-size: 100% auto !important;
+        min-height: min(100vh - 72px, calc(100vw * 1.78)) !important;
+    }
 }
