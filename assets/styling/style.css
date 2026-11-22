@@ -9860,19 +9860,28 @@ iframe {
         background-position: right center !important;
     }
 
-    /* Home banner: show full composition on large screens (avoid cover crop) */
+    /* Home banner: full width; keep natural banner height (do not shrink to viewport) */
     .home-page-hero.hero-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        aspect-ratio: 1500 / 800 !important;
         height: auto !important;
+        max-height: none !important;
         min-height: 0 !important;
-        aspect-ratio: 1500 / 800;
-        max-height: calc(100vh - 95px);
         background-size: 100% 100% !important;
         -webkit-background-size: 100% 100% !important;
         background-position: center center !important;
+        box-sizing: border-box !important;
     }
 
     .home-page-hero {
         background-position: center center !important;
+    }
+
+    .main-header {
+        width: 100%;
+        max-width: 100%;
     }
 
     .about-banner-section,
