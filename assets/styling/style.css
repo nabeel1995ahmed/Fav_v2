@@ -1510,6 +1510,196 @@ a {
 }
 
 /* =====================================
+   HERO SOCIAL RAIL
+===================================== */
+
+.hero-social {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translateY(-50%);
+}
+
+.hero-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(0, 24, 52, 0.55);
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 20px rgba(0, 24, 52, 0.22);
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, color 0.25s ease;
+}
+
+.hero-social a:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+    .hero-social {
+        right: 14px;
+        gap: 8px;
+    }
+
+    .hero-social a {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .home-page-hero.hero-section {
+        height: auto;
+        min-height: 0;
+        padding: 48px 0 40px;
+        align-items: stretch;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .home-page-hero .container {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .home-page-hero .hero-title {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .home-page-hero .hero-text {
+        font-size: 15px;
+        line-height: 1.65;
+        margin: 16px 0 0;
+        max-width: 36em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-page-hero .hero-buttons {
+        margin-top: 22px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        width: 100%;
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-page-hero .hero-buttons .btn,
+    .home-page-hero .hero-buttons .btn-warning,
+    .home-page-hero .hero-buttons .btn-outline-light {
+        width: 100%;
+        max-width: none;
+        justify-content: center;
+        min-height: 46px;
+        height: auto;
+        padding: 11px 18px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .home-page-hero .hero-features {
+        margin-top: 28px;
+        justify-content: center;
+        gap: 12px 18px;
+        padding: 0 8px;
+    }
+
+    .home-page-hero .feature-item {
+        font-size: 12px;
+        gap: 6px;
+        max-width: 140px;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .home-page-hero .feature-item i {
+        font-size: 20px;
+    }
+
+    .home-page-hero .feature-item br {
+        display: none;
+    }
+
+    .hero-social {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin: 28px auto 0;
+        width: 100%;
+    }
+
+    .hero-social a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-page-hero.hero-section {
+        padding: 36px 0 32px;
+    }
+
+    .home-page-hero .hero-title {
+        font-size: 28px;
+    }
+
+    .home-page-hero .hero-text {
+        font-size: 14px;
+    }
+
+    .home-page-hero .hero-buttons {
+        max-width: 100%;
+        padding: 0 4px;
+    }
+
+    .home-page-hero .hero-features {
+        gap: 10px 12px;
+    }
+
+    .home-page-hero .feature-item {
+        max-width: 46%;
+        flex: 1 1 40%;
+    }
+
+    .call-us.mobile-call .call-text span {
+        display: none;
+    }
+
+    .call-us.mobile-call {
+        margin-right: 10px;
+    }
+
+    .call-us.mobile-call i {
+        font-size: 22px;
+    }
+
+    .call-us.mobile-call .call-text p {
+        font-size: 12px;
+    }
+}
+
+/* =====================================
    HERO
 ===================================== */
 
@@ -5966,8 +6156,31 @@ section.contact-us-banner-section {
     background: #fff;
 }
 
-.cert-catalog {
+.iac-catalog.cert-catalog {
     margin-top: 8px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+    background: transparent;
+}
+
+.iac-catalog.cert-catalog .iac-category-tabs {
+    border: 1px solid rgba(2, 26, 58, 0.06);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.iac-catalog.cert-catalog .iac-category-content {
+    padding: 28px 0 0;
+    background: transparent;
+}
+
+.iac-catalog.cert-catalog .tab-pane:focus,
+.iac-catalog.cert-catalog .tab-pane:focus-visible {
+    outline: none;
+    box-shadow: none;
 }
 
 .cert-grid {
