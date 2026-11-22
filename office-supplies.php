@@ -243,7 +243,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/office-supplies/shaker-inks.svg" class="img-fluid" alt="">
+                            <img src="./assets/images/products-and-solutions/office-supplies/premium-inks.svg" class="img-fluid" alt="Premium Inks">
                         </div>
                     </div>
                 </div>
@@ -265,33 +265,23 @@
                     </div>
                 </div> -->
                 <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/office-supplies/toner-powder-refill-bags.svg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">    
                         <div class="product-details">
                             <div class="product-head">
                                 <span class="product-number">03</span>
                                 <h5>Powder Refill Bags</h5>
                             </div>
                             <p class="product-text">
-                               Quality toner powder refill bags offering a cost-effective solution for cartridge refilling, dependable print output, and efficient printing operations.                      </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/office-supplies/toner-powder-refill-bags.svg" class="img-fluid" alt="">
+                            Quality toner powder refill bags offering a cost-effective solution for cartridge refilling, dependable print output, and efficient printing operations.                      </p>
                         </div>
                     </div>
                 </div> 
                 <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/office-supplies/copier-spare-parts.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
-                        </div>
-                    </div>
-
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
@@ -302,8 +292,22 @@
                                Reliable copier spare parts designed to support smooth machine operation, reduce downtime, and maintain consistent printing performance.                          </p>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img
+                                src="./assets/images/products-and-solutions/office-supplies/copier-spare-parts.svg"
+                                class="img-fluid"
+                                alt="Copier Spare Parts"
+                            >
+                        </div>
+                    </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/office-supplies/inkjet-photo-paper.svg" class="img-fluid" alt="Inkjet Photo Paper">
+                        </div>
+                    </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
@@ -314,18 +318,8 @@
                                High-quality inkjet photo paper designed to deliver sharp details, vibrant colours, and professional-quality photo prints.                  </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/office-supplies/inkjet-photo-paper.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
                 </div>
                 <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
-                        <div class="product-card">
-                            <img src="./assets/images/products-and-solutions/office-supplies/equipment.svg" class="img-fluid" alt="">
-                        </div>
-                    </div>
                     <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
                         <div class="product-details">
                             <div class="product-head">
@@ -335,6 +329,11 @@
                             <p class="product-text">
                                 Essential office equipment designed to support everyday business operations, improve workflow, and enhance workplace productivity.                            
                             </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/office-supplies/equipment.svg" class="img-fluid" alt="Equipment">
                         </div>
                     </div>
                 </div>                              

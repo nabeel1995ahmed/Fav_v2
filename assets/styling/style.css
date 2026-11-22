@@ -134,6 +134,9 @@ a {
     object-fit: cover;
     object-position: center;
     transition: transform 0.4s ease;
+    /* SVG product shots paint outside the img box; a mask forces the clip. */
+    mask-image: linear-gradient(#000 0 0);
+    -webkit-mask-image: linear-gradient(#000 0 0);
 }
 
 .product-details h5 {
