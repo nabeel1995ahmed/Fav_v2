@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner6">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner12">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -70,27 +70,27 @@
                     <div class="hero-features">
 
                         <div class="feature-item">
-                            <i class="fal fa-award"></i>
-                            Global <br> Reach
+                            <i class="fal fa-award" aria-hidden="true"></i>
+                            <span class="feature-label">Global<br>Reach</span>
                         </div>
 
                         <div class="feature-item">
-                            <i class="fal fa-globe"></i>
-                            Local  <br> Commentment
+                            <i class="fal fa-globe" aria-hidden="true"></i>
+                            <span class="feature-label">Local<br>Commitment</span>
                         </div>
 
                         <div class="feature-item">
-                            <i class="fal fa-lightbulb"></i>
-                            Technical Experties & <br> Application Support
+                            <i class="fal fa-lightbulb" aria-hidden="true"></i>
+                            <span class="feature-label">Technical Expertise &amp;<br>Application Support</span>
                         </div>
 
                         <div class="feature-item">
-                            <i class="fal fa-clock"></i>
-                            Reliable Supply & <br> On time Delivery
+                            <i class="fal fa-clock" aria-hidden="true"></i>
+                            <span class="feature-label">Reliable Supply &amp;<br>On time Delivery</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fal fa-handshake"></i>
-                            Long Term <br> Industrial Partnership
+                            <i class="fal fa-handshake" aria-hidden="true"></i>
+                            <span class="feature-label">Long Term<br>Industrial Partnership</span>
                         </div>
 
                     </div>

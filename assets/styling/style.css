@@ -1566,7 +1566,8 @@ a {
         height: auto;
         min-height: 0;
         padding: 48px 0 56px;
-        align-items: flex-start;
+        align-items: stretch;
+        flex-direction: column;
         overflow: visible;
     }
 
@@ -1634,42 +1635,52 @@ a {
         font-size: 12px;
         gap: 6px;
         max-width: 140px;
-        justify-content: flex-start;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .home-page-hero .feature-item:last-child {
         flex: 0 0 100%;
         width: 100%;
         max-width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
     }
 
     .home-page-hero .feature-item i {
         font-size: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .home-page-hero .feature-item br {
-        display: none;
+    .home-page-hero .feature-item .feature-label {
+        width: 100%;
+        text-align: center;
     }
 
     .hero-social {
         position: static;
+        top: auto;
+        right: auto;
+        left: auto;
         transform: none;
         flex-direction: row;
+        align-items: center;
         justify-content: center;
         gap: 10px;
         margin: 28px auto 0;
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 16px;
     }
 
     .hero-social a {
         width: 40px;
         height: 40px;
+        flex-shrink: 0;
     }
 }
 
@@ -1699,15 +1710,15 @@ a {
     .home-page-hero .feature-item {
         max-width: 46%;
         flex: 1 1 40%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
     .home-page-hero .feature-item:last-child {
         flex: 0 0 100%;
         width: 100%;
         max-width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
     }
 
     .call-us.mobile-call .call-text span {
@@ -1924,16 +1935,30 @@ span.hero-label {
     text-align: left;
 }
 
-.home-page-hero .feature-item:last-child {
+/* Center icon + label for hero feature chips (all pages / breakpoints) */
+.hero-features .feature-item {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
+    gap: 8px;
 }
 
-.home-page-hero .feature-item:last-child i {
-    margin-left: auto;
-    margin-right: auto;
+.hero-features .feature-item i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.hero-features .feature-item .feature-label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 1.25;
 }
 
 .feature-item i {
@@ -1969,12 +1994,39 @@ span.hero-label {
     color: var(--secondary);
 }
 
+@media (max-width: 767.98px) {
+    .hero-list {
+        max-width: 100%;
+    }
+
+    .hero-list ul li {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .hero-list ul li p {
+        text-align: left;
+    }
+}
+
+.breadcrumb {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
 .breadcrumb ul {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
     list-style: none;
     padding: 0;
     gap: 14px;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .breadcrumb ul li a,
@@ -2446,7 +2498,8 @@ span.hero-label {
     line-height: 24px;
 }
 
-.why-us .choose-text p {
+.why-us .choose-text > p,
+.why-us .choose-text p.text-muted {
     max-width: 310px;
 }
 
@@ -2619,6 +2672,14 @@ span.hero-label {
     background: #fafafa;
 }
 
+.why-list {
+    padding-top: 10px;
+    margin: 0;
+    padding-left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
 .why-list ul {
     margin: 0;
     list-style: none;
@@ -2628,20 +2689,38 @@ span.hero-label {
 .why-list ul li {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.why-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.why-list ul li > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 1;
 }
 
 .why-list ul li i {
     color: #f87212;
     font-size: 14px;
-}
-
-.why-list {
-    padding-top: 10px;
+    line-height: 1;
 }
 
 .why-list ul li p {
     font-weight: 500;
+    margin: 0;
+    max-width: none;
+    line-height: 1.4;
+    text-align: left;
 }
 
 .why-detail-section .section-heading h2 {
@@ -3454,15 +3533,28 @@ section.featured-section {
 }
 
 .industries-grid-with-text .industry-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 14px 10px 16px;
+    height: 100%;
 }
 
 .industries-grid-with-text .industry-box h4 {
-    margin-bottom: 0;
-    min-height: 36px;
+    margin: 0;
+    min-height: 2.8em;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.industries-grid-with-text .industry-box p {
+    margin: 8px 0 0;
+    text-align: center;
+    width: 100%;
+    flex: 1 1 auto;
 }
 
 .industry-box:hover {
@@ -4048,7 +4140,16 @@ section.newsletter-section {
     }
 
     .breadcrumb {
-        justify-content: center;
+        display: block;
+        justify-content: flex-start;
+        text-align: left;
+        width: 100%;
+    }
+
+    .breadcrumb ul {
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .feature-grid {
@@ -4200,7 +4301,10 @@ section.newsletter-section {
     section.warehousing-solutions-hero {
         background-image: url(../images/products-and-solutions/warehousing-solutions/main_banner_mobile.svg);
     }
-    .hero-features,
+    .hero-features {
+        justify-content: center;
+    }
+
     .hero-buttons {
         justify-content: flex-start;
     }
@@ -7410,8 +7514,16 @@ section.terms-banner-section {
     margin: 0;
 }
 
+.why-detail-section .row.align-items-center {
+    align-items: flex-start !important;
+}
+
+.why-detail-section .choose-text {
+    max-width: 100%;
+}
+
 .why-detail-section .why-list ul li {
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 12px;
 }
 
@@ -7424,7 +7536,13 @@ section.terms-banner-section {
 }
 
 .why-detail-section .why-list ul li p {
-    margin-bottom: 0;
+    margin: 0;
+    max-width: none;
+}
+
+.why-detail-section .section-heading {
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .iad-cta-wrapper .section-subtitle {
@@ -8794,6 +8912,52 @@ section.terms-banner-section {
     }
 }
 
+@media (max-width: 991.98px) {
+    .home-industries-section .industries-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-industries-section .industry-box {
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .home-industries-section .industry-box:nth-child(2n) {
+        border-right: none;
+    }
+
+    .home-industries-section .industry-box:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+
+    .home-industries-section .industry-round-shade {
+        width: 100%;
+        max-width: 160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-industries-section .industry-box h4,
+    .home-industries-section .industry-box p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .home-industries-section .industry-box {
+        padding: 14px 10px;
+    }
+
+    .home-industries-section .industry-box h4 {
+        font-size: 14px;
+        min-height: 0;
+    }
+
+    .home-industries-section .industry-box p {
+        font-size: 12px;
+    }
+}
+
 /* How we work */
 .home-process-section {
     background:
@@ -9588,12 +9752,22 @@ iframe {
 
     .hero-list {
         max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .hero-list ul {
         grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .hero-list ul li {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .hero-list ul li p {
         text-align: left;
     }
 
