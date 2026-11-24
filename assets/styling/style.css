@@ -125,18 +125,18 @@ a {
 }
 
 .product-card img {
-    border-radius: 5px;
     position: relative;
     z-index: 2;
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    min-height: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0;
+    object-fit: cover !important;
+    object-position: center center;
     transition: transform 0.4s ease;
-    /* SVG product shots paint outside the img box; a mask forces the clip. */
-    mask-image: linear-gradient(#000 0 0);
-    -webkit-mask-image: linear-gradient(#000 0 0);
 }
 
 .product-details h5 {
@@ -179,17 +179,34 @@ a {
 .product-card {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     width: 100%;
-    height: 280px;
-    min-height: 280px;
-    max-height: 280px;
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
     background: #f4f7fa;
     border-radius: 24px;
     overflow: hidden;
     isolation: isolate;
     transition: all 0.4s ease;
+}
+
+/* Image-only product grids (e.g. confectionery): theme cards, full artwork */
+.product-section:not(:has(.product-details)) .product-card {
+    height: 220px;
+    min-height: 220px;
+    max-height: 220px;
+    background: transparent;
+    box-shadow: none;
+}
+
+.product-section:not(:has(.product-details)) .product-card img {
+    min-height: 0;
+    padding: 0;
+    border-radius: 24px;
+    object-fit: cover !important;
+    object-position: center center;
 }
 
 .product-head {
@@ -219,7 +236,7 @@ a {
 }
 
 .product-card:hover img {
-    transform: scale(1.06);
+    transform: scale(1.03);
 }
 
 .product-details {
@@ -228,9 +245,9 @@ a {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 280px;
-    min-height: 280px;
-    max-height: 280px;
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
     padding: 36px 40px;
     background: #fff;
     border-radius: 24px;
@@ -1577,7 +1594,7 @@ a {
         padding: 48px 0 40px;
         align-items: stretch;
         flex-direction: column;
-        overflow: visible;
+        overflow: hidden;
     }
 
     .home-page-hero .container {
@@ -3450,10 +3467,22 @@ section.featured-section {
     line-height: 1.7;
 }
 
-.industries-serve-section,
-.industries-serve-section .container {
+.industries-serve-section {
     max-width: 100%;
     overflow: hidden;
+}
+
+/* Match product categories / business-divisions container width (all product pages) */
+.industries-serve-section > .container,
+.why-detail-section > .container,
+.detail-cta-section > .container,
+.certifications > .container {
+    width: 100%;
+    max-width: 1440px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .industries-grid {
@@ -3864,6 +3893,13 @@ section.newsletter-section {
         overflow: visible;
     }
 
+    .home-page-hero.hero-section {
+        overflow: hidden !important;
+        background-size: cover !important;
+        background-position: center center !important;
+        background-attachment: scroll !important;
+    }
+
     .home-page-hero {
         background-image: url(../images/home-page/main-banner-tablet-version.png);
     }
@@ -3931,8 +3967,30 @@ section.newsletter-section {
         padding: 20px 28px;
     }
 
+    .product-card,
+    .product-details {
+        height: 300px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+
     .product-card img {
-        object-fit: cover;
+        object-fit: cover !important;
+        min-height: 0;
+    }
+
+    .product-section:not(:has(.product-details)) .product-card {
+        height: 200px;
+        min-height: 200px;
+        max-height: 200px;
+        background: transparent;
+    }
+
+    .product-section:not(:has(.product-details)) .product-card img {
+        object-fit: cover !important;
+        min-height: 0;
+        padding: 0;
+        border-radius: 20px;
     }
 
     .product-details h5 {
@@ -4062,10 +4120,18 @@ section.newsletter-section {
     }
 
     .product-card {
-        min-height: 220px;
-        height: auto;
+        height: 240px;
+        min-height: 240px;
+        max-height: 240px;
         border-radius: 24px 24px 0 0;
-        max-height: 250px;
+    }
+
+    .product-section:not(:has(.product-details)) .product-card {
+        height: 180px;
+        min-height: 180px;
+        max-height: 180px;
+        border-radius: 20px;
+        background: transparent;
     }
 
     .product-details {
@@ -4136,7 +4202,15 @@ section.newsletter-section {
     .product-card img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: cover !important;
+        min-height: 0;
+    }
+
+    .product-section:not(:has(.product-details)) .product-card img {
+        object-fit: cover !important;
+        min-height: 0;
+        padding: 0;
+        border-radius: 16px;
     }
 
     .breadcrumb {
@@ -9098,16 +9172,44 @@ section.terms-banner-section {
 }
 
 @media (max-width: 575.98px) {
+    .home-process-steps {
+        --bs-gutter-x: 0.75rem;
+        --bs-gutter-y: 0.75rem;
+    }
+
+    .home-process-card {
+        height: auto;
+        padding: 0 0 14px;
+        overflow: hidden;
+    }
+
     .home-process-media {
-        height: 140px;
+        height: 110px;
+        margin-bottom: 12px;
     }
 
     .home-process-num {
-        width: 40px;
-        height: 40px;
-        font-size: 13px;
-        top: 10px;
-        left: 10px;
+        width: 36px;
+        height: 36px;
+        font-size: 12px;
+        top: 8px;
+        left: 8px;
+    }
+
+    .home-process-card h5 {
+        margin: 0 10px 6px;
+        font-size: 14px;
+        line-height: 1.3;
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+        hyphens: auto;
+    }
+
+    .home-process-card p {
+        margin: 0 10px;
+        font-size: 12px;
+        line-height: 1.45;
     }
 }
 
@@ -9500,7 +9602,6 @@ section.terms-banner-section {
 }
 
 @media (max-width: 575.98px) {
-    .home-process-card,
     .home-presence-card {
         padding: 22px 16px;
     }
@@ -9635,32 +9736,42 @@ section.terms-banner-section {
     color: #6c757d;
 }
 
-/* Security page: full image + full cards */
+/* Security page: full image + theme-width cards */
 .security-products .iac-product-grid {
+    grid-template-columns: 1fr;
     align-items: start;
+    width: 100%;
 }
 
 .security-products .iac-product-card {
     height: auto !important;
     min-height: 0 !important;
-    overflow: visible !important;
+    overflow: hidden;
+    width: 100%;
 }
 
 .security-products .iac-product-media {
     height: auto !important;
-    min-height: 0 !important;
+    min-height: 280px;
+    max-height: 420px;
     aspect-ratio: auto !important;
-    padding: 16px;
+    padding: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .security-products .iac-product-media img {
     width: 100% !important;
     height: auto !important;
-    max-height: none !important;
+    max-width: 100% !important;
+    max-height: 372px !important;
     object-fit: contain !important;
+}
+
+.security-products .iac-product-card:hover .iac-product-media img {
+    transform: scale(1.02);
 }
 
 .security-products .iac-product-body p,
@@ -9713,13 +9824,16 @@ iframe {
     min-width: 0;
 }
 
-.why-detail-section,
-.why-detail-section .container,
 .why-detail-section .row,
 .why-detail-section .gallery-slider,
 .why-detail-section .col-lg-8 {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+/* Breathing room above Why Choose / Gallery after Industries */
+.why-us.second-why-us-section.why-detail-section {
+    padding-top: 48px;
 }
 
 .gallery-slider.slick-initialized,
@@ -9860,19 +9974,23 @@ iframe {
         background-position: right center !important;
     }
 
-    /* Home banner: full width; keep natural banner height (do not shrink to viewport) */
+    /* Home banner: cover first fold; clip so image does not leak while scrolling */
     .home-page-hero.hero-section {
         width: 100% !important;
         max-width: 100% !important;
         min-width: 100% !important;
-        aspect-ratio: 1500 / 800 !important;
-        height: auto !important;
+        height: calc(100vh - 95px) !important;
+        min-height: 560px !important;
         max-height: none !important;
-        min-height: 0 !important;
-        background-size: 100% 100% !important;
-        -webkit-background-size: 100% 100% !important;
+        aspect-ratio: auto !important;
+        overflow: hidden !important;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
         background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
         box-sizing: border-box !important;
+        isolation: isolate;
     }
 
     .home-page-hero {
@@ -9930,10 +10048,12 @@ iframe {
     }
 
     .home-page-hero {
-        background-position: center top !important;
-        background-size: 100% auto !important;
-        -webkit-background-size: 100% auto !important;
-        min-height: min(100vh - 72px, calc(100vw * 1.78)) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
+        background-attachment: scroll !important;
+        overflow: hidden !important;
+        min-height: calc(100vh - 72px) !important;
     }
 
     /* Product mobile SVGs are portrait — match asset width, keep full art */
@@ -10000,9 +10120,11 @@ iframe {
     }
 
     .home-page-hero {
-        background-position: center top !important;
-        background-size: 100% auto !important;
-        -webkit-background-size: 100% auto !important;
-        min-height: min(100vh - 72px, calc(100vw * 1.78)) !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
+        background-attachment: scroll !important;
+        overflow: hidden !important;
+        min-height: calc(100vh - 72px) !important;
     }
 }

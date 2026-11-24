@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner14">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner27">
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
 
@@ -104,7 +104,7 @@
          ABOUT OUR SECITON
     ========================== -->
 
-    <section class="why-us second-why-us-section pt-5">
+    <section class="why-us second-why-us-section pt-5 pb-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -208,175 +208,85 @@
                 <div class="seprator"></div>
             </div>
 
-            <?php
-            $imgBase = './assets/images/products-and-solutions/security-solutions';
-
-            $categories = [
-                [
-                    'id' => 'hivideo-cctv',
-                    'title' => 'HIVIDEO CCTV',
-                    'short' => 'HIVIDEO CCTV',
-                    'products' => [
-                        [
-                            'name' => 'HIVIDEO CCTV',
-                            'image' => 'hivideo-camera.svg',
-                            'text' => 'Complete range of CCTV Systems.',
-                        ],
-                    ],
-                ],
-                [
-                    'id' => 'poe-switch',
-                    'title' => 'Linkff PoE Switch',
-                    'short' => 'PoE Switch',
-                    'products' => [
-                        [
-                            'name' => 'Linkff PoE Switch',
-                            'image' => 'poe-switch.svg',
-                            'text' => 'Complete range of PoE Switches.',
-                        ],
-                    ],
-                ],
-                [
-                    'id' => 'project-series-ip-cctv',
-                    'title' => 'Project Series IP CCTV',
-                    'short' => 'Project IP CCTV',
-                    'products' => [
-                        [
-                            'name' => 'Project Series IP CCTV',
-                            'image' => 'project-series-ip-cctv.svg',
-                            'text' => 'Complete range of customized Project IP CCTV.',
-                        ],
-                    ],
-                ],
-                [
-                    'id' => 'project-series-ip-nvr',
-                    'title' => "TT INT'L Project Series IP NVR",
-                    'short' => 'Project IP NVR',
-                    'products' => [
-                        [
-                            'name' => "TT INT'L Project Series IP NVR",
-                            'image' => 'project-series-ip-dvr-nvr.svg',
-                            'text' => 'Complete range for project base NVR Systems.',
-                        ],
-                    ],
-                ],
-            ];
-
-            $categories = array_values(array_filter($categories, static function ($category) {
-                return !empty($category['products']);
-            }));
-            ?>
-
-            <div class="iac-catalog">
-                <ul class="nav nav-tabs iac-category-tabs" id="iacCategoryTabs" role="tablist">
-                    <?php foreach ($categories as $categoryIndex => $category):
-                        $tabId = 'iac-' . $category['id'];
-                        $isActive = $categoryIndex === 0;
-                    ?>
-                    <li class="nav-item" role="presentation">
-                        <button
-                            class="nav-link<?= $isActive ? ' active' : '' ?>"
-                            id="<?= htmlspecialchars($tabId) ?>-tab"
-                            data-bs-toggle="tab"
-                            data-bs-target="#<?= htmlspecialchars($tabId) ?>"
-                            type="button"
-                            role="tab"
-                            aria-controls="<?= htmlspecialchars($tabId) ?>"
-                            aria-selected="<?= $isActive ? 'true' : 'false' ?>"
-                        >
-                            <?= htmlspecialchars($category['short'] ?? $category['title']) ?>
-                        </button>
-                    </li>
-                    <?php endforeach; ?>
-                </ul>
-
-                <div class="tab-content iac-category-content" id="iacCategoryTabContent">
-                    <?php foreach ($categories as $categoryIndex => $category):
-                        $tabId = 'iac-' . $category['id'];
-                        $isActive = $categoryIndex === 0;
-                    ?>
-                    <div
-                        class="tab-pane fade<?= $isActive ? ' show active' : '' ?>"
-                        id="<?= htmlspecialchars($tabId) ?>"
-                        role="tabpanel"
-                        aria-labelledby="<?= htmlspecialchars($tabId) ?>-tab"
-                        tabindex="0"
-                    >
-                        <div class="iac-category-intro">
-                            <span class="product-subheading"><?= htmlspecialchars($category['title']) ?></span>
-                            <p><?= count($category['products']) ?> product<?= count($category['products']) === 1 ? '' : 's' ?> in this range</p>
-                        </div>
-
-                        <div class="iac-product-grid">
-                            <?php foreach ($category['products'] as $productIndex => $product):
-                                $imageSrc = $imgBase . '/' . $product['image'];
-                                $alt = htmlspecialchars($product['name']);
-                                $number = str_pad((string) ($productIndex + 1), 2, '0', STR_PAD_LEFT);
-                            ?>
-                            <article class="iac-product-card">
-                                <div class="iac-product-media">
-                                    <span class="iac-product-number"><?= $number ?></span>
-                                    <img src="<?= htmlspecialchars($imageSrc) ?>" alt="<?= $alt ?>">
-                                </div>
-                                <div class="iac-product-body">
-                                    <h5><?= $alt ?></h5>
-                                    <p><?= htmlspecialchars($product['text']) ?></p>
-                                    <?php if (!empty($product['specs'])): ?>
-                                    <strong class="iac-product-specs"><?= htmlspecialchars($product['specs']) ?></strong>
-                                    <?php endif; ?>
-                                </div>
-                            </article>
-                            <?php endforeach; ?>
+            <div class="product-main-section">
+                <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/security-solutions/hivideo-camera.svg" class="img-fluid" alt="HIVIDEO CCTV">
                         </div>
                     </div>
-                    <?php endforeach; ?>
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">01</span>
+                                <h5>HIVIDEO CCTV</h5>
+                            </div>
+                            <p class="product-text">
+                                HIVIDEO delivers a complete IP CCTV range for shops, offices and industrial sites—from compact indoor cameras to weather-ready outdoor units. Clear imaging, flexible lens options and simple network setup help you cover entry points, floors and yards with reliable day-and-night surveillance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">02</span>
+                                <h5>Linkff PoE Switch</h5>
+                            </div>
+                            <p class="product-text">
+                                Linkff PoE switches power cameras and network devices over a single Ethernet cable, cutting separate power runs and simplifying installation. Choose port counts and PoE budgets that match small offices through multi-floor buildings, with stable throughput for continuous video streams.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/security-solutions/poe-switch.svg" class="img-fluid" alt="Linkff PoE Switch">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/security-solutions/project-series-ip-cctv.svg" class="img-fluid" alt="Project Series IP CCTV">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">03</span>
+                                <h5>Project Series IP CCTV</h5>
+                            </div>
+                            <p class="product-text">
+                                Project Series IP CCTV is built for larger sites that need tailored coverage—warehouses, campuses, factories and public facilities. Spec cameras by resolution, field of view and environment so every entrance, corridor and perimeter zone is monitored to project requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 align-items-center m-0 product-section">
+                    <div class="col-lg-8 col-md-8 m-0 animate-on-scroll">
+                        <div class="product-details">
+                            <div class="product-head">
+                                <span class="product-number">04</span>
+                                <h5>TT INT'L Project Series IP NVR</h5>
+                            </div>
+                            <p class="product-text">
+                                TT INT'L Project Series IP NVRs record and manage multi-camera IP systems with channel counts suited to growing projects. Centralized playback, storage options and remote access keep footage organized for security teams across commercial and industrial installations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/security-solutions/project-series-ip-dvr-nvr.svg" class="img-fluid" alt="TT INT'L Project Series IP NVR">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-    
-    <!-- =========================
-         certifications
-    ========================== -->
-
-    <section class="certifications veechem-certifications pb-5">
-        <div class="container">
-            <div class="section-heading text-center mb-4">
-                <h2>DOWNLOAD</h2>
-                <div class="seprator"></div>
-            </div>
-            <?php
-            $veechem_cert_base = './assets/images/products-and-solutions/security-solutions/';
-            $veechem_certs = [
-                ['file' => 'CSS HD Analog.pdf', 'title' => 'CSS HD Analog'],
-                ['file' => 'CSS IP CCTV.pdf', 'title' => 'CSS IP CCTV'],
-                ['file' => 'HIVIDEO CCTV.pdf', 'title' => 'HIVIDEO CCTV'],
-                ['file' => 'Linkff POE Switch.pdf', 'title' => 'Linkff PoE Switches'],
-                ['file' => 'TT INTL IP CCTV.pdf', 'title' => "TT INT'L IP CCTV"],
-                ['file' => 'TT INTL NVR.pdf', 'title' => "TT INT'L NVR"],
-            ];
-            ?>
-            <div class="veechem-cert-grid">
-                <?php foreach ($veechem_certs as $cert): ?>
-                    <a class="veechem-cert-card"
-                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
-                        <span class="veechem-cert-meta">
-                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
-                            <span class="veechem-cert-type">View PDF</span>
-                        </span>
-                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
-                    </a>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-
 
 
 
@@ -482,39 +392,39 @@
     </section>
 
     <!-- =========================
-         certifications
+         DOWNLOAD
     ========================== -->
-
-    <section class="certifications pb-5">
+    <section class="certifications veechem-certifications pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="certifications-wrapper">
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/bluesign.png" alt="Bluesign">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/oeko-tex.png" alt="OEKO-TEX">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/zdhc.png" alt="ZDHC">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/iso-9001-2015.png" alt="ISO 9001:2015">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/sgs.png" alt="SGS">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/tuv-australia.png" alt="TUV Austria">
-                        </div>
-                    </div>
-                </div>
+            <div class="section-heading text-center mb-4">
+                <h2>DOWNLOAD</h2>
+                <div class="seprator"></div>
+            </div>
+            <?php
+            $veechem_cert_base = './assets/images/products-and-solutions/security-solutions/';
+            $veechem_certs = [
+                ['file' => 'CSS HD Analog.pdf', 'title' => 'CSS HD Analog'],
+                ['file' => 'CSS IP CCTV.pdf', 'title' => 'CSS IP CCTV'],
+                ['file' => 'HIVIDEO CCTV.pdf', 'title' => 'HIVIDEO CCTV'],
+                ['file' => 'Linkff POE Switch.pdf', 'title' => 'Linkff PoE Switches'],
+                ['file' => 'TT INTL IP CCTV.pdf', 'title' => "TT INT'L IP CCTV"],
+                ['file' => 'TT INTL NVR.pdf', 'title' => "TT INT'L NVR"],
+            ];
+            ?>
+            <div class="veechem-cert-grid">
+                <?php foreach ($veechem_certs as $cert): ?>
+                    <a class="veechem-cert-card"
+                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                        <span class="veechem-cert-meta">
+                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
+                            <span class="veechem-cert-type">View PDF</span>
+                        </span>
+                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                    </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

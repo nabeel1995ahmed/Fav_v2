@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner14">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner30">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -106,7 +106,7 @@
          ABOUT OUR SECITON
     ========================== -->
 
-    <section class="why-us second-why-us-section pt-5">
+    <section class="why-us second-why-us-section pt-5 pb-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -206,49 +206,50 @@
                 <div class="seprator"></div>
             </div>
             <div class="product-main-section">
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-6 col-md-6 m-0 animate-on-scroll">
+                <div class="row g-4 m-0 product-section">
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/confectionery/favo-bites.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
+                            <img src="./assets/images/products-and-solutions/confectionery/favo-bites.svg" class="img-fluid" alt="FAVO Bites">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 m-0 animate-on-scroll">
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/confectionery/candy.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
+                            <img src="./assets/images/products-and-solutions/confectionery/candy.svg" class="img-fluid" alt="Candies">
                         </div>
                     </div>
-                    
-                </div>                               
-            </div>
-            <div class="product-main-section">
-                <div class="row g-4 align-items-center m-0 product-section">
-                    <div class="col-lg-6 col-md-6 m-0 animate-on-scroll">
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/confectionery/favo-cone.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
+                            <img src="./assets/images/products-and-solutions/confectionery/favo-cone.svg" class="img-fluid" alt="FAVO Cone">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 m-0 animate-on-scroll">
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
                         <div class="product-card">
-                            <img
-                                src="./assets/images/products-and-solutions/confectionery/favo-sticks.svg"
-                                class="img-fluid"
-                                alt="Sizing"
-                            >
+                            <img src="./assets/images/products-and-solutions/confectionery/favo-sticks.svg" class="img-fluid" alt="FAVO Sticks">
                         </div>
                     </div>
-                </div>                               
+                </div>
+                <div class="row g-4 m-0 product-section">
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/confectionery/favo-roll.svg" class="img-fluid" alt="FAVO Roll">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/confectionery/fruts-jelly.svg" class="img-fluid" alt="Fruits Jelly">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/confectionery/jolly-jelly.svg" class="img-fluid" alt="Jolly Jelly">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 m-0 animate-on-scroll">
+                        <div class="product-card">
+                            <img src="./assets/images/products-and-solutions/confectionery/confectionery.svg" class="img-fluid" alt="Confectionery">
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

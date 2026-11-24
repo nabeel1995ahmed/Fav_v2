@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner14">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner26">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
     <script>
@@ -115,7 +115,7 @@
          ABOUT OUR SECITON
     ========================== -->
 
-    <section class="why-us second-why-us-section pt-5">
+    <section class="why-us second-why-us-section pt-5 pb-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">

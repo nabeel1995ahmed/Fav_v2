@@ -12,7 +12,7 @@ if (empty($industries) || !is_array($industries)) {
 }
 
 $industries_heading = $industries_heading ?? 'INDUSTRIES WE SERVE';
-$industries_section_class = trim('industries-serve-section pb-5 ' . ($industries_section_class ?? ''));
+$industries_section_class = trim('industries-serve-section pt-4 pb-5 ' . ($industries_section_class ?? ''));
 $industries_img_base = isset($industries_img_base) ? rtrim((string) $industries_img_base, '/') : '';
 $industries_grid_class = trim((string) ($industries_grid_class ?? ''));
 

@@ -35,6 +35,15 @@ function dropdown_active($href, $current_page) {
     $current_name = pathinfo($current_page, PATHINFO_FILENAME);
     return ($href_name === $current_name) ? ' active' : '';
 }
+
+function dropdown_active_any(array $hrefs, $current_page) {
+    foreach ($hrefs as $href) {
+        if (dropdown_active($href, $current_page) !== '') {
+            return ' active';
+        }
+    }
+    return '';
+}
 ?>
 <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 
@@ -75,9 +84,9 @@ function dropdown_active($href, $current_page) {
                             Products
                         </a>
                         <ul class="dropdown-menu products-dropdown">
-                            <li><a href="./textile-dyes-and-chemicals.php" class="dropdown-item<?= dropdown_active('./textile-dyes-and-chemicals.php', $current_page) || dropdown_active('./dyestuffs-range.php', $current_page) ?>">Textile Dyes & Chemicals</a></li>
+                            <li><a href="./textile-dyes-and-chemicals.php" class="dropdown-item<?= dropdown_active_any(['./textile-dyes-and-chemicals.php', './dyestuffs-range.php'], $current_page) ?>">Textile Dyes & Chemicals</a></li>
                             <li><a href="./masterbatch.php" class="dropdown-item<?= dropdown_active('./masterbatch.php', $current_page) ?>">Masterbatch</a></li>
-                            <li><a href="./veechem-industries.php" class="dropdown-item<?= dropdown_active('./veechem-industries.php', $current_page) || dropdown_active('./textile-auxiliaries-detail.php', $current_page) ?>">Veechem Industries Pvt. Ltd.</a></li>
+                            <li><a href="./veechem-industries.php" class="dropdown-item<?= dropdown_active_any(['./veechem-industries.php', './textile-auxiliaries-detail.php'], $current_page) ?>">Veechem Industries Pvt. Ltd.</a></li>
                             <li><a href="./toner-cartridges.php" class="d-none dropdown-item<?= dropdown_active('./toner-cartridges.php', $current_page) ?>">Toner Cartridges</a></li>
                             <li><a href="./office-supplies.php" class="dropdown-item<?= dropdown_active('./office-supplies.php', $current_page) ?>">Office Supplies</a></li>
                             <li><a href="./industrial-automation-division.php" class="dropdown-item<?= dropdown_active('./industrial-automation-division.php', $current_page) ?>">Industrial Automation  Solutions</a></li>

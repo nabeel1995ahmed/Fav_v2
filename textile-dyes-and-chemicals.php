@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner14">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner26">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -106,7 +106,7 @@
          ABOUT OUR SECITON
     ========================== -->
 
-    <section class="why-us second-why-us-section pt-5">
+    <section class="why-us second-why-us-section pt-5 pb-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -287,7 +287,7 @@
                                 <h5>Optical Brighteners</h5>
                             </div>
                             <p class="product-text">
-                                Our OBA’s usually added in bleached textiles to increase the whiteness or brightness; OBA converts ultra violet radiation into visible light thus white appears more whiter. We have a wide range of Optical Brighteners for Cotton, Rayon, Polyester, T/C, T/R, Nylon, Polyamide, Wool, Silk, Acrylic
+                                Our OBA's usually added in bleached textiles to increase the whiteness or brightness; OBA converts ultra violet radiation into visible light thus white appears more whiter. We have a wide range of Optical Brighteners for Cotton, Rayon, Polyester, T/C, T/R, Nylon, Polyamide, Wool, Silk, Acrylic
                             </p>
                         </div>
                     </div>
@@ -300,7 +300,7 @@
                                 <h5>Finish Special Finishes</h5>
                             </div>
                             <p class="product-text">
-                                A one of Asia’s largest processors of silicone polymers for garments, Resil has the widest range of Silicone solutions to match every requirement. On going in house research, customizing capabilities and comprehensive application support bring value and end to end solutions.
+                                As one of Asia's largest processors of silicone polymers for garments, Resil has the widest range of Silicone solutions to match every requirement. Ongoing in-house research, customizing capabilities and comprehensive application support bring value and end to end solutions.
                             </p>
                         </div>
                     </div>

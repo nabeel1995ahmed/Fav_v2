@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner14">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner20">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -64,19 +64,19 @@
                         <ul>
                             <li>
                                 <span><i class="fal fa-check-circle"></i></span>
-                                <p>Reliable Air</p>
+                                <p>Single & Two Stage Screw Air Compressors</p>
                             </li>
                             <li>
                                 <span><i class="fal fa-check-circle"></i></span>
-                                <p>Spare Parts</p>
+                                <p>Oil-free Screw Air Compressor</p>
                             </li>
                             <li>
                                 <span><i class="fal fa-check-circle"></i></span>
-                                <p>Multi Brand</p>
+                                <p>5 in 1 Laser Cutting Screw Air Compressor</p>
                             </li>
                             <li>
                                 <span><i class="fal fa-check-circle"></i></span>
-                                <p>Plant Uptime</p>
+                                <p>Portable Air Compressor</p>
                             </li>
                         </ul>
                     </div>
@@ -106,7 +106,7 @@
          ABOUT OUR SECITON
     ========================== -->
 
-    <section class="why-us second-why-us-section pt-5">
+    <section class="why-us second-why-us-section pt-5 pb-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -348,13 +348,13 @@
                             'name' => 'Air Filter',
                             'image' => 'multi-brand/air-filter.svg',
                             'text' => 'Protects your compressor by removing dust, dirt and airborne contaminants from incoming air for better performance, improved efficiency and longer equipment life.',
-                            'specs' => 'Filtration Efficiency: Up to 99% Â· Micron Rating: 5â€“20 microns (custom options available)',
+                            'specs' => 'Filtration Efficiency: Up to 99% · Micron Rating: 5–20 microns (custom options available)',
                         ],
                         [
                             'name' => 'Oil Filter',
                             'image' => 'multi-brand/oil-filter.svg',
                             'text' => 'Maintains oil cleanliness by removing dirt, metal particles and contaminants, ensuring smooth operation and extending the life of internal components.',
-                            'specs' => 'Filtration Rating: 10â€“25 microns Â· Efficiency: Up to 99% particle removal',
+                            'specs' => 'Filtration Rating: 10–25 microns · Efficiency: Up to 99% particle removal',
                         ],
                         [
                             'name' => 'Compressor Oil',
@@ -365,25 +365,25 @@
                             'name' => 'Oil Separator',
                             'image' => 'multi-brand/oil-separator.svg',
                             'text' => 'Separates oil from compressed air in oil-injected compressors, ensuring cleaner air output while returning oil to the system and reducing consumption.',
-                            'specs' => 'Filtration Efficiency: Up to 99.9% Â· Oil Carryover: â‰¤ 3 ppm',
+                            'specs' => 'Filtration Efficiency: Up to 99.9% · Oil Carryover: = 3 ppm',
                         ],
                         [
                             'name' => 'Controllers, HMI & Sensors',
                             'image' => 'multi-brand/controller-hmi.svg',
-                            'text' => 'Essential for monitoring, control and automation of compressor systemsâ€”supporting energy-saving algorithms, fault protection and real-time operator visibility.',
-                            'specs' => 'Automatic start/stop & load management Â· Fault detection Â· Multi-compressor compatibility',
+                            'text' => 'Essential for monitoring, control and automation of compressor systems—supporting energy-saving algorithms, fault protection and real-time operator visibility.',
+                            'specs' => 'Automatic start/stop & load management · Fault detection · Multi-compressor compatibility',
                         ],
                         [
                             'name' => 'Wearing Kits',
                             'image' => 'multi-brand/wearing-kit.svg',
                             'text' => 'Service kits with essential wear parts designed to maintain efficiency, reduce downtime and keep compressors reliable at recommended service intervals.',
-                            'specs' => '2,000 / 4,000 / 8,000 Hours kits Â· Customized kits as per compressor model',
+                            'specs' => '2,000 / 4,000 / 8,000 Hours kits · Customized kits as per compressor model',
                         ],
                         [
                             'name' => 'Rubber Coupling',
                             'image' => 'multi-brand/rubber-coupling.svg',
                             'text' => 'Flexible coupling that connects rotating shafts while absorbing vibration, shock and misalignment to protect motors and compressor drivetrains.',
-                            'specs' => 'Material: Natural rubber / NBR / Polyurethane Â· Temperature Range: -20Â°C to +80Â°C',
+                            'specs' => 'Material: Natural rubber / NBR / Polyurethane · Temperature Range: -20°C to +80°C',
                         ],
                         [
                             'name' => 'Bearing Kits',
@@ -403,7 +403,7 @@
                         [
                             'name' => 'New & Used / Reconditioned Air Ends',
                             'image' => 'multi-brand/used-reconditioned-air-ends.svg',
-                            'text' => 'Inspected, repaired and performance-tested reconditioned air ends with replaced bearings, seals and worn partsâ€”a cost-effective industrial option.',
+                            'text' => 'Inspected, repaired and performance-tested reconditioned air ends with replaced bearings, seals and worn parts—a cost-effective industrial option.',
                         ],
                     ],
                 ],

@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner14">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner26">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -108,7 +108,7 @@
          ABOUT OUR SECITON
     ========================== -->
 
-    <section class="why-us second-why-us-section pt-5">
+    <section class="why-us second-why-us-section pt-5 pb-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -340,40 +340,6 @@
             </div>
         </div>
     </section>
-<!-- =========================
-         certifications
-    ========================== -->
-
-    <section class="certifications veechem-certifications pb-5">
-        <div class="container">
-            <div class="section-heading text-center mb-4">
-                <h2>Download</h2>
-                <div class="seprator"></div>
-            </div>
-            <?php
-            $veechem_cert_base = './assets/images/products-and-solutions/office-supplies/';
-            $veechem_certs = [
-                ['file' => 'supplies-catalogue.pdf', 'title' => 'Catalogue'],
-                          ];
-            ?>
-            <div class="veechem-cert-grid">
-                <?php foreach ($veechem_certs as $cert): ?>
-                    <a class="veechem-cert-card"
-                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
-                        <span class="veechem-cert-meta">
-                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
-                            <span class="veechem-cert-type">View PDF</span>
-                        </span>
-                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
-                    </a>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-
         <!-- =========================
      INDUSTRIES WE SERVE
 ========================== -->
@@ -476,39 +442,34 @@
     </section>
 
     <!-- =========================
-         certifications
+         Download
     ========================== -->
-
-    <section class="certifications pb-5">
+    <section class="certifications veechem-certifications pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="certifications-wrapper">
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/bluesign.png" alt="Bluesign">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/oeko-tex.png" alt="OEKO-TEX">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/zdhc.png" alt="ZDHC">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/iso-9001-2015.png" alt="ISO 9001:2015">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/sgs.png" alt="SGS">
-                        </div>
-
-                        <div class="certification-item">
-                            <img src="./assets/images/products-and-solutions/textile-dyes-and-chemicals/certifications-logo/tuv-australia.png" alt="TUV Austria">
-                        </div>
-                    </div>
-                </div>
+            <div class="section-heading text-center mb-4">
+                <h2>Download</h2>
+                <div class="seprator"></div>
+            </div>
+            <?php
+            $veechem_cert_base = './assets/images/products-and-solutions/office-supplies/';
+            $veechem_certs = [
+                ['file' => 'supplies-catalogue.pdf', 'title' => 'Catalogue'],
+            ];
+            ?>
+            <div class="veechem-cert-grid">
+                <?php foreach ($veechem_certs as $cert): ?>
+                    <a class="veechem-cert-card"
+                        href="<?= htmlspecialchars($veechem_cert_base . rawurlencode($cert['file'])) ?>"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="veechem-cert-icon"><i class="fal fa-file-pdf"></i></span>
+                        <span class="veechem-cert-meta">
+                            <span class="veechem-cert-title"><?= htmlspecialchars($cert['title']) ?></span>
+                            <span class="veechem-cert-type">View PDF</span>
+                        </span>
+                        <span class="veechem-cert-action"><i class="fal fa-external-link"></i></span>
+                    </a>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

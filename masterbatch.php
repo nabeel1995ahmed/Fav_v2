@@ -14,7 +14,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/styling/style.css?v=banner14">
+    <link rel="stylesheet" href="./assets/styling/style.css?v=banner26">
 
     <link rel="stylesheet" href="./assets/slick-slider/slick/slick.css">
 </head>
@@ -106,7 +106,7 @@
          ABOUT OUR SECITON
     ========================== -->
 
-    <section class="why-us second-why-us-section pt-5">
+    <section class="why-us second-why-us-section pt-5 pb-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -230,7 +230,7 @@ FAV Plastico provides a wide range of high-performance additive masterbatches de
 integrity, and end-product durability. Our advanced additive formulations protect polymers against thermal degradation, UV exposure,
 and environmental wear while optimizing production outputs.
                             </p>
-                            <a href="https://favplastico.com.pk/products/additive-masterbatch/" class="btn btn-warning text-white mt-3">
+                            <a href="https://favplastico.com.pk/products/additive-masterbatch/" class="product-explore-link">
                                 EXPLORE ADDITIVE MASTERBATCH <i class="fal fa-arrow-right"></i>
                             </a>
                         </div>
@@ -248,7 +248,7 @@ and environmental wear while optimizing production outputs.
  	
 FAV Plastico provides a wide selection of black masterbatches, featuring different concentrations of carbon black pigment and dye. These are categorized into economical and premium segments to suit various needs. Our black masterbatches are formulated with high-quality pigments that deliver excellent jetness in the final product.
                             </p>
-                            <a href="https://favplastico.com.pk/products/black-masterbatch/" class="btn btn-warning text-white mt-3">
+                            <a href="https://favplastico.com.pk/products/black-masterbatch/" class="product-explore-link">
                                 EXPLORE BLACK MASTERBATCH <i class="fal fa-arrow-right"></i>
                             </a>
                             
@@ -276,7 +276,7 @@ FAV Plastico provides a wide selection of black masterbatches, featuring differe
                                 FAV Plastico provides a wide selection of color masterbatches, featuring different strength, opacity and transparency. Our color masterbatches are formulated with high-quality pigments that deliver excellent jetness in the final product.
 
                             </p>
-                            <a href="https://favplastico.com.pk/products/color-masterbatch/" class="btn  btn-warning text-white mt-3">
+                            <a href="https://favplastico.com.pk/products/color-masterbatch/" class="product-explore-link">
                                 EXPLORE COLOR MASTERBATCH <i class="fal  fa-arrow-right"></i>
                             </a>
                         </div>
@@ -298,7 +298,7 @@ energy consumption, reduce moulding cycle times, and prevent screw wear.We offer
 custom-engineered filler grades suited for diverse conversion processes, including blown film, blow moulding, injection moulding,
 thermoforming, and woven polypropylene (WPP) sacks.
                             </p>
-                            <a href="https://favplastico.com.pk/products/filler-masterbatch/" class="btn  btn-warning text-white mt-3">
+                            <a href="https://favplastico.com.pk/products/filler-masterbatch/" class="product-explore-link">
                                 EXPLORE FILLER MASTERBATCH <i class="fal  fa-arrow-right"></i>
                             </a>
                         </div>
@@ -361,7 +361,7 @@ thermoforming, and woven polypropylene (WPP) sacks.
                                 FAV Plastico offers a diverse range of white masterbatches with varying concentrations of white pigment, available with or without brightness agent, and categorized into economical and premium product segments.
 
                             </p>
-                            <a href="https://favplastico.com.pk/products/white-masterbatch/" class="btn  btn-warning text-white mt-3">
+                            <a href="https://favplastico.com.pk/products/white-masterbatch/" class="product-explore-link">
                                 EXPLORE WHITE MASTERBATCH <i class="fal  fa-arrow-right"></i>
                             </a>
                         </div>
@@ -379,7 +379,7 @@ thermoforming, and woven polypropylene (WPP) sacks.
                             <p class="product-text">
                                 Specialized liquid masterbatch system formulated for exceptional color strength, seamless pumpability, and low let-down ratios with minimal impact on polymer physical properties.
                             </p>
-                            <a href="https://favplastico.com.pk/products/liquid-color-masterbatch/" class="btn btn-warning text-white mt-3">
+                            <a href="https://favplastico.com.pk/products/liquid-color-masterbatch/" class="product-explore-link">
                                 EXPLORE LIQUID MASTERBATCH <i class="fal fa-arrow-right"></i>
                             </a>
                         </div>
