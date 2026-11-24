@@ -45,7 +45,7 @@ function dropdown_active_any(array $hrefs, $current_page) {
     return '';
 }
 ?>
-<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+<!-- <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a> -->
 
 <header class="main-header">
     <nav class="navbar navbar-expand-xl navbar-dark">
